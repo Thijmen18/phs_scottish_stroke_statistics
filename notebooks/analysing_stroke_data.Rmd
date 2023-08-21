@@ -1,0 +1,203 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## PHS Scottish Stroke Statistics
+
+This notebook contains analysis steps of stroke incidence and mortality 
+data across Scotland.
+
+* Raw datasets are from PHS open data accessible via: https://www.opendata.nhs.scot/dataset/scottish-stroke-statistics
+* The raw datasets have been cleaned and saved within the folder "../clean_data/"
+  the cleaned datafiles will be used and analysed here.
+
+```{r}
+# load in libraries
+library(tidyverse)
+library(skimr)
+```
+
+### Contents
+
+For the analysis I focus on:
+
+1. Stroke activity
+  - demographics (age, sex)
+  - distribution across Scotland
+2. Stroke mortality
+  - demographics (age, sex)
+  - distribution across Scotland
+
+#### 1. Load in cleaned datafiles
+
+```{r}
+#stroke activity per healthboard
+activity_hb <- read_csv("../clean_data/stroke_activity_healthboard.csv")
+
+#stroke activity per council area
+activity_ca <- read_csv("../clean_data/stroke_activity_council.csv")
+
+# stroke mortality per healthboard
+mortality_hb <- read_csv("../clean_data/stroke_mortality_healthboard.csv")
+
+# stroke mortality per council area
+mortality_ca <- read_csv("../clean_data/stroke_mortality_council.csv")
+```
+
+#### 2. General exploration data contents
+Initially we focus on Health boards as data contents are similar except for area.
+
+```{r}
+# general exploration activity
+
+activity_hb %>% 
+  distinct(financial_year)
+# data is spanning from 2012/2013 until 2021/22 = 10 years
+
+activity_hb %>% 
+  distinct(admission_type)
+# 4 admission types: elective, emergency, transfer and all
+
+activity_hb %>% 
+  distinct(age_group)
+# 6 age groups: 0-44, 45-64, 65-74, 75+, all, under 75
+
+activity_hb %>% 
+  distinct(diagnosis)
+# 4 diagnosis types: Cerebrovascular disease, stroke, Subarachnoid haemorrhage, TIAs and related symptoms
+
+activity_hb %>% 
+  distinct(sex)
+# 3 sex types: Males, Females, All
+
+activity_hb %>% 
+  distinct(hbr)
+# 14 healthboards and single code for whole of Scotland
+
+```
+
+```{r}
+# general exploration mortality
+# most categories for character data are similar for activity and mortality datasets, except:
+
+mortality_hb %>% 
+  distinct(diagnosis)
+# 3 diagnosis types: Cerebrovascular disease, stroke, Subarachnoid haemorrhage
+```
+
+#### 3A. General insights Stroke activity in Scotland
+
+__What is the number of total stroke incidences in Scotland per year from 2012 to now?__
+```{r}
+activity_hb %>% 
+  select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
+  filter(age_group == "All",
+         admission_type == "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(financial_year) %>% 
+  summarise(total_stroke_incidences = sum(number_of_discharges)) #%>% 
+#  ggplot() +
+#  aes(x = financial_year, y = total_stroke_incidences) +
+#  geom_col()
+```
+Data/graph shows the total number of stroke incidences in Scotland over the years 
+2012/13 - 2021/22. We see an initial increase until 2016 after incidence rates are 
+more stable.
+
+__What is the number of total stroke incidences split per diagnosis type?__
+```{r}
+activity_hb %>% 
+  select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
+  filter(age_group == "All",
+         admission_type == "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(financial_year, diagnosis) %>% 
+  summarise(total_incidences = sum(number_of_discharges)) %>% 
+  ggplot() +
+  aes(x = financial_year, y = total_stroke_incidences, fill = diagnosis) +
+  geom_col(position = "dodge")
+```
+Graph shows the total number of stroke incidences in Scotland over the years 
+2012/13 - 2021/22 divided for diagnosis type. 
+Majority of cases are diagnosed as Cerebrovascular disease, followed by Stroke. 
+Small number of cases are diagnosed as TIA, followed by Subarachnoid Haemorrhage.
+We see an initial increase until 2016 after incidence rates are 
+more stable. Largest differences are found in Cerebrovascular disease and Stroke, while
+TIA and Subarachnoid Haemorrhage are relatively stable across all years.
+
+__What is the number of total stroke incidences split per admission type?__
+```{r}
+activity_hb %>% 
+  select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
+  filter(age_group == "All",
+         admission_type != "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(financial_year, admission_type) %>% 
+  summarise(total_stroke_incidences = sum(number_of_discharges)) %>% 
+  ggplot() +
+  aes(x = financial_year, y = total_stroke_incidences, fill = admission_type) +
+  geom_col(position = "dodge")
+```
+Graph shows the total number of stroke incidences in Scotland over the years 
+2012/13 - 2021/22 split for admission type. 
+Largest number of incidences are transfered patients, followed by emergency cases. 
+A small minority of admitted incidences are elective.
+
+#### 3B. General insights Stroke activity in Scotland
+
+__What is the stroke mortality rate in Scotland per year?__
+```{r}
+mortality_hb %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths) %>% 
+  filter(age_group == "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(year) %>% 
+  summarise(total_deaths = sum(number_of_deaths)) #%>% 
+#  ggplot() +
+#  aes(x = year, y = total_deaths) +
+#  geom_col()
+
+```
+Graph shows the total number of deaths due to strokes in Scotland over the year 2012-2021.
+Total number of deaths has decreased over the years comparing start to end year, 
+with a reduction of ~1000 cases
+
+__What is the number of deaths split per diagnosis type?__
+```{r}
+mortality_hb %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths) %>% 
+  filter(age_group == "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(year, diagnosis) %>% 
+  summarise(total_deaths = sum(number_of_deaths)) %>% 
+  ggplot() +
+  aes(x = year, y = total_deaths, fill = diagnosis) +
+  geom_col(position = "dodge")
+```
+Graph shows the total number of deaths due to strokes in Scotland over the year 
+2012-2021 split by diagnosis type. 
+Majority of deaths are diagnosed as Cerebrovascular disease, followed by stroke. 
+Only a minority is caused by Subarachnoid haemorrhage.
+
+#### 4A. Stroke activity per health board
+
+
+
+
+
+
+
+
+```{r}
+colnames(activity_hb)
+colnames(mortality_hb)
+```
+
+
+
