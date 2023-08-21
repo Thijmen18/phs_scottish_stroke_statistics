@@ -47,6 +47,3 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
-
-# all files in folder notes_and_misc
-notes_and_misc/
