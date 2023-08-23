@@ -3,7 +3,7 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-## PHS Scottish Stroke Statistics
+# PHS Scottish Stroke Statistics
 
 This notebook contains analysis steps of stroke incidence and mortality 
 data across Scotland.
@@ -29,7 +29,7 @@ For the analysis I focus on:
   - demographics (age, sex)
   - distribution across Scotland
 
-#### 1. Load in cleaned datafiles
+### 1. Load in cleaned datafiles
 
 ```{r}
 #stroke activity per healthboard
@@ -43,13 +43,24 @@ mortality_hb <- read_csv("../clean_data/stroke_mortality_healthboard.csv")
 
 # stroke mortality per council area
 mortality_ca <- read_csv("../clean_data/stroke_mortality_council.csv")
+
+# additional datafile 'table2_mortality_stroke_2023_01_24.csv' from
+# https://publichealthscotland.scot/publications/scottish-stroke-statistics/scottish-stroke-statistics-year-ending-31-march-2022/
+# showing mortality rates per SIMD quantile
+mortality_simd <- read_csv("../clean_data/cd_mortality_by_deprivation.csv")
 ```
 
-#### 2. General exploration data contents
+### 2. General exploration data contents
 Initially we focus on Health boards as data contents are similar except for area.
 
 ```{r}
 # general exploration activity
+
+head(activity_hb)
+
+activity_hb %>% 
+  filter(age_group == "All") %>% 
+  filter(sex == "All")
 
 activity_hb %>% 
   distinct(financial_year)
@@ -77,6 +88,7 @@ activity_hb %>%
 
 ```
 
+
 ```{r}
 # general exploration mortality
 # most categories for character data are similar for activity and mortality datasets, except:
@@ -86,7 +98,27 @@ mortality_hb %>%
 # 3 diagnosis types: Cerebrovascular disease, stroke, Subarachnoid haemorrhage
 ```
 
-#### 3A. General insights Stroke activity in Scotland
+__crude rate and easr__
+Two columns in all PHS open data files are of interest for data visualisation:
+
+*crude rate:*
+The crude rate is the population-standardised rate of the 'event' (here: incidences or moratlity rate)
+Crude rate is the number of events per 100.000 people
+
+*EASR:*
+is the The European Age-Sex Standardised Rate per 100,000 population.
+The numbers of deaths per 100 000 population are influenced by the age distribution of the population.
+use is made of the European Standard Population (ESP) to age and sex standardise.
+
+### Visualisations - are organised per data file / topic
+
+3a = stroke activity per HB
+3b = stroke mortality per HB
+3c = mortality per simd (Scottish Index Multiple Deprivation)
+4a = stroke activity per HB - demographics
+4b = stroke activity per HB - demographics
+
+#### 3A. General insights Stroke activity per HB
 
 __What is the number of total stroke incidences in Scotland per year from 2012 to now?__
 ```{r}
@@ -97,16 +129,54 @@ activity_hb %>%
          sex == "All",
          hbr == "S92000003") %>% 
   group_by(financial_year) %>% 
-  summarise(total_stroke_incidences = sum(number_of_discharges)) #%>% 
-#  ggplot() +
-#  aes(x = financial_year, y = total_stroke_incidences) +
-#  geom_col()
+  summarise(total_stroke_incidences = sum(number_of_discharges)) %>% 
+  ggplot() +
+  aes(x = financial_year, y = total_stroke_incidences) +
+  geom_line(aes(group = 1), colour = "indianred", size = 2) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "Total incidences",
+    title = "Total Cerebrovascular Disease Incidences per Year\n"
+  ) +
+  scale_y_continuous(limits = c(0, 70000))
+
 ```
 Data/graph shows the total number of stroke incidences in Scotland over the years 
 2012/13 - 2021/22. We see an initial increase until 2016 after incidence rates are 
 more stable.
 
+However this gives the absolute number of incidences, which are not standardised for 
+age and sex composition differences in the population across years.
+The population size changes and you want to standardise for this.
+
+__age-sex standardised stroke incidences in Scotland per year__
+```{r}
+activity_hb %>% 
+  select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
+  filter(age_group == "All",
+         admission_type == "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(financial_year) %>% 
+  summarise(total_incidences_easr = sum(easr)) %>% 
+  ggplot() +
+  aes(x = financial_year, y = total_incidences_easr) +
+  geom_line(aes(group = 1), colour = "indianred", size = 2) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "age-sex adjusted incidence rate per 100,000 population",
+    title = "Cerebrovascular Disease Standardised Incidences per Year",
+    subtitle = "age and sex adjusted incidence rates per year"
+  ) +
+  scale_y_continuous(limits = c(0, 1300))
+  
+```
+
+
 __What is the number of total stroke incidences split per diagnosis type?__
+
 ```{r}
 activity_hb %>% 
   select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
@@ -115,9 +185,9 @@ activity_hb %>%
          sex == "All",
          hbr == "S92000003") %>% 
   group_by(financial_year, diagnosis) %>% 
-  summarise(total_incidences = sum(number_of_discharges)) %>% 
+  summarise(total_incidences_easr = sum(easr)) %>% 
   ggplot() +
-  aes(x = financial_year, y = total_stroke_incidences, fill = diagnosis) +
+  aes(x = financial_year, y = total_incidences_easr, fill = diagnosis) +
   geom_col(position = "dodge")
 ```
 Graph shows the total number of stroke incidences in Scotland over the years 
@@ -137,9 +207,9 @@ activity_hb %>%
          sex == "All",
          hbr == "S92000003") %>% 
   group_by(financial_year, admission_type) %>% 
-  summarise(total_stroke_incidences = sum(number_of_discharges)) %>% 
+  summarise(total_incidences_easr = sum(easr)) %>% 
   ggplot() +
-  aes(x = financial_year, y = total_stroke_incidences, fill = admission_type) +
+  aes(x = financial_year, y = total_incidences_easr, fill = admission_type) +
   geom_col(position = "dodge")
 ```
 Graph shows the total number of stroke incidences in Scotland over the years 
@@ -147,7 +217,7 @@ Graph shows the total number of stroke incidences in Scotland over the years
 Largest number of incidences are transfered patients, followed by emergency cases. 
 A small minority of admitted incidences are elective.
 
-#### 3B. General insights Stroke activity in Scotland
+#### 3B. General insights Stroke mortality per hb
 
 __What is the stroke mortality rate in Scotland per year?__
 ```{r}
@@ -157,27 +227,61 @@ mortality_hb %>%
          sex == "All",
          hbr == "S92000003") %>% 
   group_by(year) %>% 
-  summarise(total_deaths = sum(number_of_deaths)) #%>% 
-#  ggplot() +
-#  aes(x = year, y = total_deaths) +
-#  geom_col()
+  summarise(total_deaths = sum(number_of_deaths)) %>% 
+  ggplot() +
+  aes(x = year, y = total_deaths) +
+  geom_line(aes(group = 1), colour = "indianred", size = 2) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "Total deaths",
+    title = "Total deaths for Cerebrovascular Disease per Year\n"
+  ) +
+  scale_y_continuous(limits = c(0, 7500))
 
 ```
 Graph shows the total number of deaths due to strokes in Scotland over the year 2012-2021.
 Total number of deaths has decreased over the years comparing start to end year, 
 with a reduction of ~1000 cases
 
+However this gives the absolute number of deaths, which are not standardised for 
+age and sex composition differences in the population across years.
+The population size changes and you want to standardise for this.
+
+__age-sex standardised stroke deaths in Scotland per year__
+```{r}
+mortality_hb %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr, crude_rate) %>% 
+  filter(age_group == "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(year) %>% 
+  summarise(total_deaths_easr = sum(easr)) %>% 
+  ggplot() +
+  aes(x = as.factor(year), y = total_deaths_easr) +
+  geom_line(aes(group = 1), colour = "indianred", size = 2) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "sex-age adjusted death rate per 100,000 population",
+    title = "Cerebrovascular Disease Standardised Death rate per Year",
+    subtitle = "age and sex adjusted death rates per year"
+  ) +
+  scale_y_continuous(limits = c(0, 200))
+```
+
+
 __What is the number of deaths split per diagnosis type?__
 ```{r}
 mortality_hb %>% 
-  select(year, hbr, age_group, sex, diagnosis, number_of_deaths) %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr) %>% 
   filter(age_group == "All",
          sex == "All",
          hbr == "S92000003") %>% 
   group_by(year, diagnosis) %>% 
-  summarise(total_deaths = sum(number_of_deaths)) %>% 
+  summarise(total_deaths_easr = sum(easr)) %>% 
   ggplot() +
-  aes(x = year, y = total_deaths, fill = diagnosis) +
+  aes(x = year, y = total_deaths_easr, fill = diagnosis) +
   geom_col(position = "dodge")
 ```
 Graph shows the total number of deaths due to strokes in Scotland over the year 
@@ -185,12 +289,173 @@ Graph shows the total number of deaths due to strokes in Scotland over the year
 Majority of deaths are diagnosed as Cerebrovascular disease, followed by stroke. 
 Only a minority is caused by Subarachnoid haemorrhage.
 
-#### 4A. Stroke activity per health board
+#### 3C. Stroke mortality per SIMD
+
+Visualise the number of deaths (use age-sex standardised rate per 100k population)
+```{r}
+head(mortality_simd)
+
+mortality_simd %>% 
+  mutate(quintile = recode(quintile,
+                           "1" = "Q1",
+                           "2" = "Q2",
+                           "3" = "Q3",
+                           "4" = "Q4",
+                           "5" = "Q5")) %>% 
+  ggplot() +
+  aes(x = as.factor(year), y = easr_rate, group = quintile, colour = quintile) +
+  geom_line(size = 1) +
+  scale_colour_manual(
+    values = c(
+      "Q1" = "indianred",
+      "Q2" = "darkorange",
+      "Q3" = "gold",
+      "Q4" = "skyblue1",
+      "Q5" = "navyblue"
+    )
+  ) +
+  theme_light() +
+  labs(
+    x = "\nYear",
+    y = "Standardised mortality rate per 100,000 population",
+    title = "Cerebrovascular Disease Mortality rates by Deprivation Level",
+    subtitle = "Age-Sex standardised mortality rates by SIMD quintile and year",
+    colour = "SIMD quintile")
+  
+  
+```
+Graph shows the age-sex standardised mortality rates (per 100,000 people) per SIMD quintile.
+Indicating that mortality rate for CD is higher in areas of higher deprivation.
+
+#### 4A. Stroke incidence rate - demographics
+Visualise the number of incidences (use age-sex standardised rate per 100k population)
+split per age-group and sex
+
+__sex__
+```{r}
+activity_hb %>% 
+  select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
+  filter(age_group == "All",
+         admission_type == "All",
+         sex == "Males" | sex == "Females",
+         hbr == "S92000003") %>% 
+  group_by(financial_year, sex) %>% 
+  summarise(total_incidences_easr = sum(easr)) %>% 
+  ggplot() +
+  aes(x = financial_year, y = total_incidences_easr) +
+  geom_line(aes(group = sex, colour = sex), size = 2) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "age-sex adjusted incidence rate per 100,000 population",
+    title = "Cerebrovascular Disease Standardised Incidences per Sex",
+    subtitle = "age and sex adjusted incidence rates per year (ESP-2013)"
+  ) +
+  scale_y_continuous(limits = c(0, 1500)) +
+  scale_colour_manual(
+    values = c(
+      "Males" = "palegreen4",
+      "Females" = "palegreen1")
+    )
+```
+
+__age_group__
+```{r}
+activity_hb %>% 
+  select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
+  filter(age_group == "0-44 years" | age_group == "45-64 years" | 
+           age_group == "65-74 years" | age_group == "75plus years",
+         admission_type == "All",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(financial_year, age_group) %>% 
+  summarise(total_incidences_easr = sum(easr)) %>% 
+  ggplot() +
+  aes(x = financial_year, y = total_incidences_easr) +
+  geom_line(aes(group = age_group, colour = age_group), size = 1.5) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "age-sex adjusted incidence rate per 100,000 population",
+    title = "Cerebrovascular Disease Standardised Incidences per Age-group",
+    subtitle = "age and sex adjusted incidence rates per year (ESP-2013)",
+    colour = "Age group"
+  ) +
+  scale_y_continuous(limits = c(0, 8000)) +
+  scale_colour_manual(
+    values = c(
+      "0-44 years" = "palegreen4",
+      "45-64 years" = "palegreen3",
+      "65-74 years" = "palegreen1",
+      "75plus years" = "limegreen")
+    )
+```
 
 
+#### 4B. Stroke mortality rate - demographics
+Visualise the number of deaths (use age-sex standardised rate per 100k population)
+split per age-group and sex
+
+__sex__
+```{r}
+mortality_hb %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr, crude_rate) %>% 
+  filter(age_group == "All",
+         sex == "Males" | sex == "Females",
+         hbr == "S92000003") %>% 
+  group_by(year, sex) %>% 
+  summarise(total_deaths_easr = sum(easr)) %>% 
+  ggplot() +
+  aes(x = as.factor(year), y = total_deaths_easr) +
+  geom_line(aes(group = sex, colour = sex), size = 2) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "age-sex adjusted death rate per 100,000 population",
+    title = "Cerebrovascular Disease Standardised Death rate per Sex",
+    subtitle = "age and sex adjusted death rates per year (ESP-2013)"
+  ) +
+  scale_y_continuous(limits = c(0, 400)) +
+  scale_colour_manual(
+    values = c(
+      "Males" = "palegreen4",
+      "Females" = "palegreen1")
+    )
+
+```
+
+__age_group__
+```{r}
+mortality_hb %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr, crude_rate) %>% 
+  filter(age_group == "0-44 years" | age_group == "45-64 years" | 
+           age_group == "65-74 years" | age_group == "75plus years",
+         sex == "All",
+         hbr == "S92000003") %>% 
+  group_by(year, age_group) %>% 
+  summarise(total_deaths_easr = sum(easr)) %>% 
+  ggplot() +
+  aes(x = as.factor(year), y = total_deaths_easr) +
+  geom_line(aes(group = age_group, colour = age_group), size = 1.5) +
+  theme_light() +
+  labs(
+    x = "\nYear", 
+    y = "age-sex adjusted death rate per 100,000 population",
+    title = "Cerebrovascular Disease Standardised Death rate per Age-group",
+    subtitle = "age and sex adjusted death rates per year (ESP-2013)",
+    colour = "Age group"
+  ) +
+  scale_y_continuous(limits = c(0, 1500)) +
+  scale_colour_manual(
+    values = c(
+      "0-44 years" = "palegreen4",
+      "45-64 years" = "palegreen3",
+      "65-74 years" = "palegreen1",
+      "75plus years" = "limegreen")
+    )
 
 
-
+```
 
 
 
