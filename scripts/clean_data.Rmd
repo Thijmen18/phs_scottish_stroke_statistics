@@ -1,8 +1,0 @@
----
-title: "Cleanin and exploring data"
-output: html_notebook
----
-
-
-
-

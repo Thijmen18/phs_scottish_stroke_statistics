@@ -2,9 +2,13 @@
 # this script contains code to clean and prep raw data derived from PHS
 # source: https://www.opendata.nhs.scot/dataset/scottish-stroke-statistics
 
+# see below 'NRS data' for cleaning and wrangling steps of population estimate 
+# datafiles derived from NRS.
+
 ## open libraries
 library(tidyverse)
 library(skimr)
+library(readxl)
 
 #####################
 ## first dataset: Stroke Activity By Health Board
@@ -126,6 +130,61 @@ mortality_ca %>%
 # 4. write cleaned file to new csv:
 
 write.csv(mortality_ca, file = "clean_data/stroke_mortality_council.csv")
+
+##############################
+# NRS data
+############################
+# clean dataset: 
+# Mid-Year Population Estimates for Scotland, mid-2021: Time series data
+# Source: NRS
+# https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/mid-year-population-estimates/population-estimates-time-series-data
+
+
+# we only need table 2:
+# Mid-year population estimates by NHS health board, sex and single year of age, 1981-2021 [note 2]
+
+pop_estimates <- read_excel("raw_data/mid-year-pop-est-21-time-series-data.xlsx", 
+                            sheet = "Table_2",
+                            range = cell_rows(6:1851))
+
+pop_estimates <- pop_estimates %>% 
+  janitor::clean_names() 
+ 
+# only select the rows and columns we need:
+# year: 2012-2021
+# health boards
+
+pop_estimates <- pop_estimates %>% 
+  filter(year %in% c(2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021)) %>% 
+  rename("hbr" = "area_code") %>% 
+  mutate(sex = recode(sex, "Persons" = "All"))
+
+# add population estimates into age bins similar as the NHS bins:
+# 0-44 years, 45-64 years, 65-74 years, 75plus years
+
+pop_estimates_age_bins <- pop_estimates %>% 
+  mutate(age_bin_1 = rowSums(pop_estimates[6:50], na.rm = TRUE)) %>% 
+  mutate(age_bin_2 = rowSums(pop_estimates[51:70], na.rm = TRUE)) %>% 
+  mutate(age_bin_3 = rowSums(pop_estimates[71:80], na.rm = TRUE)) %>% 
+  mutate(age_bin_4 = rowSums(pop_estimates[81:96], na.rm = TRUE)) %>% 
+  select(hbr, area_name, sex, year, all_ages, age_bin_1, age_bin_2, age_bin_3, age_bin_4)
+
+population_estimates_nhs_format <- pop_estimates_age_bins %>% 
+  pivot_longer(cols = c("age_bin_1", "age_bin_2", "age_bin_3", "age_bin_4", "all_ages"),
+               names_to = "age_group",
+               values_to = "population_size") %>% 
+  mutate(age_group = recode(age_group,
+                            "age_bin_1" = "0-44 years",
+                            "age_bin_2" = "45-64 years",
+                            "age_bin_3" = "65-74 years",
+                            "age_bin_4" = "75plus years",
+                            "all_ages" = "All"))
+  
+# 4. write cleaned file to new csv:
+
+write.csv(population_estimates_nhs_format, file = "clean_data/pop_est_nhs_format.csv")
+
+
 
 
 

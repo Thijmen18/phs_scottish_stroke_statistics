@@ -1,0 +1,2251 @@
+"","hbr","area_name","sex","year","age_group","population_size"
+"1","S92000003","Scotland","All",2012,"0-44 years",2930967
+"2","S92000003","Scotland","All",2012,"45-64 years",1456892
+"3","S92000003","Scotland","All",2012,"65-74 years",507288
+"4","S92000003","Scotland","All",2012,"75plus years",418453
+"5","S92000003","Scotland","All",2012,"All",5313600
+"6","S08000001","Ayrshire and Arran","All",2012,"0-44 years",190586
+"7","S08000001","Ayrshire and Arran","All",2012,"45-64 years",108051
+"8","S08000001","Ayrshire and Arran","All",2012,"65-74 years",41744
+"9","S08000001","Ayrshire and Arran","All",2012,"75plus years",32839
+"10","S08000001","Ayrshire and Arran","All",2012,"All",373220
+"11","S08000002","Borders","All",2012,"0-44 years",54038
+"12","S08000002","Borders","All",2012,"45-64 years",34745
+"13","S08000002","Borders","All",2012,"65-74 years",13863
+"14","S08000002","Borders","All",2012,"75plus years",11074
+"15","S08000002","Borders","All",2012,"All",113720
+"16","S08000003","Dumfries and Galloway","All",2012,"0-44 years",71176
+"17","S08000003","Dumfries and Galloway","All",2012,"45-64 years",45319
+"18","S08000003","Dumfries and Galloway","All",2012,"65-74 years",18864
+"19","S08000003","Dumfries and Galloway","All",2012,"75plus years",15481
+"20","S08000003","Dumfries and Galloway","All",2012,"All",150840
+"21","S08000004","Fife","All",2012,"0-44 years",197066
+"22","S08000004","Fife","All",2012,"45-64 years",101991
+"23","S08000004","Fife","All",2012,"65-74 years",37519
+"24","S08000004","Fife","All",2012,"75plus years",29634
+"25","S08000004","Fife","All",2012,"All",366210
+"26","S08000005","Forth Valley","All",2012,"0-44 years",164596
+"27","S08000005","Forth Valley","All",2012,"45-64 years",83042
+"28","S08000005","Forth Valley","All",2012,"65-74 years",29046
+"29","S08000005","Forth Valley","All",2012,"75plus years",22406
+"30","S08000005","Forth Valley","All",2012,"All",299090
+"31","S08000006","Grampian","All",2012,"0-44 years",323953
+"32","S08000006","Grampian","All",2012,"45-64 years",155419
+"33","S08000006","Grampian","All",2012,"65-74 years",51458
+"34","S08000006","Grampian","All",2012,"75plus years",42570
+"35","S08000006","Grampian","All",2012,"All",573400
+"36","S08000007","Greater Glasgow and Clyde","All",2012,"0-44 years",654046
+"37","S08000007","Greater Glasgow and Clyde","All",2012,"45-64 years",300928
+"38","S08000007","Greater Glasgow and Clyde","All",2012,"65-74 years",96792
+"39","S08000007","Greater Glasgow and Clyde","All",2012,"75plus years",85554
+"40","S08000007","Greater Glasgow and Clyde","All",2012,"All",1137320
+"41","S08000008","Highland","All",2012,"0-44 years",158562
+"42","S08000008","Highland","All",2012,"45-64 years",96015
+"43","S08000008","Highland","All",2012,"65-74 years",36668
+"44","S08000008","Highland","All",2012,"75plus years",28555
+"45","S08000008","Highland","All",2012,"All",319800
+"46","S08000009","Lanarkshire","All",2012,"0-44 years",362336
+"47","S08000009","Lanarkshire","All",2012,"45-64 years",182563
+"48","S08000009","Lanarkshire","All",2012,"65-74 years",60695
+"49","S08000009","Lanarkshire","All",2012,"75plus years",46626
+"50","S08000009","Lanarkshire","All",2012,"All",652220
+"51","S08000010","Lothian","All",2012,"0-44 years",499533
+"52","S08000010","Lothian","All",2012,"45-64 years",214829
+"53","S08000010","Lothian","All",2012,"65-74 years",69804
+"54","S08000010","Lothian","All",2012,"75plus years",59574
+"55","S08000010","Lothian","All",2012,"All",843740
+"56","S08000011","Orkney","All",2012,"0-44 years",10603
+"57","S08000011","Orkney","All",2012,"45-64 years",6477
+"58","S08000011","Orkney","All",2012,"65-74 years",2601
+"59","S08000011","Orkney","All",2012,"75plus years",1849
+"60","S08000011","Orkney","All",2012,"All",21530
+"61","S08000012","Shetland","All",2012,"0-44 years",12604
+"62","S08000012","Shetland","All",2012,"45-64 years",6621
+"63","S08000012","Shetland","All",2012,"65-74 years",2304
+"64","S08000012","Shetland","All",2012,"75plus years",1681
+"65","S08000012","Shetland","All",2012,"All",23210
+"66","S08000013","Tayside","All",2012,"0-44 years",218701
+"67","S08000013","Tayside","All",2012,"45-64 years",112675
+"68","S08000013","Tayside","All",2012,"65-74 years",42584
+"69","S08000013","Tayside","All",2012,"75plus years",37780
+"70","S08000013","Tayside","All",2012,"All",411740
+"71","S08000014","Western Isles","All",2012,"0-44 years",13167
+"72","S08000014","Western Isles","All",2012,"45-64 years",8217
+"73","S08000014","Western Isles","All",2012,"65-74 years",3346
+"74","S08000014","Western Isles","All",2012,"75plus years",2830
+"75","S08000014","Western Isles","All",2012,"All",27560
+"76","S92000003","Scotland","Males",2012,"0-44 years",1462539
+"77","S92000003","Scotland","Males",2012,"45-64 years",711781
+"78","S92000003","Scotland","Males",2012,"65-74 years",238979
+"79","S92000003","Scotland","Males",2012,"75plus years",163991
+"80","S92000003","Scotland","Males",2012,"All",2577290
+"81","S08000001","Ayrshire and Arran","Males",2012,"0-44 years",94019
+"82","S08000001","Ayrshire and Arran","Males",2012,"45-64 years",51909
+"83","S08000001","Ayrshire and Arran","Males",2012,"65-74 years",19737
+"84","S08000001","Ayrshire and Arran","Males",2012,"75plus years",13009
+"85","S08000001","Ayrshire and Arran","Males",2012,"All",178674
+"86","S08000002","Borders","Males",2012,"0-44 years",26777
+"87","S08000002","Borders","Males",2012,"45-64 years",17128
+"88","S08000002","Borders","Males",2012,"65-74 years",6668
+"89","S08000002","Borders","Males",2012,"75plus years",4610
+"90","S08000002","Borders","Males",2012,"All",55183
+"91","S08000003","Dumfries and Galloway","Males",2012,"0-44 years",35404
+"92","S08000003","Dumfries and Galloway","Males",2012,"45-64 years",22185
+"93","S08000003","Dumfries and Galloway","Males",2012,"65-74 years",9090
+"94","S08000003","Dumfries and Galloway","Males",2012,"75plus years",6533
+"95","S08000003","Dumfries and Galloway","Males",2012,"All",73212
+"96","S08000004","Fife","Males",2012,"0-44 years",97837
+"97","S08000004","Fife","Males",2012,"45-64 years",49789
+"98","S08000004","Fife","Males",2012,"65-74 years",17921
+"99","S08000004","Fife","Males",2012,"75plus years",11901
+"100","S08000004","Fife","Males",2012,"All",177448
+"101","S08000005","Forth Valley","Males",2012,"0-44 years",81920
+"102","S08000005","Forth Valley","Males",2012,"45-64 years",40783
+"103","S08000005","Forth Valley","Males",2012,"65-74 years",13680
+"104","S08000005","Forth Valley","Males",2012,"75plus years",8977
+"105","S08000005","Forth Valley","Males",2012,"All",145360
+"106","S08000006","Grampian","Males",2012,"0-44 years",164290
+"107","S08000006","Grampian","Males",2012,"45-64 years",77598
+"108","S08000006","Grampian","Males",2012,"65-74 years",24627
+"109","S08000006","Grampian","Males",2012,"75plus years",17113
+"110","S08000006","Grampian","Males",2012,"All",283628
+"111","S08000007","Greater Glasgow and Clyde","Males",2012,"0-44 years",325590
+"112","S08000007","Greater Glasgow and Clyde","Males",2012,"45-64 years",145210
+"113","S08000007","Greater Glasgow and Clyde","Males",2012,"65-74 years",44592
+"114","S08000007","Greater Glasgow and Clyde","Males",2012,"75plus years",31602
+"115","S08000007","Greater Glasgow and Clyde","Males",2012,"All",546994
+"116","S08000008","Highland","Males",2012,"0-44 years",79766
+"117","S08000008","Highland","Males",2012,"45-64 years",47127
+"118","S08000008","Highland","Males",2012,"65-74 years",17776
+"119","S08000008","Highland","Males",2012,"75plus years",11547
+"120","S08000008","Highland","Males",2012,"All",156216
+"121","S08000009","Lanarkshire","Males",2012,"0-44 years",180254
+"122","S08000009","Lanarkshire","Males",2012,"45-64 years",88336
+"123","S08000009","Lanarkshire","Males",2012,"65-74 years",28122
+"124","S08000009","Lanarkshire","Males",2012,"75plus years",17847
+"125","S08000009","Lanarkshire","Males",2012,"All",314559
+"126","S08000010","Lothian","Males",2012,"0-44 years",248816
+"127","S08000010","Lothian","Males",2012,"45-64 years",105691
+"128","S08000010","Lothian","Males",2012,"65-74 years",32590
+"129","S08000010","Lothian","Males",2012,"75plus years",23252
+"130","S08000010","Lothian","Males",2012,"All",410349
+"131","S08000011","Orkney","Males",2012,"0-44 years",5312
+"132","S08000011","Orkney","Males",2012,"45-64 years",3296
+"133","S08000011","Orkney","Males",2012,"65-74 years",1293
+"134","S08000011","Orkney","Males",2012,"75plus years",792
+"135","S08000011","Orkney","Males",2012,"All",10693
+"136","S08000012","Shetland","Males",2012,"0-44 years",6492
+"137","S08000012","Shetland","Males",2012,"45-64 years",3417
+"138","S08000012","Shetland","Males",2012,"65-74 years",1159
+"139","S08000012","Shetland","Males",2012,"75plus years",702
+"140","S08000012","Shetland","Males",2012,"All",11770
+"141","S08000013","Tayside","Males",2012,"0-44 years",109358
+"142","S08000013","Tayside","Males",2012,"45-64 years",55120
+"143","S08000013","Tayside","Males",2012,"65-74 years",20086
+"144","S08000013","Tayside","Males",2012,"75plus years",15034
+"145","S08000013","Tayside","Males",2012,"All",199598
+"146","S08000014","Western Isles","Males",2012,"0-44 years",6704
+"147","S08000014","Western Isles","Males",2012,"45-64 years",4192
+"148","S08000014","Western Isles","Males",2012,"65-74 years",1638
+"149","S08000014","Western Isles","Males",2012,"75plus years",1072
+"150","S08000014","Western Isles","Males",2012,"All",13606
+"151","S92000003","Scotland","Females",2012,"0-44 years",1468428
+"152","S92000003","Scotland","Females",2012,"45-64 years",745111
+"153","S92000003","Scotland","Females",2012,"65-74 years",268309
+"154","S92000003","Scotland","Females",2012,"75plus years",254462
+"155","S92000003","Scotland","Females",2012,"All",2736310
+"156","S08000001","Ayrshire and Arran","Females",2012,"0-44 years",96567
+"157","S08000001","Ayrshire and Arran","Females",2012,"45-64 years",56142
+"158","S08000001","Ayrshire and Arran","Females",2012,"65-74 years",22007
+"159","S08000001","Ayrshire and Arran","Females",2012,"75plus years",19830
+"160","S08000001","Ayrshire and Arran","Females",2012,"All",194546
+"161","S08000002","Borders","Females",2012,"0-44 years",27261
+"162","S08000002","Borders","Females",2012,"45-64 years",17617
+"163","S08000002","Borders","Females",2012,"65-74 years",7195
+"164","S08000002","Borders","Females",2012,"75plus years",6464
+"165","S08000002","Borders","Females",2012,"All",58537
+"166","S08000003","Dumfries and Galloway","Females",2012,"0-44 years",35772
+"167","S08000003","Dumfries and Galloway","Females",2012,"45-64 years",23134
+"168","S08000003","Dumfries and Galloway","Females",2012,"65-74 years",9774
+"169","S08000003","Dumfries and Galloway","Females",2012,"75plus years",8948
+"170","S08000003","Dumfries and Galloway","Females",2012,"All",77628
+"171","S08000004","Fife","Females",2012,"0-44 years",99229
+"172","S08000004","Fife","Females",2012,"45-64 years",52202
+"173","S08000004","Fife","Females",2012,"65-74 years",19598
+"174","S08000004","Fife","Females",2012,"75plus years",17733
+"175","S08000004","Fife","Females",2012,"All",188762
+"176","S08000005","Forth Valley","Females",2012,"0-44 years",82676
+"177","S08000005","Forth Valley","Females",2012,"45-64 years",42259
+"178","S08000005","Forth Valley","Females",2012,"65-74 years",15366
+"179","S08000005","Forth Valley","Females",2012,"75plus years",13429
+"180","S08000005","Forth Valley","Females",2012,"All",153730
+"181","S08000006","Grampian","Females",2012,"0-44 years",159663
+"182","S08000006","Grampian","Females",2012,"45-64 years",77821
+"183","S08000006","Grampian","Females",2012,"65-74 years",26831
+"184","S08000006","Grampian","Females",2012,"75plus years",25457
+"185","S08000006","Grampian","Females",2012,"All",289772
+"186","S08000007","Greater Glasgow and Clyde","Females",2012,"0-44 years",328456
+"187","S08000007","Greater Glasgow and Clyde","Females",2012,"45-64 years",155718
+"188","S08000007","Greater Glasgow and Clyde","Females",2012,"65-74 years",52200
+"189","S08000007","Greater Glasgow and Clyde","Females",2012,"75plus years",53952
+"190","S08000007","Greater Glasgow and Clyde","Females",2012,"All",590326
+"191","S08000008","Highland","Females",2012,"0-44 years",78796
+"192","S08000008","Highland","Females",2012,"45-64 years",48888
+"193","S08000008","Highland","Females",2012,"65-74 years",18892
+"194","S08000008","Highland","Females",2012,"75plus years",17008
+"195","S08000008","Highland","Females",2012,"All",163584
+"196","S08000009","Lanarkshire","Females",2012,"0-44 years",182082
+"197","S08000009","Lanarkshire","Females",2012,"45-64 years",94227
+"198","S08000009","Lanarkshire","Females",2012,"65-74 years",32573
+"199","S08000009","Lanarkshire","Females",2012,"75plus years",28779
+"200","S08000009","Lanarkshire","Females",2012,"All",337661
+"201","S08000010","Lothian","Females",2012,"0-44 years",250717
+"202","S08000010","Lothian","Females",2012,"45-64 years",109138
+"203","S08000010","Lothian","Females",2012,"65-74 years",37214
+"204","S08000010","Lothian","Females",2012,"75plus years",36322
+"205","S08000010","Lothian","Females",2012,"All",433391
+"206","S08000011","Orkney","Females",2012,"0-44 years",5291
+"207","S08000011","Orkney","Females",2012,"45-64 years",3181
+"208","S08000011","Orkney","Females",2012,"65-74 years",1308
+"209","S08000011","Orkney","Females",2012,"75plus years",1057
+"210","S08000011","Orkney","Females",2012,"All",10837
+"211","S08000012","Shetland","Females",2012,"0-44 years",6112
+"212","S08000012","Shetland","Females",2012,"45-64 years",3204
+"213","S08000012","Shetland","Females",2012,"65-74 years",1145
+"214","S08000012","Shetland","Females",2012,"75plus years",979
+"215","S08000012","Shetland","Females",2012,"All",11440
+"216","S08000013","Tayside","Females",2012,"0-44 years",109343
+"217","S08000013","Tayside","Females",2012,"45-64 years",57555
+"218","S08000013","Tayside","Females",2012,"65-74 years",22498
+"219","S08000013","Tayside","Females",2012,"75plus years",22746
+"220","S08000013","Tayside","Females",2012,"All",212142
+"221","S08000014","Western Isles","Females",2012,"0-44 years",6463
+"222","S08000014","Western Isles","Females",2012,"45-64 years",4025
+"223","S08000014","Western Isles","Females",2012,"65-74 years",1708
+"224","S08000014","Western Isles","Females",2012,"75plus years",1758
+"225","S08000014","Western Isles","Females",2012,"All",13954
+"226","S92000003","Scotland","All",2013,"0-44 years",2916818
+"227","S92000003","Scotland","All",2013,"45-64 years",1463984
+"228","S92000003","Scotland","All",2013,"65-74 years",522302
+"229","S92000003","Scotland","All",2013,"75plus years",424596
+"230","S92000003","Scotland","All",2013,"All",5327700
+"231","S08000001","Ayrshire and Arran","All",2013,"0-44 years",187676
+"232","S08000001","Ayrshire and Arran","All",2013,"45-64 years",108118
+"233","S08000001","Ayrshire and Arran","All",2013,"65-74 years",43019
+"234","S08000001","Ayrshire and Arran","All",2013,"75plus years",33427
+"235","S08000001","Ayrshire and Arran","All",2013,"All",372240
+"236","S08000002","Borders","All",2013,"0-44 years",53381
+"237","S08000002","Borders","All",2013,"45-64 years",34786
+"238","S08000002","Borders","All",2013,"65-74 years",14434
+"239","S08000002","Borders","All",2013,"75plus years",11279
+"240","S08000002","Borders","All",2013,"All",113880
+"241","S08000003","Dumfries and Galloway","All",2013,"0-44 years",70064
+"242","S08000003","Dumfries and Galloway","All",2013,"45-64 years",45170
+"243","S08000003","Dumfries and Galloway","All",2013,"65-74 years",19398
+"244","S08000003","Dumfries and Galloway","All",2013,"75plus years",15648
+"245","S08000003","Dumfries and Galloway","All",2013,"All",150280
+"246","S08000004","Fife","All",2013,"0-44 years",195593
+"247","S08000004","Fife","All",2013,"45-64 years",102290
+"248","S08000004","Fife","All",2013,"65-74 years",39014
+"249","S08000004","Fife","All",2013,"75plus years",30003
+"250","S08000004","Fife","All",2013,"All",366900
+"251","S08000005","Forth Valley","All",2013,"0-44 years",163136
+"252","S08000005","Forth Valley","All",2013,"45-64 years",83740
+"253","S08000005","Forth Valley","All",2013,"65-74 years",29982
+"254","S08000005","Forth Valley","All",2013,"75plus years",22812
+"255","S08000005","Forth Valley","All",2013,"All",299670
+"256","S08000006","Grampian","All",2013,"0-44 years",326699
+"257","S08000006","Grampian","All",2013,"45-64 years",155920
+"258","S08000006","Grampian","All",2013,"65-74 years",53301
+"259","S08000006","Grampian","All",2013,"75plus years",43280
+"260","S08000006","Grampian","All",2013,"All",579200
+"261","S08000007","Greater Glasgow and Clyde","All",2013,"0-44 years",650282
+"262","S08000007","Greater Glasgow and Clyde","All",2013,"45-64 years",303177
+"263","S08000007","Greater Glasgow and Clyde","All",2013,"65-74 years",98334
+"264","S08000007","Greater Glasgow and Clyde","All",2013,"75plus years",86127
+"265","S08000007","Greater Glasgow and Clyde","All",2013,"All",1137920
+"266","S08000008","Highland","All",2013,"0-44 years",157867
+"267","S08000008","Highland","All",2013,"45-64 years",95932
+"268","S08000008","Highland","All",2013,"65-74 years",38035
+"269","S08000008","Highland","All",2013,"75plus years",29146
+"270","S08000008","Highland","All",2013,"All",320980
+"271","S08000009","Lanarkshire","All",2013,"0-44 years",358626
+"272","S08000009","Lanarkshire","All",2013,"45-64 years",184085
+"273","S08000009","Lanarkshire","All",2013,"65-74 years",62249
+"274","S08000009","Lanarkshire","All",2013,"75plus years",47630
+"275","S08000009","Lanarkshire","All",2013,"All",652590
+"276","S08000010","Lothian","All",2013,"0-44 years",500152
+"277","S08000010","Lothian","All",2013,"45-64 years",216877
+"278","S08000010","Lothian","All",2013,"65-74 years",72157
+"279","S08000010","Lothian","All",2013,"75plus years",60534
+"280","S08000010","Lothian","All",2013,"All",849720
+"281","S08000011","Orkney","All",2013,"0-44 years",10476
+"282","S08000011","Orkney","All",2013,"45-64 years",6524
+"283","S08000011","Orkney","All",2013,"65-74 years",2648
+"284","S08000011","Orkney","All",2013,"75plus years",1912
+"285","S08000011","Orkney","All",2013,"All",21560
+"286","S08000012","Shetland","All",2013,"0-44 years",12498
+"287","S08000012","Shetland","All",2013,"45-64 years",6595
+"288","S08000012","Shetland","All",2013,"65-74 years",2392
+"289","S08000012","Shetland","All",2013,"75plus years",1715
+"290","S08000012","Shetland","All",2013,"All",23200
+"291","S08000013","Tayside","All",2013,"0-44 years",217443
+"292","S08000013","Tayside","All",2013,"45-64 years",112565
+"293","S08000013","Tayside","All",2013,"65-74 years",43920
+"294","S08000013","Tayside","All",2013,"75plus years",38232
+"295","S08000013","Tayside","All",2013,"All",412160
+"296","S08000014","Western Isles","All",2013,"0-44 years",12925
+"297","S08000014","Western Isles","All",2013,"45-64 years",8205
+"298","S08000014","Western Isles","All",2013,"65-74 years",3419
+"299","S08000014","Western Isles","All",2013,"75plus years",2851
+"300","S08000014","Western Isles","All",2013,"All",27400
+"301","S92000003","Scotland","Males",2013,"0-44 years",1457133
+"302","S92000003","Scotland","Males",2013,"45-64 years",714280
+"303","S92000003","Scotland","Males",2013,"65-74 years",246992
+"304","S92000003","Scotland","Males",2013,"75plus years",168275
+"305","S92000003","Scotland","Males",2013,"All",2586680
+"306","S08000001","Ayrshire and Arran","Males",2013,"0-44 years",92611
+"307","S08000001","Ayrshire and Arran","Males",2013,"45-64 years",51820
+"308","S08000001","Ayrshire and Arran","Males",2013,"65-74 years",20352
+"309","S08000001","Ayrshire and Arran","Males",2013,"75plus years",13458
+"310","S08000001","Ayrshire and Arran","Males",2013,"All",178241
+"311","S08000002","Borders","Males",2013,"0-44 years",26438
+"312","S08000002","Borders","Males",2013,"45-64 years",17136
+"313","S08000002","Borders","Males",2013,"65-74 years",6984
+"314","S08000002","Borders","Males",2013,"75plus years",4753
+"315","S08000002","Borders","Males",2013,"All",55311
+"316","S08000003","Dumfries and Galloway","Males",2013,"0-44 years",34897
+"317","S08000003","Dumfries and Galloway","Males",2013,"45-64 years",22030
+"318","S08000003","Dumfries and Galloway","Males",2013,"65-74 years",9360
+"319","S08000003","Dumfries and Galloway","Males",2013,"75plus years",6693
+"320","S08000003","Dumfries and Galloway","Males",2013,"All",72980
+"321","S08000004","Fife","Males",2013,"0-44 years",97239
+"322","S08000004","Fife","Males",2013,"45-64 years",49903
+"323","S08000004","Fife","Males",2013,"65-74 years",18644
+"324","S08000004","Fife","Males",2013,"75plus years",12185
+"325","S08000004","Fife","Males",2013,"All",177971
+"326","S08000005","Forth Valley","Males",2013,"0-44 years",81315
+"327","S08000005","Forth Valley","Males",2013,"45-64 years",41075
+"328","S08000005","Forth Valley","Males",2013,"65-74 years",14178
+"329","S08000005","Forth Valley","Males",2013,"75plus years",9223
+"330","S08000005","Forth Valley","Males",2013,"All",145791
+"331","S08000006","Grampian","Males",2013,"0-44 years",166084
+"332","S08000006","Grampian","Males",2013,"45-64 years",77818
+"333","S08000006","Grampian","Males",2013,"65-74 years",25661
+"334","S08000006","Grampian","Males",2013,"75plus years",17622
+"335","S08000006","Grampian","Males",2013,"All",287185
+"336","S08000007","Greater Glasgow and Clyde","Males",2013,"0-44 years",324165
+"337","S08000007","Greater Glasgow and Clyde","Males",2013,"45-64 years",145952
+"338","S08000007","Greater Glasgow and Clyde","Males",2013,"65-74 years",45549
+"339","S08000007","Greater Glasgow and Clyde","Males",2013,"75plus years",32178
+"340","S08000007","Greater Glasgow and Clyde","Males",2013,"All",547844
+"341","S08000008","Highland","Males",2013,"0-44 years",80039
+"342","S08000008","Highland","Males",2013,"45-64 years",47106
+"343","S08000008","Highland","Males",2013,"65-74 years",18406
+"344","S08000008","Highland","Males",2013,"75plus years",11932
+"345","S08000008","Highland","Males",2013,"All",157483
+"346","S08000009","Lanarkshire","Males",2013,"0-44 years",178589
+"347","S08000009","Lanarkshire","Males",2013,"45-64 years",88965
+"348","S08000009","Lanarkshire","Males",2013,"65-74 years",28941
+"349","S08000009","Lanarkshire","Males",2013,"75plus years",18420
+"350","S08000009","Lanarkshire","Males",2013,"All",314915
+"351","S08000010","Lothian","Males",2013,"0-44 years",248601
+"352","S08000010","Lothian","Males",2013,"45-64 years",106650
+"353","S08000010","Lothian","Males",2013,"65-74 years",33862
+"354","S08000010","Lothian","Males",2013,"75plus years",23835
+"355","S08000010","Lothian","Males",2013,"All",412948
+"356","S08000011","Orkney","Males",2013,"0-44 years",5271
+"357","S08000011","Orkney","Males",2013,"45-64 years",3328
+"358","S08000011","Orkney","Males",2013,"65-74 years",1303
+"359","S08000011","Orkney","Males",2013,"75plus years",821
+"360","S08000011","Orkney","Males",2013,"All",10723
+"361","S08000012","Shetland","Males",2013,"0-44 years",6449
+"362","S08000012","Shetland","Males",2013,"45-64 years",3382
+"363","S08000012","Shetland","Males",2013,"65-74 years",1232
+"364","S08000012","Shetland","Males",2013,"75plus years",708
+"365","S08000012","Shetland","Males",2013,"All",11771
+"366","S08000013","Tayside","Males",2013,"0-44 years",108866
+"367","S08000013","Tayside","Males",2013,"45-64 years",54965
+"368","S08000013","Tayside","Males",2013,"65-74 years",20822
+"369","S08000013","Tayside","Males",2013,"75plus years",15345
+"370","S08000013","Tayside","Males",2013,"All",199998
+"371","S08000014","Western Isles","Males",2013,"0-44 years",6569
+"372","S08000014","Western Isles","Males",2013,"45-64 years",4150
+"373","S08000014","Western Isles","Males",2013,"65-74 years",1698
+"374","S08000014","Western Isles","Males",2013,"75plus years",1102
+"375","S08000014","Western Isles","Males",2013,"All",13519
+"376","S92000003","Scotland","Females",2013,"0-44 years",1459685
+"377","S92000003","Scotland","Females",2013,"45-64 years",749704
+"378","S92000003","Scotland","Females",2013,"65-74 years",275310
+"379","S92000003","Scotland","Females",2013,"75plus years",256321
+"380","S92000003","Scotland","Females",2013,"All",2741020
+"381","S08000001","Ayrshire and Arran","Females",2013,"0-44 years",95065
+"382","S08000001","Ayrshire and Arran","Females",2013,"45-64 years",56298
+"383","S08000001","Ayrshire and Arran","Females",2013,"65-74 years",22667
+"384","S08000001","Ayrshire and Arran","Females",2013,"75plus years",19969
+"385","S08000001","Ayrshire and Arran","Females",2013,"All",193999
+"386","S08000002","Borders","Females",2013,"0-44 years",26943
+"387","S08000002","Borders","Females",2013,"45-64 years",17650
+"388","S08000002","Borders","Females",2013,"65-74 years",7450
+"389","S08000002","Borders","Females",2013,"75plus years",6526
+"390","S08000002","Borders","Females",2013,"All",58569
+"391","S08000003","Dumfries and Galloway","Females",2013,"0-44 years",35167
+"392","S08000003","Dumfries and Galloway","Females",2013,"45-64 years",23140
+"393","S08000003","Dumfries and Galloway","Females",2013,"65-74 years",10038
+"394","S08000003","Dumfries and Galloway","Females",2013,"75plus years",8955
+"395","S08000003","Dumfries and Galloway","Females",2013,"All",77300
+"396","S08000004","Fife","Females",2013,"0-44 years",98354
+"397","S08000004","Fife","Females",2013,"45-64 years",52387
+"398","S08000004","Fife","Females",2013,"65-74 years",20370
+"399","S08000004","Fife","Females",2013,"75plus years",17818
+"400","S08000004","Fife","Females",2013,"All",188929
+"401","S08000005","Forth Valley","Females",2013,"0-44 years",81821
+"402","S08000005","Forth Valley","Females",2013,"45-64 years",42665
+"403","S08000005","Forth Valley","Females",2013,"65-74 years",15804
+"404","S08000005","Forth Valley","Females",2013,"75plus years",13589
+"405","S08000005","Forth Valley","Females",2013,"All",153879
+"406","S08000006","Grampian","Females",2013,"0-44 years",160615
+"407","S08000006","Grampian","Females",2013,"45-64 years",78102
+"408","S08000006","Grampian","Females",2013,"65-74 years",27640
+"409","S08000006","Grampian","Females",2013,"75plus years",25658
+"410","S08000006","Grampian","Females",2013,"All",292015
+"411","S08000007","Greater Glasgow and Clyde","Females",2013,"0-44 years",326117
+"412","S08000007","Greater Glasgow and Clyde","Females",2013,"45-64 years",157225
+"413","S08000007","Greater Glasgow and Clyde","Females",2013,"65-74 years",52785
+"414","S08000007","Greater Glasgow and Clyde","Females",2013,"75plus years",53949
+"415","S08000007","Greater Glasgow and Clyde","Females",2013,"All",590076
+"416","S08000008","Highland","Females",2013,"0-44 years",77828
+"417","S08000008","Highland","Females",2013,"45-64 years",48826
+"418","S08000008","Highland","Females",2013,"65-74 years",19629
+"419","S08000008","Highland","Females",2013,"75plus years",17214
+"420","S08000008","Highland","Females",2013,"All",163497
+"421","S08000009","Lanarkshire","Females",2013,"0-44 years",180037
+"422","S08000009","Lanarkshire","Females",2013,"45-64 years",95120
+"423","S08000009","Lanarkshire","Females",2013,"65-74 years",33308
+"424","S08000009","Lanarkshire","Females",2013,"75plus years",29210
+"425","S08000009","Lanarkshire","Females",2013,"All",337675
+"426","S08000010","Lothian","Females",2013,"0-44 years",251551
+"427","S08000010","Lothian","Females",2013,"45-64 years",110227
+"428","S08000010","Lothian","Females",2013,"65-74 years",38295
+"429","S08000010","Lothian","Females",2013,"75plus years",36699
+"430","S08000010","Lothian","Females",2013,"All",436772
+"431","S08000011","Orkney","Females",2013,"0-44 years",5205
+"432","S08000011","Orkney","Females",2013,"45-64 years",3196
+"433","S08000011","Orkney","Females",2013,"65-74 years",1345
+"434","S08000011","Orkney","Females",2013,"75plus years",1091
+"435","S08000011","Orkney","Females",2013,"All",10837
+"436","S08000012","Shetland","Females",2013,"0-44 years",6049
+"437","S08000012","Shetland","Females",2013,"45-64 years",3213
+"438","S08000012","Shetland","Females",2013,"65-74 years",1160
+"439","S08000012","Shetland","Females",2013,"75plus years",1007
+"440","S08000012","Shetland","Females",2013,"All",11429
+"441","S08000013","Tayside","Females",2013,"0-44 years",108577
+"442","S08000013","Tayside","Females",2013,"45-64 years",57600
+"443","S08000013","Tayside","Females",2013,"65-74 years",23098
+"444","S08000013","Tayside","Females",2013,"75plus years",22887
+"445","S08000013","Tayside","Females",2013,"All",212162
+"446","S08000014","Western Isles","Females",2013,"0-44 years",6356
+"447","S08000014","Western Isles","Females",2013,"45-64 years",4055
+"448","S08000014","Western Isles","Females",2013,"65-74 years",1721
+"449","S08000014","Western Isles","Females",2013,"75plus years",1749
+"450","S08000014","Western Isles","Females",2013,"All",13881
+"451","S92000003","Scotland","All",2014,"0-44 years",2906374
+"452","S92000003","Scotland","All",2014,"45-64 years",1472776
+"453","S92000003","Scotland","All",2014,"65-74 years",535212
+"454","S92000003","Scotland","All",2014,"75plus years",433238
+"455","S92000003","Scotland","All",2014,"All",5347600
+"456","S08000001","Ayrshire and Arran","All",2014,"0-44 years",184963
+"457","S08000001","Ayrshire and Arran","All",2014,"45-64 years",108095
+"458","S08000001","Ayrshire and Arran","All",2014,"65-74 years",44055
+"459","S08000001","Ayrshire and Arran","All",2014,"75plus years",34027
+"460","S08000001","Ayrshire and Arran","All",2014,"All",371140
+"461","S08000002","Borders","All",2014,"0-44 years",52762
+"462","S08000002","Borders","All",2014,"45-64 years",34948
+"463","S08000002","Borders","All",2014,"65-74 years",14762
+"464","S08000002","Borders","All",2014,"75plus years",11568
+"465","S08000002","Borders","All",2014,"All",114040
+"466","S08000003","Dumfries and Galloway","All",2014,"0-44 years",69013
+"467","S08000003","Dumfries and Galloway","All",2014,"45-64 years",45162
+"468","S08000003","Dumfries and Galloway","All",2014,"65-74 years",19886
+"469","S08000003","Dumfries and Galloway","All",2014,"75plus years",15899
+"470","S08000003","Dumfries and Galloway","All",2014,"All",149960
+"471","S08000004","Fife","All",2014,"0-44 years",193406
+"472","S08000004","Fife","All",2014,"45-64 years",102767
+"473","S08000004","Fife","All",2014,"65-74 years",40268
+"474","S08000004","Fife","All",2014,"75plus years",30809
+"475","S08000004","Fife","All",2014,"All",367250
+"476","S08000005","Forth Valley","All",2014,"0-44 years",161652
+"477","S08000005","Forth Valley","All",2014,"45-64 years",84582
+"478","S08000005","Forth Valley","All",2014,"65-74 years",30679
+"479","S08000005","Forth Valley","All",2014,"75plus years",23487
+"480","S08000005","Forth Valley","All",2014,"All",300400
+"481","S08000006","Grampian","All",2014,"0-44 years",328617
+"482","S08000006","Grampian","All",2014,"45-64 years",156543
+"483","S08000006","Grampian","All",2014,"65-74 years",55041
+"484","S08000006","Grampian","All",2014,"75plus years",44019
+"485","S08000006","Grampian","All",2014,"All",584220
+"486","S08000007","Greater Glasgow and Clyde","All",2014,"0-44 years",649846
+"487","S08000007","Greater Glasgow and Clyde","All",2014,"45-64 years",305704
+"488","S08000007","Greater Glasgow and Clyde","All",2014,"65-74 years",99704
+"489","S08000007","Greater Glasgow and Clyde","All",2014,"75plus years",87336
+"490","S08000007","Greater Glasgow and Clyde","All",2014,"All",1142590
+"491","S08000008","Highland","All",2014,"0-44 years",155831
+"492","S08000008","Highland","All",2014,"45-64 years",95748
+"493","S08000008","Highland","All",2014,"65-74 years",39198
+"494","S08000008","Highland","All",2014,"75plus years",29953
+"495","S08000008","Highland","All",2014,"All",320730
+"496","S08000009","Lanarkshire","All",2014,"0-44 years",355026
+"497","S08000009","Lanarkshire","All",2014,"45-64 years",185907
+"498","S08000009","Lanarkshire","All",2014,"65-74 years",63621
+"499","S08000009","Lanarkshire","All",2014,"75plus years",48746
+"500","S08000009","Lanarkshire","All",2014,"All",653300
+"501","S08000010","Lothian","All",2014,"0-44 years",503019
+"502","S08000010","Lothian","All",2014,"45-64 years",219065
+"503","S08000010","Lothian","All",2014,"65-74 years",74359
+"504","S08000010","Lothian","All",2014,"75plus years",61677
+"505","S08000010","Lothian","All",2014,"All",858120
+"506","S08000011","Orkney","All",2014,"0-44 years",10376
+"507","S08000011","Orkney","All",2014,"45-64 years",6489
+"508","S08000011","Orkney","All",2014,"65-74 years",2738
+"509","S08000011","Orkney","All",2014,"75plus years",1977
+"510","S08000011","Orkney","All",2014,"All",21580
+"511","S08000012","Shetland","All",2014,"0-44 years",12414
+"512","S08000012","Shetland","All",2014,"45-64 years",6569
+"513","S08000012","Shetland","All",2014,"65-74 years",2468
+"514","S08000012","Shetland","All",2014,"75plus years",1769
+"515","S08000012","Shetland","All",2014,"All",23220
+"516","S08000013","Tayside","All",2014,"0-44 years",216844
+"517","S08000013","Tayside","All",2014,"45-64 years",113003
+"518","S08000013","Tayside","All",2014,"65-74 years",44925
+"519","S08000013","Tayside","All",2014,"75plus years",39028
+"520","S08000013","Tayside","All",2014,"All",413800
+"521","S08000014","Western Isles","All",2014,"0-44 years",12605
+"522","S08000014","Western Isles","All",2014,"45-64 years",8194
+"523","S08000014","Western Isles","All",2014,"65-74 years",3508
+"524","S08000014","Western Isles","All",2014,"75plus years",2943
+"525","S08000014","Western Isles","All",2014,"All",27250
+"526","S92000003","Scotland","Males",2014,"0-44 years",1452120
+"527","S92000003","Scotland","Males",2014,"45-64 years",717435
+"528","S92000003","Scotland","Males",2014,"65-74 years",253825
+"529","S92000003","Scotland","Males",2014,"75plus years",173150
+"530","S92000003","Scotland","Males",2014,"All",2596530
+"531","S08000001","Ayrshire and Arran","Males",2014,"0-44 years",91296
+"532","S08000001","Ayrshire and Arran","Males",2014,"45-64 years",51732
+"533","S08000001","Ayrshire and Arran","Males",2014,"65-74 years",20786
+"534","S08000001","Ayrshire and Arran","Males",2014,"75plus years",13923
+"535","S08000001","Ayrshire and Arran","Males",2014,"All",177737
+"536","S08000002","Borders","Males",2014,"0-44 years",26071
+"537","S08000002","Borders","Males",2014,"45-64 years",17204
+"538","S08000002","Borders","Males",2014,"65-74 years",7156
+"539","S08000002","Borders","Males",2014,"75plus years",4888
+"540","S08000002","Borders","Males",2014,"All",55319
+"541","S08000003","Dumfries and Galloway","Males",2014,"0-44 years",34423
+"542","S08000003","Dumfries and Galloway","Males",2014,"45-64 years",21890
+"543","S08000003","Dumfries and Galloway","Males",2014,"65-74 years",9644
+"544","S08000003","Dumfries and Galloway","Males",2014,"75plus years",6868
+"545","S08000003","Dumfries and Galloway","Males",2014,"All",72825
+"546","S08000004","Fife","Males",2014,"0-44 years",96019
+"547","S08000004","Fife","Males",2014,"45-64 years",50055
+"548","S08000004","Fife","Males",2014,"65-74 years",19224
+"549","S08000004","Fife","Males",2014,"75plus years",12614
+"550","S08000004","Fife","Males",2014,"All",177912
+"551","S08000005","Forth Valley","Males",2014,"0-44 years",80495
+"552","S08000005","Forth Valley","Males",2014,"45-64 years",41444
+"553","S08000005","Forth Valley","Males",2014,"65-74 years",14603
+"554","S08000005","Forth Valley","Males",2014,"75plus years",9583
+"555","S08000005","Forth Valley","Males",2014,"All",146125
+"556","S08000006","Grampian","Males",2014,"0-44 years",166934
+"557","S08000006","Grampian","Males",2014,"45-64 years",78002
+"558","S08000006","Grampian","Males",2014,"65-74 years",26640
+"559","S08000006","Grampian","Males",2014,"75plus years",18039
+"560","S08000006","Grampian","Males",2014,"All",289615
+"561","S08000007","Greater Glasgow and Clyde","Males",2014,"0-44 years",324284
+"562","S08000007","Greater Glasgow and Clyde","Males",2014,"45-64 years",146844
+"563","S08000007","Greater Glasgow and Clyde","Males",2014,"65-74 years",46393
+"564","S08000007","Greater Glasgow and Clyde","Males",2014,"75plus years",32857
+"565","S08000007","Greater Glasgow and Clyde","Males",2014,"All",550378
+"566","S08000008","Highland","Males",2014,"0-44 years",79174
+"567","S08000008","Highland","Males",2014,"45-64 years",46881
+"568","S08000008","Highland","Males",2014,"65-74 years",19065
+"569","S08000008","Highland","Males",2014,"75plus years",12345
+"570","S08000008","Highland","Males",2014,"All",157465
+"571","S08000009","Lanarkshire","Males",2014,"0-44 years",176763
+"572","S08000009","Lanarkshire","Males",2014,"45-64 years",89794
+"573","S08000009","Lanarkshire","Males",2014,"65-74 years",29711
+"574","S08000009","Lanarkshire","Males",2014,"75plus years",18960
+"575","S08000009","Lanarkshire","Males",2014,"All",315228
+"576","S08000010","Lothian","Males",2014,"0-44 years",249991
+"577","S08000010","Lothian","Males",2014,"45-64 years",107653
+"578","S08000010","Lothian","Males",2014,"65-74 years",34928
+"579","S08000010","Lothian","Males",2014,"75plus years",24515
+"580","S08000010","Lothian","Males",2014,"All",417087
+"581","S08000011","Orkney","Males",2014,"0-44 years",5228
+"582","S08000011","Orkney","Males",2014,"45-64 years",3299
+"583","S08000011","Orkney","Males",2014,"65-74 years",1338
+"584","S08000011","Orkney","Males",2014,"75plus years",864
+"585","S08000011","Orkney","Males",2014,"All",10729
+"586","S08000012","Shetland","Males",2014,"0-44 years",6425
+"587","S08000012","Shetland","Males",2014,"45-64 years",3354
+"588","S08000012","Shetland","Males",2014,"65-74 years",1265
+"589","S08000012","Shetland","Males",2014,"75plus years",749
+"590","S08000012","Shetland","Males",2014,"All",11793
+"591","S08000013","Tayside","Males",2014,"0-44 years",108613
+"592","S08000013","Tayside","Males",2014,"45-64 years",55148
+"593","S08000013","Tayside","Males",2014,"65-74 years",21338
+"594","S08000013","Tayside","Males",2014,"75plus years",15774
+"595","S08000013","Tayside","Males",2014,"All",200873
+"596","S08000014","Western Isles","Males",2014,"0-44 years",6404
+"597","S08000014","Western Isles","Males",2014,"45-64 years",4135
+"598","S08000014","Western Isles","Males",2014,"65-74 years",1734
+"599","S08000014","Western Isles","Males",2014,"75plus years",1171
+"600","S08000014","Western Isles","Males",2014,"All",13444
+"601","S92000003","Scotland","Females",2014,"0-44 years",1454254
+"602","S92000003","Scotland","Females",2014,"45-64 years",755341
+"603","S92000003","Scotland","Females",2014,"65-74 years",281387
+"604","S92000003","Scotland","Females",2014,"75plus years",260088
+"605","S92000003","Scotland","Females",2014,"All",2751070
+"606","S08000001","Ayrshire and Arran","Females",2014,"0-44 years",93667
+"607","S08000001","Ayrshire and Arran","Females",2014,"45-64 years",56363
+"608","S08000001","Ayrshire and Arran","Females",2014,"65-74 years",23269
+"609","S08000001","Ayrshire and Arran","Females",2014,"75plus years",20104
+"610","S08000001","Ayrshire and Arran","Females",2014,"All",193403
+"611","S08000002","Borders","Females",2014,"0-44 years",26691
+"612","S08000002","Borders","Females",2014,"45-64 years",17744
+"613","S08000002","Borders","Females",2014,"65-74 years",7606
+"614","S08000002","Borders","Females",2014,"75plus years",6680
+"615","S08000002","Borders","Females",2014,"All",58721
+"616","S08000003","Dumfries and Galloway","Females",2014,"0-44 years",34590
+"617","S08000003","Dumfries and Galloway","Females",2014,"45-64 years",23272
+"618","S08000003","Dumfries and Galloway","Females",2014,"65-74 years",10242
+"619","S08000003","Dumfries and Galloway","Females",2014,"75plus years",9031
+"620","S08000003","Dumfries and Galloway","Females",2014,"All",77135
+"621","S08000004","Fife","Females",2014,"0-44 years",97387
+"622","S08000004","Fife","Females",2014,"45-64 years",52712
+"623","S08000004","Fife","Females",2014,"65-74 years",21044
+"624","S08000004","Fife","Females",2014,"75plus years",18195
+"625","S08000004","Fife","Females",2014,"All",189338
+"626","S08000005","Forth Valley","Females",2014,"0-44 years",81157
+"627","S08000005","Forth Valley","Females",2014,"45-64 years",43138
+"628","S08000005","Forth Valley","Females",2014,"65-74 years",16076
+"629","S08000005","Forth Valley","Females",2014,"75plus years",13904
+"630","S08000005","Forth Valley","Females",2014,"All",154275
+"631","S08000006","Grampian","Females",2014,"0-44 years",161683
+"632","S08000006","Grampian","Females",2014,"45-64 years",78541
+"633","S08000006","Grampian","Females",2014,"65-74 years",28401
+"634","S08000006","Grampian","Females",2014,"75plus years",25980
+"635","S08000006","Grampian","Females",2014,"All",294605
+"636","S08000007","Greater Glasgow and Clyde","Females",2014,"0-44 years",325562
+"637","S08000007","Greater Glasgow and Clyde","Females",2014,"45-64 years",158860
+"638","S08000007","Greater Glasgow and Clyde","Females",2014,"65-74 years",53311
+"639","S08000007","Greater Glasgow and Clyde","Females",2014,"75plus years",54479
+"640","S08000007","Greater Glasgow and Clyde","Females",2014,"All",592212
+"641","S08000008","Highland","Females",2014,"0-44 years",76657
+"642","S08000008","Highland","Females",2014,"45-64 years",48867
+"643","S08000008","Highland","Females",2014,"65-74 years",20133
+"644","S08000008","Highland","Females",2014,"75plus years",17608
+"645","S08000008","Highland","Females",2014,"All",163265
+"646","S08000009","Lanarkshire","Females",2014,"0-44 years",178263
+"647","S08000009","Lanarkshire","Females",2014,"45-64 years",96113
+"648","S08000009","Lanarkshire","Females",2014,"65-74 years",33910
+"649","S08000009","Lanarkshire","Females",2014,"75plus years",29786
+"650","S08000009","Lanarkshire","Females",2014,"All",338072
+"651","S08000010","Lothian","Females",2014,"0-44 years",253028
+"652","S08000010","Lothian","Females",2014,"45-64 years",111412
+"653","S08000010","Lothian","Females",2014,"65-74 years",39431
+"654","S08000010","Lothian","Females",2014,"75plus years",37162
+"655","S08000010","Lothian","Females",2014,"All",441033
+"656","S08000011","Orkney","Females",2014,"0-44 years",5148
+"657","S08000011","Orkney","Females",2014,"45-64 years",3190
+"658","S08000011","Orkney","Females",2014,"65-74 years",1400
+"659","S08000011","Orkney","Females",2014,"75plus years",1113
+"660","S08000011","Orkney","Females",2014,"All",10851
+"661","S08000012","Shetland","Females",2014,"0-44 years",5989
+"662","S08000012","Shetland","Females",2014,"45-64 years",3215
+"663","S08000012","Shetland","Females",2014,"65-74 years",1203
+"664","S08000012","Shetland","Females",2014,"75plus years",1020
+"665","S08000012","Shetland","Females",2014,"All",11427
+"666","S08000013","Tayside","Females",2014,"0-44 years",108231
+"667","S08000013","Tayside","Females",2014,"45-64 years",57855
+"668","S08000013","Tayside","Females",2014,"65-74 years",23587
+"669","S08000013","Tayside","Females",2014,"75plus years",23254
+"670","S08000013","Tayside","Females",2014,"All",212927
+"671","S08000014","Western Isles","Females",2014,"0-44 years",6201
+"672","S08000014","Western Isles","Females",2014,"45-64 years",4059
+"673","S08000014","Western Isles","Females",2014,"65-74 years",1774
+"674","S08000014","Western Isles","Females",2014,"75plus years",1772
+"675","S08000014","Western Isles","Females",2014,"All",13806
+"676","S92000003","Scotland","All",2015,"0-44 years",2909073
+"677","S92000003","Scotland","All",2015,"45-64 years",1480929
+"678","S92000003","Scotland","All",2015,"65-74 years",545281
+"679","S92000003","Scotland","All",2015,"75plus years",437717
+"680","S92000003","Scotland","All",2015,"All",5373000
+"681","S08000001","Ayrshire and Arran","All",2015,"0-44 years",182983
+"682","S08000001","Ayrshire and Arran","All",2015,"45-64 years",108500
+"683","S08000001","Ayrshire and Arran","All",2015,"65-74 years",44649
+"684","S08000001","Ayrshire and Arran","All",2015,"75plus years",34458
+"685","S08000001","Ayrshire and Arran","All",2015,"All",370590
+"686","S08000002","Borders","All",2015,"0-44 years",52232
+"687","S08000002","Borders","All",2015,"45-64 years",35050
+"688","S08000002","Borders","All",2015,"65-74 years",15091
+"689","S08000002","Borders","All",2015,"75plus years",11657
+"690","S08000002","Borders","All",2015,"All",114030
+"691","S08000003","Dumfries and Galloway","All",2015,"0-44 years",68189
+"692","S08000003","Dumfries and Galloway","All",2015,"45-64 years",45140
+"693","S08000003","Dumfries and Galloway","All",2015,"65-74 years",20220
+"694","S08000003","Dumfries and Galloway","All",2015,"75plus years",16121
+"695","S08000003","Dumfries and Galloway","All",2015,"All",149670
+"696","S08000004","Fife","All",2015,"0-44 years",192613
+"697","S08000004","Fife","All",2015,"45-64 years",103105
+"698","S08000004","Fife","All",2015,"65-74 years",41142
+"699","S08000004","Fife","All",2015,"75plus years",31220
+"700","S08000004","Fife","All",2015,"All",368080
+"701","S08000005","Forth Valley","All",2015,"0-44 years",161727
+"702","S08000005","Forth Valley","All",2015,"45-64 years",85559
+"703","S08000005","Forth Valley","All",2015,"65-74 years",31473
+"704","S08000005","Forth Valley","All",2015,"75plus years",23891
+"705","S08000005","Forth Valley","All",2015,"All",302650
+"706","S08000006","Grampian","All",2015,"0-44 years",330283
+"707","S08000006","Grampian","All",2015,"45-64 years",157011
+"708","S08000006","Grampian","All",2015,"65-74 years",56080
+"709","S08000006","Grampian","All",2015,"75plus years",44446
+"710","S08000006","Grampian","All",2015,"All",587820
+"711","S08000007","Greater Glasgow and Clyde","All",2015,"0-44 years",653564
+"712","S08000007","Greater Glasgow and Clyde","All",2015,"45-64 years",307871
+"713","S08000007","Greater Glasgow and Clyde","All",2015,"65-74 years",101027
+"714","S08000007","Greater Glasgow and Clyde","All",2015,"75plus years",87428
+"715","S08000007","Greater Glasgow and Clyde","All",2015,"All",1149890
+"716","S08000008","Highland","All",2015,"0-44 years",154872
+"717","S08000008","Highland","All",2015,"45-64 years",95727
+"718","S08000008","Highland","All",2015,"65-74 years",39938
+"719","S08000008","Highland","All",2015,"75plus years",30463
+"720","S08000008","Highland","All",2015,"All",321000
+"721","S08000009","Lanarkshire","All",2015,"0-44 years",352780
+"722","S08000009","Lanarkshire","All",2015,"45-64 years",187536
+"723","S08000009","Lanarkshire","All",2015,"65-74 years",64793
+"724","S08000009","Lanarkshire","All",2015,"75plus years",49381
+"725","S08000009","Lanarkshire","All",2015,"All",654490
+"726","S08000010","Lothian","All",2015,"0-44 years",508208
+"727","S08000010","Lothian","All",2015,"45-64 years",220965
+"728","S08000010","Lothian","All",2015,"65-74 years",76333
+"729","S08000010","Lothian","All",2015,"75plus years",62294
+"730","S08000010","Lothian","All",2015,"All",867800
+"731","S08000011","Orkney","All",2015,"0-44 years",10282
+"732","S08000011","Orkney","All",2015,"45-64 years",6574
+"733","S08000011","Orkney","All",2015,"65-74 years",2717
+"734","S08000011","Orkney","All",2015,"75plus years",2097
+"735","S08000011","Orkney","All",2015,"All",21670
+"736","S08000012","Shetland","All",2015,"0-44 years",12324
+"737","S08000012","Shetland","All",2015,"45-64 years",6549
+"738","S08000012","Shetland","All",2015,"65-74 years",2501
+"739","S08000012","Shetland","All",2015,"75plus years",1826
+"740","S08000012","Shetland","All",2015,"All",23200
+"741","S08000013","Tayside","All",2015,"0-44 years",216628
+"742","S08000013","Tayside","All",2015,"45-64 years",113221
+"743","S08000013","Tayside","All",2015,"65-74 years",45747
+"744","S08000013","Tayside","All",2015,"75plus years",39444
+"745","S08000013","Tayside","All",2015,"All",415040
+"746","S08000014","Western Isles","All",2015,"0-44 years",12388
+"747","S08000014","Western Isles","All",2015,"45-64 years",8121
+"748","S08000014","Western Isles","All",2015,"65-74 years",3570
+"749","S08000014","Western Isles","All",2015,"75plus years",2991
+"750","S08000014","Western Isles","All",2015,"All",27070
+"751","S92000003","Scotland","Males",2015,"0-44 years",1454683
+"752","S92000003","Scotland","Males",2015,"45-64 years",720105
+"753","S92000003","Scotland","Males",2015,"65-74 years",259409
+"754","S92000003","Scotland","Males",2015,"75plus years",176272
+"755","S92000003","Scotland","Males",2015,"All",2610469
+"756","S08000001","Ayrshire and Arran","Males",2015,"0-44 years",90433
+"757","S08000001","Ayrshire and Arran","Males",2015,"45-64 years",51775
+"758","S08000001","Ayrshire and Arran","Males",2015,"65-74 years",21148
+"759","S08000001","Ayrshire and Arran","Males",2015,"75plus years",14223
+"760","S08000001","Ayrshire and Arran","Males",2015,"All",177579
+"761","S08000002","Borders","Males",2015,"0-44 years",25768
+"762","S08000002","Borders","Males",2015,"45-64 years",17225
+"763","S08000002","Borders","Males",2015,"65-74 years",7338
+"764","S08000002","Borders","Males",2015,"75plus years",4942
+"765","S08000002","Borders","Males",2015,"All",55273
+"766","S08000003","Dumfries and Galloway","Males",2015,"0-44 years",33988
+"767","S08000003","Dumfries and Galloway","Males",2015,"45-64 years",21835
+"768","S08000003","Dumfries and Galloway","Males",2015,"65-74 years",9864
+"769","S08000003","Dumfries and Galloway","Males",2015,"75plus years",7004
+"770","S08000003","Dumfries and Galloway","Males",2015,"All",72691
+"771","S08000004","Fife","Males",2015,"0-44 years",95356
+"772","S08000004","Fife","Males",2015,"45-64 years",50179
+"773","S08000004","Fife","Males",2015,"65-74 years",19676
+"774","S08000004","Fife","Males",2015,"75plus years",12836
+"775","S08000004","Fife","Males",2015,"All",178047
+"776","S08000005","Forth Valley","Males",2015,"0-44 years",80545
+"777","S08000005","Forth Valley","Males",2015,"45-64 years",41913
+"778","S08000005","Forth Valley","Males",2015,"65-74 years",15040
+"779","S08000005","Forth Valley","Males",2015,"75plus years",9815
+"780","S08000005","Forth Valley","Males",2015,"All",147313
+"781","S08000006","Grampian","Males",2015,"0-44 years",168135
+"782","S08000006","Grampian","Males",2015,"45-64 years",78136
+"783","S08000006","Grampian","Males",2015,"65-74 years",27202
+"784","S08000006","Grampian","Males",2015,"75plus years",18302
+"785","S08000006","Grampian","Males",2015,"All",291775
+"786","S08000007","Greater Glasgow and Clyde","Males",2015,"0-44 years",327087
+"787","S08000007","Greater Glasgow and Clyde","Males",2015,"45-64 years",147497
+"788","S08000007","Greater Glasgow and Clyde","Males",2015,"65-74 years",47200
+"789","S08000007","Greater Glasgow and Clyde","Males",2015,"75plus years",33060
+"790","S08000007","Greater Glasgow and Clyde","Males",2015,"All",554844
+"791","S08000008","Highland","Males",2015,"0-44 years",78875
+"792","S08000008","Highland","Males",2015,"45-64 years",46681
+"793","S08000008","Highland","Males",2015,"65-74 years",19467
+"794","S08000008","Highland","Males",2015,"75plus years",12629
+"795","S08000008","Highland","Males",2015,"All",157652
+"796","S08000009","Lanarkshire","Males",2015,"0-44 years",175714
+"797","S08000009","Lanarkshire","Males",2015,"45-64 years",90451
+"798","S08000009","Lanarkshire","Males",2015,"65-74 years",30414
+"799","S08000009","Lanarkshire","Males",2015,"75plus years",19424
+"800","S08000009","Lanarkshire","Males",2015,"All",316003
+"801","S08000010","Lothian","Males",2015,"0-44 years",252249
+"802","S08000010","Lothian","Males",2015,"45-64 years",108452
+"803","S08000010","Lothian","Males",2015,"65-74 years",35907
+"804","S08000010","Lothian","Males",2015,"75plus years",24956
+"805","S08000010","Lothian","Males",2015,"All",421564
+"806","S08000011","Orkney","Males",2015,"0-44 years",5185
+"807","S08000011","Orkney","Males",2015,"45-64 years",3341
+"808","S08000011","Orkney","Males",2015,"65-74 years",1322
+"809","S08000011","Orkney","Males",2015,"75plus years",937
+"810","S08000011","Orkney","Males",2015,"All",10785
+"811","S08000012","Shetland","Males",2015,"0-44 years",6358
+"812","S08000012","Shetland","Males",2015,"45-64 years",3350
+"813","S08000012","Shetland","Males",2015,"65-74 years",1282
+"814","S08000012","Shetland","Males",2015,"75plus years",793
+"815","S08000012","Shetland","Males",2015,"All",11783
+"816","S08000013","Tayside","Males",2015,"0-44 years",108680
+"817","S08000013","Tayside","Males",2015,"45-64 years",55189
+"818","S08000013","Tayside","Males",2015,"65-74 years",21757
+"819","S08000013","Tayside","Males",2015,"75plus years",16160
+"820","S08000013","Tayside","Males",2015,"All",201786
+"821","S08000014","Western Isles","Males",2015,"0-44 years",6310
+"822","S08000014","Western Isles","Males",2015,"45-64 years",4081
+"823","S08000014","Western Isles","Males",2015,"65-74 years",1792
+"824","S08000014","Western Isles","Males",2015,"75plus years",1191
+"825","S08000014","Western Isles","Males",2015,"All",13374
+"826","S92000003","Scotland","Females",2015,"0-44 years",1454390
+"827","S92000003","Scotland","Females",2015,"45-64 years",760824
+"828","S92000003","Scotland","Females",2015,"65-74 years",285872
+"829","S92000003","Scotland","Females",2015,"75plus years",261445
+"830","S92000003","Scotland","Females",2015,"All",2762531
+"831","S08000001","Ayrshire and Arran","Females",2015,"0-44 years",92550
+"832","S08000001","Ayrshire and Arran","Females",2015,"45-64 years",56725
+"833","S08000001","Ayrshire and Arran","Females",2015,"65-74 years",23501
+"834","S08000001","Ayrshire and Arran","Females",2015,"75plus years",20235
+"835","S08000001","Ayrshire and Arran","Females",2015,"All",193011
+"836","S08000002","Borders","Females",2015,"0-44 years",26464
+"837","S08000002","Borders","Females",2015,"45-64 years",17825
+"838","S08000002","Borders","Females",2015,"65-74 years",7753
+"839","S08000002","Borders","Females",2015,"75plus years",6715
+"840","S08000002","Borders","Females",2015,"All",58757
+"841","S08000003","Dumfries and Galloway","Females",2015,"0-44 years",34201
+"842","S08000003","Dumfries and Galloway","Females",2015,"45-64 years",23305
+"843","S08000003","Dumfries and Galloway","Females",2015,"65-74 years",10356
+"844","S08000003","Dumfries and Galloway","Females",2015,"75plus years",9117
+"845","S08000003","Dumfries and Galloway","Females",2015,"All",76979
+"846","S08000004","Fife","Females",2015,"0-44 years",97257
+"847","S08000004","Fife","Females",2015,"45-64 years",52926
+"848","S08000004","Fife","Females",2015,"65-74 years",21466
+"849","S08000004","Fife","Females",2015,"75plus years",18384
+"850","S08000004","Fife","Females",2015,"All",190033
+"851","S08000005","Forth Valley","Females",2015,"0-44 years",81182
+"852","S08000005","Forth Valley","Females",2015,"45-64 years",43646
+"853","S08000005","Forth Valley","Females",2015,"65-74 years",16433
+"854","S08000005","Forth Valley","Females",2015,"75plus years",14076
+"855","S08000005","Forth Valley","Females",2015,"All",155337
+"856","S08000006","Grampian","Females",2015,"0-44 years",162148
+"857","S08000006","Grampian","Females",2015,"45-64 years",78875
+"858","S08000006","Grampian","Females",2015,"65-74 years",28878
+"859","S08000006","Grampian","Females",2015,"75plus years",26144
+"860","S08000006","Grampian","Females",2015,"All",296045
+"861","S08000007","Greater Glasgow and Clyde","Females",2015,"0-44 years",326477
+"862","S08000007","Greater Glasgow and Clyde","Females",2015,"45-64 years",160374
+"863","S08000007","Greater Glasgow and Clyde","Females",2015,"65-74 years",53827
+"864","S08000007","Greater Glasgow and Clyde","Females",2015,"75plus years",54368
+"865","S08000007","Greater Glasgow and Clyde","Females",2015,"All",595046
+"866","S08000008","Highland","Females",2015,"0-44 years",75997
+"867","S08000008","Highland","Females",2015,"45-64 years",49046
+"868","S08000008","Highland","Females",2015,"65-74 years",20471
+"869","S08000008","Highland","Females",2015,"75plus years",17834
+"870","S08000008","Highland","Females",2015,"All",163348
+"871","S08000009","Lanarkshire","Females",2015,"0-44 years",177066
+"872","S08000009","Lanarkshire","Females",2015,"45-64 years",97085
+"873","S08000009","Lanarkshire","Females",2015,"65-74 years",34379
+"874","S08000009","Lanarkshire","Females",2015,"75plus years",29957
+"875","S08000009","Lanarkshire","Females",2015,"All",338487
+"876","S08000010","Lothian","Females",2015,"0-44 years",255959
+"877","S08000010","Lothian","Females",2015,"45-64 years",112513
+"878","S08000010","Lothian","Females",2015,"65-74 years",40426
+"879","S08000010","Lothian","Females",2015,"75plus years",37338
+"880","S08000010","Lothian","Females",2015,"All",446236
+"881","S08000011","Orkney","Females",2015,"0-44 years",5097
+"882","S08000011","Orkney","Females",2015,"45-64 years",3233
+"883","S08000011","Orkney","Females",2015,"65-74 years",1395
+"884","S08000011","Orkney","Females",2015,"75plus years",1160
+"885","S08000011","Orkney","Females",2015,"All",10885
+"886","S08000012","Shetland","Females",2015,"0-44 years",5966
+"887","S08000012","Shetland","Females",2015,"45-64 years",3199
+"888","S08000012","Shetland","Females",2015,"65-74 years",1219
+"889","S08000012","Shetland","Females",2015,"75plus years",1033
+"890","S08000012","Shetland","Females",2015,"All",11417
+"891","S08000013","Tayside","Females",2015,"0-44 years",107948
+"892","S08000013","Tayside","Females",2015,"45-64 years",58032
+"893","S08000013","Tayside","Females",2015,"65-74 years",23990
+"894","S08000013","Tayside","Females",2015,"75plus years",23284
+"895","S08000013","Tayside","Females",2015,"All",213254
+"896","S08000014","Western Isles","Females",2015,"0-44 years",6078
+"897","S08000014","Western Isles","Females",2015,"45-64 years",4040
+"898","S08000014","Western Isles","Females",2015,"65-74 years",1778
+"899","S08000014","Western Isles","Females",2015,"75plus years",1800
+"900","S08000014","Western Isles","Females",2015,"All",13696
+"901","S92000003","Scotland","All",2016,"0-44 years",2914533
+"902","S92000003","Scotland","All",2016,"45-64 years",1491315
+"903","S92000003","Scotland","All",2016,"65-74 years",556543
+"904","S92000003","Scotland","All",2016,"75plus years",442309
+"905","S92000003","Scotland","All",2016,"All",5404700
+"906","S08000001","Ayrshire and Arran","All",2016,"0-44 years",181205
+"907","S08000001","Ayrshire and Arran","All",2016,"45-64 years",108954
+"908","S08000001","Ayrshire and Arran","All",2016,"65-74 years",45468
+"909","S08000001","Ayrshire and Arran","All",2016,"75plus years",34933
+"910","S08000001","Ayrshire and Arran","All",2016,"All",370560
+"911","S08000002","Borders","All",2016,"0-44 years",51996
+"912","S08000002","Borders","All",2016,"45-64 years",35291
+"913","S08000002","Borders","All",2016,"65-74 years",15451
+"914","S08000002","Borders","All",2016,"75plus years",11792
+"915","S08000002","Borders","All",2016,"All",114530
+"916","S08000003","Dumfries and Galloway","All",2016,"0-44 years",67438
+"917","S08000003","Dumfries and Galloway","All",2016,"45-64 years",45175
+"918","S08000003","Dumfries and Galloway","All",2016,"65-74 years",20462
+"919","S08000003","Dumfries and Galloway","All",2016,"75plus years",16445
+"920","S08000003","Dumfries and Galloway","All",2016,"All",149520
+"921","S08000004","Fife","All",2016,"0-44 years",192868
+"922","S08000004","Fife","All",2016,"45-64 years",103804
+"923","S08000004","Fife","All",2016,"65-74 years",42115
+"924","S08000004","Fife","All",2016,"75plus years",31543
+"925","S08000004","Fife","All",2016,"All",370330
+"926","S08000005","Forth Valley","All",2016,"0-44 years",161649
+"927","S08000005","Forth Valley","All",2016,"45-64 years",86366
+"928","S08000005","Forth Valley","All",2016,"65-74 years",32210
+"929","S08000005","Forth Valley","All",2016,"75plus years",24255
+"930","S08000005","Forth Valley","All",2016,"All",304480
+"931","S08000006","Grampian","All",2016,"0-44 years",328059
+"932","S08000006","Grampian","All",2016,"45-64 years",157684
+"933","S08000006","Grampian","All",2016,"65-74 years",57514
+"934","S08000006","Grampian","All",2016,"75plus years",44843
+"935","S08000006","Grampian","All",2016,"All",588100
+"936","S08000007","Greater Glasgow and Clyde","All",2016,"0-44 years",660650
+"937","S08000007","Greater Glasgow and Clyde","All",2016,"45-64 years",310147
+"938","S08000007","Greater Glasgow and Clyde","All",2016,"65-74 years",102793
+"939","S08000007","Greater Glasgow and Clyde","All",2016,"75plus years",87780
+"940","S08000007","Greater Glasgow and Clyde","All",2016,"All",1161370
+"941","S08000008","Highland","All",2016,"0-44 years",154380
+"942","S08000008","Highland","All",2016,"45-64 years",95888
+"943","S08000008","Highland","All",2016,"65-74 years",40803
+"944","S08000008","Highland","All",2016,"75plus years",30829
+"945","S08000008","Highland","All",2016,"All",321900
+"946","S08000009","Lanarkshire","All",2016,"0-44 years",351196
+"947","S08000009","Lanarkshire","All",2016,"45-64 years",189422
+"948","S08000009","Lanarkshire","All",2016,"65-74 years",65853
+"949","S08000009","Lanarkshire","All",2016,"75plus years",50019
+"950","S08000009","Lanarkshire","All",2016,"All",656490
+"951","S08000010","Lothian","All",2016,"0-44 years",514843
+"952","S08000010","Lothian","All",2016,"45-64 years",223792
+"953","S08000010","Lothian","All",2016,"65-74 years",78228
+"954","S08000010","Lothian","All",2016,"75plus years",63137
+"955","S08000010","Lothian","All",2016,"All",880000
+"956","S08000011","Orkney","All",2016,"0-44 years",10274
+"957","S08000011","Orkney","All",2016,"45-64 years",6609
+"958","S08000011","Orkney","All",2016,"65-74 years",2826
+"959","S08000011","Orkney","All",2016,"75plus years",2141
+"960","S08000011","Orkney","All",2016,"All",21850
+"961","S08000012","Shetland","All",2016,"0-44 years",12220
+"962","S08000012","Shetland","All",2016,"45-64 years",6577
+"963","S08000012","Shetland","All",2016,"65-74 years",2572
+"964","S08000012","Shetland","All",2016,"75plus years",1831
+"965","S08000012","Shetland","All",2016,"All",23200
+"966","S08000013","Tayside","All",2016,"0-44 years",215596
+"967","S08000013","Tayside","All",2016,"45-64 years",113504
+"968","S08000013","Tayside","All",2016,"65-74 years",46661
+"969","S08000013","Tayside","All",2016,"75plus years",39709
+"970","S08000013","Tayside","All",2016,"All",415470
+"971","S08000014","Western Isles","All",2016,"0-44 years",12159
+"972","S08000014","Western Isles","All",2016,"45-64 years",8102
+"973","S08000014","Western Isles","All",2016,"65-74 years",3587
+"974","S08000014","Western Isles","All",2016,"75plus years",3052
+"975","S08000014","Western Isles","All",2016,"All",26900
+"976","S92000003","Scotland","Males",2016,"0-44 years",1459153
+"977","S92000003","Scotland","Males",2016,"45-64 years",723994
+"978","S92000003","Scotland","Males",2016,"65-74 years",265336
+"979","S92000003","Scotland","Males",2016,"75plus years",179020
+"980","S92000003","Scotland","Males",2016,"All",2627503
+"981","S08000001","Ayrshire and Arran","Males",2016,"0-44 years",89703
+"982","S08000001","Ayrshire and Arran","Males",2016,"45-64 years",51805
+"983","S08000001","Ayrshire and Arran","Males",2016,"65-74 years",21608
+"984","S08000001","Ayrshire and Arran","Males",2016,"75plus years",14486
+"985","S08000001","Ayrshire and Arran","Males",2016,"All",177602
+"986","S08000002","Borders","Males",2016,"0-44 years",25695
+"987","S08000002","Borders","Males",2016,"45-64 years",17269
+"988","S08000002","Borders","Males",2016,"65-74 years",7538
+"989","S08000002","Borders","Males",2016,"75plus years",5014
+"990","S08000002","Borders","Males",2016,"All",55516
+"991","S08000003","Dumfries and Galloway","Males",2016,"0-44 years",33612
+"992","S08000003","Dumfries and Galloway","Males",2016,"45-64 years",21758
+"993","S08000003","Dumfries and Galloway","Males",2016,"65-74 years",9996
+"994","S08000003","Dumfries and Galloway","Males",2016,"75plus years",7167
+"995","S08000003","Dumfries and Galloway","Males",2016,"All",72533
+"996","S08000004","Fife","Males",2016,"0-44 years",95851
+"997","S08000004","Fife","Males",2016,"45-64 years",50470
+"998","S08000004","Fife","Males",2016,"65-74 years",20150
+"999","S08000004","Fife","Males",2016,"75plus years",13081
+"1000","S08000004","Fife","Males",2016,"All",179552
+"1001","S08000005","Forth Valley","Males",2016,"0-44 years",80554
+"1002","S08000005","Forth Valley","Males",2016,"45-64 years",42318
+"1003","S08000005","Forth Valley","Males",2016,"65-74 years",15371
+"1004","S08000005","Forth Valley","Males",2016,"75plus years",10031
+"1005","S08000005","Forth Valley","Males",2016,"All",148274
+"1006","S08000006","Grampian","Males",2016,"0-44 years",167337
+"1007","S08000006","Grampian","Males",2016,"45-64 years",78311
+"1008","S08000006","Grampian","Males",2016,"65-74 years",27948
+"1009","S08000006","Grampian","Males",2016,"75plus years",18549
+"1010","S08000006","Grampian","Males",2016,"All",292145
+"1011","S08000007","Greater Glasgow and Clyde","Males",2016,"0-44 years",331147
+"1012","S08000007","Greater Glasgow and Clyde","Males",2016,"45-64 years",148197
+"1013","S08000007","Greater Glasgow and Clyde","Males",2016,"65-74 years",48214
+"1014","S08000007","Greater Glasgow and Clyde","Males",2016,"75plus years",33386
+"1015","S08000007","Greater Glasgow and Clyde","Males",2016,"All",560944
+"1016","S08000008","Highland","Males",2016,"0-44 years",78802
+"1017","S08000008","Highland","Males",2016,"45-64 years",46644
+"1018","S08000008","Highland","Males",2016,"65-74 years",19953
+"1019","S08000008","Highland","Males",2016,"75plus years",12766
+"1020","S08000008","Highland","Males",2016,"All",158165
+"1021","S08000009","Lanarkshire","Males",2016,"0-44 years",175161
+"1022","S08000009","Lanarkshire","Males",2016,"45-64 years",91288
+"1023","S08000009","Lanarkshire","Males",2016,"65-74 years",31007
+"1024","S08000009","Lanarkshire","Males",2016,"75plus years",19781
+"1025","S08000009","Lanarkshire","Males",2016,"All",317237
+"1026","S08000010","Lothian","Males",2016,"0-44 years",255325
+"1027","S08000010","Lothian","Males",2016,"45-64 years",109864
+"1028","S08000010","Lothian","Males",2016,"65-74 years",36823
+"1029","S08000010","Lothian","Males",2016,"75plus years",25428
+"1030","S08000010","Lothian","Males",2016,"All",427440
+"1031","S08000011","Orkney","Males",2016,"0-44 years",5191
+"1032","S08000011","Orkney","Males",2016,"45-64 years",3345
+"1033","S08000011","Orkney","Males",2016,"65-74 years",1381
+"1034","S08000011","Orkney","Males",2016,"75plus years",963
+"1035","S08000011","Orkney","Males",2016,"All",10880
+"1036","S08000012","Shetland","Males",2016,"0-44 years",6344
+"1037","S08000012","Shetland","Males",2016,"45-64 years",3340
+"1038","S08000012","Shetland","Males",2016,"65-74 years",1312
+"1039","S08000012","Shetland","Males",2016,"75plus years",787
+"1040","S08000012","Shetland","Males",2016,"All",11783
+"1041","S08000013","Tayside","Males",2016,"0-44 years",108271
+"1042","S08000013","Tayside","Males",2016,"45-64 years",55283
+"1043","S08000013","Tayside","Males",2016,"65-74 years",22244
+"1044","S08000013","Tayside","Males",2016,"75plus years",16365
+"1045","S08000013","Tayside","Males",2016,"All",202163
+"1046","S08000014","Western Isles","Males",2016,"0-44 years",6160
+"1047","S08000014","Western Isles","Males",2016,"45-64 years",4102
+"1048","S08000014","Western Isles","Males",2016,"65-74 years",1791
+"1049","S08000014","Western Isles","Males",2016,"75plus years",1216
+"1050","S08000014","Western Isles","Males",2016,"All",13269
+"1051","S92000003","Scotland","Females",2016,"0-44 years",1455380
+"1052","S92000003","Scotland","Females",2016,"45-64 years",767321
+"1053","S92000003","Scotland","Females",2016,"65-74 years",291207
+"1054","S92000003","Scotland","Females",2016,"75plus years",263289
+"1055","S92000003","Scotland","Females",2016,"All",2777197
+"1056","S08000001","Ayrshire and Arran","Females",2016,"0-44 years",91502
+"1057","S08000001","Ayrshire and Arran","Females",2016,"45-64 years",57149
+"1058","S08000001","Ayrshire and Arran","Females",2016,"65-74 years",23860
+"1059","S08000001","Ayrshire and Arran","Females",2016,"75plus years",20447
+"1060","S08000001","Ayrshire and Arran","Females",2016,"All",192958
+"1061","S08000002","Borders","Females",2016,"0-44 years",26301
+"1062","S08000002","Borders","Females",2016,"45-64 years",18022
+"1063","S08000002","Borders","Females",2016,"65-74 years",7913
+"1064","S08000002","Borders","Females",2016,"75plus years",6778
+"1065","S08000002","Borders","Females",2016,"All",59014
+"1066","S08000003","Dumfries and Galloway","Females",2016,"0-44 years",33826
+"1067","S08000003","Dumfries and Galloway","Females",2016,"45-64 years",23417
+"1068","S08000003","Dumfries and Galloway","Females",2016,"65-74 years",10466
+"1069","S08000003","Dumfries and Galloway","Females",2016,"75plus years",9278
+"1070","S08000003","Dumfries and Galloway","Females",2016,"All",76987
+"1071","S08000004","Fife","Females",2016,"0-44 years",97017
+"1072","S08000004","Fife","Females",2016,"45-64 years",53334
+"1073","S08000004","Fife","Females",2016,"65-74 years",21965
+"1074","S08000004","Fife","Females",2016,"75plus years",18462
+"1075","S08000004","Fife","Females",2016,"All",190778
+"1076","S08000005","Forth Valley","Females",2016,"0-44 years",81095
+"1077","S08000005","Forth Valley","Females",2016,"45-64 years",44048
+"1078","S08000005","Forth Valley","Females",2016,"65-74 years",16839
+"1079","S08000005","Forth Valley","Females",2016,"75plus years",14224
+"1080","S08000005","Forth Valley","Females",2016,"All",156206
+"1081","S08000006","Grampian","Females",2016,"0-44 years",160722
+"1082","S08000006","Grampian","Females",2016,"45-64 years",79373
+"1083","S08000006","Grampian","Females",2016,"65-74 years",29566
+"1084","S08000006","Grampian","Females",2016,"75plus years",26294
+"1085","S08000006","Grampian","Females",2016,"All",295955
+"1086","S08000007","Greater Glasgow and Clyde","Females",2016,"0-44 years",329503
+"1087","S08000007","Greater Glasgow and Clyde","Females",2016,"45-64 years",161950
+"1088","S08000007","Greater Glasgow and Clyde","Females",2016,"65-74 years",54579
+"1089","S08000007","Greater Glasgow and Clyde","Females",2016,"75plus years",54394
+"1090","S08000007","Greater Glasgow and Clyde","Females",2016,"All",600426
+"1091","S08000008","Highland","Females",2016,"0-44 years",75578
+"1092","S08000008","Highland","Females",2016,"45-64 years",49244
+"1093","S08000008","Highland","Females",2016,"65-74 years",20850
+"1094","S08000008","Highland","Females",2016,"75plus years",18063
+"1095","S08000008","Highland","Females",2016,"All",163735
+"1096","S08000009","Lanarkshire","Females",2016,"0-44 years",176035
+"1097","S08000009","Lanarkshire","Females",2016,"45-64 years",98134
+"1098","S08000009","Lanarkshire","Females",2016,"65-74 years",34846
+"1099","S08000009","Lanarkshire","Females",2016,"75plus years",30238
+"1100","S08000009","Lanarkshire","Females",2016,"All",339253
+"1101","S08000010","Lothian","Females",2016,"0-44 years",259518
+"1102","S08000010","Lothian","Females",2016,"45-64 years",113928
+"1103","S08000010","Lothian","Females",2016,"65-74 years",41405
+"1104","S08000010","Lothian","Females",2016,"75plus years",37709
+"1105","S08000010","Lothian","Females",2016,"All",452560
+"1106","S08000011","Orkney","Females",2016,"0-44 years",5083
+"1107","S08000011","Orkney","Females",2016,"45-64 years",3264
+"1108","S08000011","Orkney","Females",2016,"65-74 years",1445
+"1109","S08000011","Orkney","Females",2016,"75plus years",1178
+"1110","S08000011","Orkney","Females",2016,"All",10970
+"1111","S08000012","Shetland","Females",2016,"0-44 years",5876
+"1112","S08000012","Shetland","Females",2016,"45-64 years",3237
+"1113","S08000012","Shetland","Females",2016,"65-74 years",1260
+"1114","S08000012","Shetland","Females",2016,"75plus years",1044
+"1115","S08000012","Shetland","Females",2016,"All",11417
+"1116","S08000013","Tayside","Females",2016,"0-44 years",107325
+"1117","S08000013","Tayside","Females",2016,"45-64 years",58221
+"1118","S08000013","Tayside","Females",2016,"65-74 years",24417
+"1119","S08000013","Tayside","Females",2016,"75plus years",23344
+"1120","S08000013","Tayside","Females",2016,"All",213307
+"1121","S08000014","Western Isles","Females",2016,"0-44 years",5999
+"1122","S08000014","Western Isles","Females",2016,"45-64 years",4000
+"1123","S08000014","Western Isles","Females",2016,"65-74 years",1796
+"1124","S08000014","Western Isles","Females",2016,"75plus years",1836
+"1125","S08000014","Western Isles","Females",2016,"All",13631
+"1126","S92000003","Scotland","All",2017,"0-44 years",2912217
+"1127","S92000003","Scotland","All",2017,"45-64 years",1500016
+"1128","S92000003","Scotland","All",2017,"65-74 years",564596
+"1129","S92000003","Scotland","All",2017,"75plus years",447971
+"1130","S92000003","Scotland","All",2017,"All",5424800
+"1131","S08000001","Ayrshire and Arran","All",2017,"0-44 years",179423
+"1132","S08000001","Ayrshire and Arran","All",2017,"45-64 years",109300
+"1133","S08000001","Ayrshire and Arran","All",2017,"65-74 years",46182
+"1134","S08000001","Ayrshire and Arran","All",2017,"75plus years",35505
+"1135","S08000001","Ayrshire and Arran","All",2017,"All",370410
+"1136","S08000002","Borders","All",2017,"0-44 years",51791
+"1137","S08000002","Borders","All",2017,"45-64 years",35530
+"1138","S08000002","Borders","All",2017,"65-74 years",15715
+"1139","S08000002","Borders","All",2017,"75plus years",11984
+"1140","S08000002","Borders","All",2017,"All",115020
+"1141","S08000003","Dumfries and Galloway","All",2017,"0-44 years",66728
+"1142","S08000003","Dumfries and Galloway","All",2017,"45-64 years",45063
+"1143","S08000003","Dumfries and Galloway","All",2017,"65-74 years",20663
+"1144","S08000003","Dumfries and Galloway","All",2017,"75plus years",16746
+"1145","S08000003","Dumfries and Galloway","All",2017,"All",149200
+"1146","S08000004","Fife","All",2017,"0-44 years",192395
+"1147","S08000004","Fife","All",2017,"45-64 years",104423
+"1148","S08000004","Fife","All",2017,"65-74 years",42503
+"1149","S08000004","Fife","All",2017,"75plus years",32089
+"1150","S08000004","Fife","All",2017,"All",371410
+"1151","S08000005","Forth Valley","All",2017,"0-44 years",160956
+"1152","S08000005","Forth Valley","All",2017,"45-64 years",87307
+"1153","S08000005","Forth Valley","All",2017,"65-74 years",32610
+"1154","S08000005","Forth Valley","All",2017,"75plus years",24707
+"1155","S08000005","Forth Valley","All",2017,"All",305580
+"1156","S08000006","Grampian","All",2017,"0-44 years",323947
+"1157","S08000006","Grampian","All",2017,"45-64 years",158281
+"1158","S08000006","Grampian","All",2017,"65-74 years",58566
+"1159","S08000006","Grampian","All",2017,"75plus years",45586
+"1160","S08000006","Grampian","All",2017,"All",586380
+"1161","S08000007","Greater Glasgow and Clyde","All",2017,"0-44 years",665455
+"1162","S08000007","Greater Glasgow and Clyde","All",2017,"45-64 years",311732
+"1163","S08000007","Greater Glasgow and Clyde","All",2017,"65-74 years",104090
+"1164","S08000007","Greater Glasgow and Clyde","All",2017,"75plus years",87833
+"1165","S08000007","Greater Glasgow and Clyde","All",2017,"All",1169110
+"1166","S08000008","Highland","All",2017,"0-44 years",153032
+"1167","S08000008","Highland","All",2017,"45-64 years",96082
+"1168","S08000008","Highland","All",2017,"65-74 years",41429
+"1169","S08000008","Highland","All",2017,"75plus years",31447
+"1170","S08000008","Highland","All",2017,"All",321990
+"1171","S08000009","Lanarkshire","All",2017,"0-44 years",349713
+"1172","S08000009","Lanarkshire","All",2017,"45-64 years",190906
+"1173","S08000009","Lanarkshire","All",2017,"65-74 years",66841
+"1174","S08000009","Lanarkshire","All",2017,"75plus years",50670
+"1175","S08000009","Lanarkshire","All",2017,"All",658130
+"1176","S08000010","Lothian","All",2017,"0-44 years",519326
+"1177","S08000010","Lothian","All",2017,"45-64 years",226296
+"1178","S08000010","Lothian","All",2017,"65-74 years",79838
+"1179","S08000010","Lothian","All",2017,"75plus years",63990
+"1180","S08000010","Lothian","All",2017,"All",889450
+"1181","S08000011","Orkney","All",2017,"0-44 years",10292
+"1182","S08000011","Orkney","All",2017,"45-64 years",6635
+"1183","S08000011","Orkney","All",2017,"65-74 years",2829
+"1184","S08000011","Orkney","All",2017,"75plus years",2244
+"1185","S08000011","Orkney","All",2017,"All",22000
+"1186","S08000012","Shetland","All",2017,"0-44 years",12030
+"1187","S08000012","Shetland","All",2017,"45-64 years",6568
+"1188","S08000012","Shetland","All",2017,"65-74 years",2597
+"1189","S08000012","Shetland","All",2017,"75plus years",1885
+"1190","S08000012","Shetland","All",2017,"All",23080
+"1191","S08000013","Tayside","All",2017,"0-44 years",215048
+"1192","S08000013","Tayside","All",2017,"45-64 years",113780
+"1193","S08000013","Tayside","All",2017,"65-74 years",47067
+"1194","S08000013","Tayside","All",2017,"75plus years",40195
+"1195","S08000013","Tayside","All",2017,"All",416090
+"1196","S08000014","Western Isles","All",2017,"0-44 years",12081
+"1197","S08000014","Western Isles","All",2017,"45-64 years",8113
+"1198","S08000014","Western Isles","All",2017,"65-74 years",3666
+"1199","S08000014","Western Isles","All",2017,"75plus years",3090
+"1200","S08000014","Western Isles","All",2017,"All",26950
+"1201","S92000003","Scotland","Males",2017,"0-44 years",1460696
+"1202","S92000003","Scotland","Males",2017,"45-64 years",727383
+"1203","S92000003","Scotland","Males",2017,"65-74 years",269726
+"1204","S92000003","Scotland","Males",2017,"75plus years",182495
+"1205","S92000003","Scotland","Males",2017,"All",2640300
+"1206","S08000001","Ayrshire and Arran","Males",2017,"0-44 years",88945
+"1207","S08000001","Ayrshire and Arran","Males",2017,"45-64 years",51866
+"1208","S08000001","Ayrshire and Arran","Males",2017,"65-74 years",22061
+"1209","S08000001","Ayrshire and Arran","Males",2017,"75plus years",14738
+"1210","S08000001","Ayrshire and Arran","Males",2017,"All",177610
+"1211","S08000002","Borders","Males",2017,"0-44 years",25594
+"1212","S08000002","Borders","Males",2017,"45-64 years",17380
+"1213","S08000002","Borders","Males",2017,"65-74 years",7689
+"1214","S08000002","Borders","Males",2017,"75plus years",5126
+"1215","S08000002","Borders","Males",2017,"All",55789
+"1216","S08000003","Dumfries and Galloway","Males",2017,"0-44 years",33303
+"1217","S08000003","Dumfries and Galloway","Males",2017,"45-64 years",21719
+"1218","S08000003","Dumfries and Galloway","Males",2017,"65-74 years",10098
+"1219","S08000003","Dumfries and Galloway","Males",2017,"75plus years",7304
+"1220","S08000003","Dumfries and Galloway","Males",2017,"All",72424
+"1221","S08000004","Fife","Males",2017,"0-44 years",95843
+"1222","S08000004","Fife","Males",2017,"45-64 years",50734
+"1223","S08000004","Fife","Males",2017,"65-74 years",20276
+"1224","S08000004","Fife","Males",2017,"75plus years",13459
+"1225","S08000004","Fife","Males",2017,"All",180312
+"1226","S08000005","Forth Valley","Males",2017,"0-44 years",80267
+"1227","S08000005","Forth Valley","Males",2017,"45-64 years",42661
+"1228","S08000005","Forth Valley","Males",2017,"65-74 years",15650
+"1229","S08000005","Forth Valley","Males",2017,"75plus years",10258
+"1230","S08000005","Forth Valley","Males",2017,"All",148836
+"1231","S08000006","Grampian","Males",2017,"0-44 years",165649
+"1232","S08000006","Grampian","Males",2017,"45-64 years",78464
+"1233","S08000006","Grampian","Males",2017,"65-74 years",28544
+"1234","S08000006","Grampian","Males",2017,"75plus years",19000
+"1235","S08000006","Grampian","Males",2017,"All",291657
+"1236","S08000007","Greater Glasgow and Clyde","Males",2017,"0-44 years",334682
+"1237","S08000007","Greater Glasgow and Clyde","Males",2017,"45-64 years",148713
+"1238","S08000007","Greater Glasgow and Clyde","Males",2017,"65-74 years",48969
+"1239","S08000007","Greater Glasgow and Clyde","Males",2017,"75plus years",33663
+"1240","S08000007","Greater Glasgow and Clyde","Males",2017,"All",566027
+"1241","S08000008","Highland","Males",2017,"0-44 years",78284
+"1242","S08000008","Highland","Males",2017,"45-64 years",46634
+"1243","S08000008","Highland","Males",2017,"65-74 years",20200
+"1244","S08000008","Highland","Males",2017,"75plus years",13188
+"1245","S08000008","Highland","Males",2017,"All",158306
+"1246","S08000009","Lanarkshire","Males",2017,"0-44 years",174660
+"1247","S08000009","Lanarkshire","Males",2017,"45-64 years",91948
+"1248","S08000009","Lanarkshire","Males",2017,"65-74 years",31478
+"1249","S08000009","Lanarkshire","Males",2017,"75plus years",20188
+"1250","S08000009","Lanarkshire","Males",2017,"All",318274
+"1251","S08000010","Lothian","Males",2017,"0-44 years",257810
+"1252","S08000010","Lothian","Males",2017,"45-64 years",111110
+"1253","S08000010","Lothian","Males",2017,"65-74 years",37695
+"1254","S08000010","Lothian","Males",2017,"75plus years",25897
+"1255","S08000010","Lothian","Males",2017,"All",432512
+"1256","S08000011","Orkney","Males",2017,"0-44 years",5192
+"1257","S08000011","Orkney","Males",2017,"45-64 years",3354
+"1258","S08000011","Orkney","Males",2017,"65-74 years",1388
+"1259","S08000011","Orkney","Males",2017,"75plus years",1011
+"1260","S08000011","Orkney","Males",2017,"All",10945
+"1261","S08000012","Shetland","Males",2017,"0-44 years",6251
+"1262","S08000012","Shetland","Males",2017,"45-64 years",3325
+"1263","S08000012","Shetland","Males",2017,"65-74 years",1340
+"1264","S08000012","Shetland","Males",2017,"75plus years",815
+"1265","S08000012","Shetland","Males",2017,"All",11731
+"1266","S08000013","Tayside","Males",2017,"0-44 years",108108
+"1267","S08000013","Tayside","Males",2017,"45-64 years",55341
+"1268","S08000013","Tayside","Males",2017,"65-74 years",22529
+"1269","S08000013","Tayside","Males",2017,"75plus years",16589
+"1270","S08000013","Tayside","Males",2017,"All",202567
+"1271","S08000014","Western Isles","Males",2017,"0-44 years",6108
+"1272","S08000014","Western Isles","Males",2017,"45-64 years",4134
+"1273","S08000014","Western Isles","Males",2017,"65-74 years",1809
+"1274","S08000014","Western Isles","Males",2017,"75plus years",1259
+"1275","S08000014","Western Isles","Males",2017,"All",13310
+"1276","S92000003","Scotland","Females",2017,"0-44 years",1451521
+"1277","S92000003","Scotland","Females",2017,"45-64 years",772633
+"1278","S92000003","Scotland","Females",2017,"65-74 years",294870
+"1279","S92000003","Scotland","Females",2017,"75plus years",265476
+"1280","S92000003","Scotland","Females",2017,"All",2784500
+"1281","S08000001","Ayrshire and Arran","Females",2017,"0-44 years",90478
+"1282","S08000001","Ayrshire and Arran","Females",2017,"45-64 years",57434
+"1283","S08000001","Ayrshire and Arran","Females",2017,"65-74 years",24121
+"1284","S08000001","Ayrshire and Arran","Females",2017,"75plus years",20767
+"1285","S08000001","Ayrshire and Arran","Females",2017,"All",192800
+"1286","S08000002","Borders","Females",2017,"0-44 years",26197
+"1287","S08000002","Borders","Females",2017,"45-64 years",18150
+"1288","S08000002","Borders","Females",2017,"65-74 years",8026
+"1289","S08000002","Borders","Females",2017,"75plus years",6858
+"1290","S08000002","Borders","Females",2017,"All",59231
+"1291","S08000003","Dumfries and Galloway","Females",2017,"0-44 years",33425
+"1292","S08000003","Dumfries and Galloway","Females",2017,"45-64 years",23344
+"1293","S08000003","Dumfries and Galloway","Females",2017,"65-74 years",10565
+"1294","S08000003","Dumfries and Galloway","Females",2017,"75plus years",9442
+"1295","S08000003","Dumfries and Galloway","Females",2017,"All",76776
+"1296","S08000004","Fife","Females",2017,"0-44 years",96552
+"1297","S08000004","Fife","Females",2017,"45-64 years",53689
+"1298","S08000004","Fife","Females",2017,"65-74 years",22227
+"1299","S08000004","Fife","Females",2017,"75plus years",18630
+"1300","S08000004","Fife","Females",2017,"All",191098
+"1301","S08000005","Forth Valley","Females",2017,"0-44 years",80689
+"1302","S08000005","Forth Valley","Females",2017,"45-64 years",44646
+"1303","S08000005","Forth Valley","Females",2017,"65-74 years",16960
+"1304","S08000005","Forth Valley","Females",2017,"75plus years",14449
+"1305","S08000005","Forth Valley","Females",2017,"All",156744
+"1306","S08000006","Grampian","Females",2017,"0-44 years",158298
+"1307","S08000006","Grampian","Females",2017,"45-64 years",79817
+"1308","S08000006","Grampian","Females",2017,"65-74 years",30022
+"1309","S08000006","Grampian","Females",2017,"75plus years",26586
+"1310","S08000006","Grampian","Females",2017,"All",294723
+"1311","S08000007","Greater Glasgow and Clyde","Females",2017,"0-44 years",330773
+"1312","S08000007","Greater Glasgow and Clyde","Females",2017,"45-64 years",163019
+"1313","S08000007","Greater Glasgow and Clyde","Females",2017,"65-74 years",55121
+"1314","S08000007","Greater Glasgow and Clyde","Females",2017,"75plus years",54170
+"1315","S08000007","Greater Glasgow and Clyde","Females",2017,"All",603083
+"1316","S08000008","Highland","Females",2017,"0-44 years",74748
+"1317","S08000008","Highland","Females",2017,"45-64 years",49448
+"1318","S08000008","Highland","Females",2017,"65-74 years",21229
+"1319","S08000008","Highland","Females",2017,"75plus years",18259
+"1320","S08000008","Highland","Females",2017,"All",163684
+"1321","S08000009","Lanarkshire","Females",2017,"0-44 years",175053
+"1322","S08000009","Lanarkshire","Females",2017,"45-64 years",98958
+"1323","S08000009","Lanarkshire","Females",2017,"65-74 years",35363
+"1324","S08000009","Lanarkshire","Females",2017,"75plus years",30482
+"1325","S08000009","Lanarkshire","Females",2017,"All",339856
+"1326","S08000010","Lothian","Females",2017,"0-44 years",261516
+"1327","S08000010","Lothian","Females",2017,"45-64 years",115186
+"1328","S08000010","Lothian","Females",2017,"65-74 years",42143
+"1329","S08000010","Lothian","Females",2017,"75plus years",38093
+"1330","S08000010","Lothian","Females",2017,"All",456938
+"1331","S08000011","Orkney","Females",2017,"0-44 years",5100
+"1332","S08000011","Orkney","Females",2017,"45-64 years",3281
+"1333","S08000011","Orkney","Females",2017,"65-74 years",1441
+"1334","S08000011","Orkney","Females",2017,"75plus years",1233
+"1335","S08000011","Orkney","Females",2017,"All",11055
+"1336","S08000012","Shetland","Females",2017,"0-44 years",5779
+"1337","S08000012","Shetland","Females",2017,"45-64 years",3243
+"1338","S08000012","Shetland","Females",2017,"65-74 years",1257
+"1339","S08000012","Shetland","Females",2017,"75plus years",1070
+"1340","S08000012","Shetland","Females",2017,"All",11349
+"1341","S08000013","Tayside","Females",2017,"0-44 years",106940
+"1342","S08000013","Tayside","Females",2017,"45-64 years",58439
+"1343","S08000013","Tayside","Females",2017,"65-74 years",24538
+"1344","S08000013","Tayside","Females",2017,"75plus years",23606
+"1345","S08000013","Tayside","Females",2017,"All",213523
+"1346","S08000014","Western Isles","Females",2017,"0-44 years",5973
+"1347","S08000014","Western Isles","Females",2017,"45-64 years",3979
+"1348","S08000014","Western Isles","Females",2017,"65-74 years",1857
+"1349","S08000014","Western Isles","Females",2017,"75plus years",1831
+"1350","S08000014","Western Isles","Females",2017,"All",13640
+"1351","S92000003","Scotland","All",2018,"0-44 years",2910046
+"1352","S92000003","Scotland","All",2018,"45-64 years",1501940
+"1353","S92000003","Scotland","All",2018,"65-74 years",571378
+"1354","S92000003","Scotland","All",2018,"75plus years",454736
+"1355","S92000003","Scotland","All",2018,"All",5438100
+"1356","S08000015","Ayrshire and Arran","All",2018,"0-44 years",177773
+"1357","S08000015","Ayrshire and Arran","All",2018,"45-64 years",109084
+"1358","S08000015","Ayrshire and Arran","All",2018,"65-74 years",46698
+"1359","S08000015","Ayrshire and Arran","All",2018,"75plus years",36115
+"1360","S08000015","Ayrshire and Arran","All",2018,"All",369670
+"1361","S08000016","Borders","All",2018,"0-44 years",51609
+"1362","S08000016","Borders","All",2018,"45-64 years",35558
+"1363","S08000016","Borders","All",2018,"65-74 years",15863
+"1364","S08000016","Borders","All",2018,"75plus years",12240
+"1365","S08000016","Borders","All",2018,"All",115270
+"1366","S08000017","Dumfries and Galloway","All",2018,"0-44 years",66151
+"1367","S08000017","Dumfries and Galloway","All",2018,"45-64 years",44760
+"1368","S08000017","Dumfries and Galloway","All",2018,"65-74 years",20841
+"1369","S08000017","Dumfries and Galloway","All",2018,"75plus years",17038
+"1370","S08000017","Dumfries and Galloway","All",2018,"All",148790
+"1371","S08000029","Fife","All",2018,"0-44 years",191656
+"1372","S08000029","Fife","All",2018,"45-64 years",104664
+"1373","S08000029","Fife","All",2018,"65-74 years",42836
+"1374","S08000029","Fife","All",2018,"75plus years",32754
+"1375","S08000029","Fife","All",2018,"All",371910
+"1376","S08000019","Forth Valley","All",2018,"0-44 years",160097
+"1377","S08000019","Forth Valley","All",2018,"45-64 years",87738
+"1378","S08000019","Forth Valley","All",2018,"65-74 years",32973
+"1379","S08000019","Forth Valley","All",2018,"75plus years",25262
+"1380","S08000019","Forth Valley","All",2018,"All",306070
+"1381","S08000020","Grampian","All",2018,"0-44 years",320114
+"1382","S08000020","Grampian","All",2018,"45-64 years",158682
+"1383","S08000020","Grampian","All",2018,"65-74 years",59342
+"1384","S08000020","Grampian","All",2018,"75plus years",46412
+"1385","S08000020","Grampian","All",2018,"All",584550
+"1386","S08000021","Greater Glasgow and Clyde","All",2018,"0-44 years",669882
+"1387","S08000021","Greater Glasgow and Clyde","All",2018,"45-64 years",311772
+"1388","S08000021","Greater Glasgow and Clyde","All",2018,"65-74 years",105173
+"1389","S08000021","Greater Glasgow and Clyde","All",2018,"75plus years",88153
+"1390","S08000021","Greater Glasgow and Clyde","All",2018,"All",1174980
+"1391","S08000022","Highland","All",2018,"0-44 years",151870
+"1392","S08000022","Highland","All",2018,"45-64 years",95974
+"1393","S08000022","Highland","All",2018,"65-74 years",41716
+"1394","S08000022","Highland","All",2018,"75plus years",32240
+"1395","S08000022","Highland","All",2018,"All",321800
+"1396","S08000023","Lanarkshire","All",2018,"0-44 years",348612
+"1397","S08000023","Lanarkshire","All",2018,"45-64 years",191287
+"1398","S08000023","Lanarkshire","All",2018,"65-74 years",67836
+"1399","S08000023","Lanarkshire","All",2018,"75plus years",51465
+"1400","S08000023","Lanarkshire","All",2018,"All",659200
+"1401","S08000024","Lothian","All",2018,"0-44 years",523886
+"1402","S08000024","Lothian","All",2018,"45-64 years",227815
+"1403","S08000024","Lothian","All",2018,"65-74 years",81146
+"1404","S08000024","Lothian","All",2018,"75plus years",64923
+"1405","S08000024","Lothian","All",2018,"All",897770
+"1406","S08000025","Orkney","All",2018,"0-44 years",10288
+"1407","S08000025","Orkney","All",2018,"45-64 years",6668
+"1408","S08000025","Orkney","All",2018,"65-74 years",2889
+"1409","S08000025","Orkney","All",2018,"75plus years",2345
+"1410","S08000025","Orkney","All",2018,"All",22190
+"1411","S08000026","Shetland","All",2018,"0-44 years",11844
+"1412","S08000026","Shetland","All",2018,"45-64 years",6591
+"1413","S08000026","Shetland","All",2018,"65-74 years",2589
+"1414","S08000026","Shetland","All",2018,"75plus years",1966
+"1415","S08000026","Shetland","All",2018,"All",22990
+"1416","S08000030","Tayside","All",2018,"0-44 years",214366
+"1417","S08000030","Tayside","All",2018,"45-64 years",113240
+"1418","S08000030","Tayside","All",2018,"65-74 years",47811
+"1419","S08000030","Tayside","All",2018,"75plus years",40663
+"1420","S08000030","Tayside","All",2018,"All",416080
+"1421","S08000028","Western Isles","All",2018,"0-44 years",11898
+"1422","S08000028","Western Isles","All",2018,"45-64 years",8107
+"1423","S08000028","Western Isles","All",2018,"65-74 years",3665
+"1424","S08000028","Western Isles","All",2018,"75plus years",3160
+"1425","S08000028","Western Isles","All",2018,"All",26830
+"1426","S92000003","Scotland","Males",2018,"0-44 years",1461180
+"1427","S92000003","Scotland","Males",2018,"45-64 years",727725
+"1428","S92000003","Scotland","Males",2018,"65-74 years",273369
+"1429","S92000003","Scotland","Males",2018,"75plus years",186477
+"1430","S92000003","Scotland","Males",2018,"All",2648751
+"1431","S08000015","Ayrshire and Arran","Males",2018,"0-44 years",88123
+"1432","S08000015","Ayrshire and Arran","Males",2018,"45-64 years",51731
+"1433","S08000015","Ayrshire and Arran","Males",2018,"65-74 years",22243
+"1434","S08000015","Ayrshire and Arran","Males",2018,"75plus years",15119
+"1435","S08000015","Ayrshire and Arran","Males",2018,"All",177216
+"1436","S08000016","Borders","Males",2018,"0-44 years",25602
+"1437","S08000016","Borders","Males",2018,"45-64 years",17370
+"1438","S08000016","Borders","Males",2018,"65-74 years",7750
+"1439","S08000016","Borders","Males",2018,"75plus years",5267
+"1440","S08000016","Borders","Males",2018,"All",55989
+"1441","S08000017","Dumfries and Galloway","Males",2018,"0-44 years",33068
+"1442","S08000017","Dumfries and Galloway","Males",2018,"45-64 years",21556
+"1443","S08000017","Dumfries and Galloway","Males",2018,"65-74 years",10227
+"1444","S08000017","Dumfries and Galloway","Males",2018,"75plus years",7470
+"1445","S08000017","Dumfries and Galloway","Males",2018,"All",72321
+"1446","S08000029","Fife","Males",2018,"0-44 years",95545
+"1447","S08000029","Fife","Males",2018,"45-64 years",50866
+"1448","S08000029","Fife","Males",2018,"65-74 years",20407
+"1449","S08000029","Fife","Males",2018,"75plus years",13802
+"1450","S08000029","Fife","Males",2018,"All",180620
+"1451","S08000019","Forth Valley","Males",2018,"0-44 years",79974
+"1452","S08000019","Forth Valley","Males",2018,"45-64 years",42721
+"1453","S08000019","Forth Valley","Males",2018,"65-74 years",15872
+"1454","S08000019","Forth Valley","Males",2018,"75plus years",10600
+"1455","S08000019","Forth Valley","Males",2018,"All",149167
+"1456","S08000020","Grampian","Males",2018,"0-44 years",163680
+"1457","S08000020","Grampian","Males",2018,"45-64 years",78699
+"1458","S08000020","Grampian","Males",2018,"65-74 years",28909
+"1459","S08000020","Grampian","Males",2018,"75plus years",19440
+"1460","S08000020","Grampian","Males",2018,"All",290728
+"1461","S08000021","Greater Glasgow and Clyde","Males",2018,"0-44 years",337607
+"1462","S08000021","Greater Glasgow and Clyde","Males",2018,"45-64 years",148477
+"1463","S08000021","Greater Glasgow and Clyde","Males",2018,"65-74 years",49679
+"1464","S08000021","Greater Glasgow and Clyde","Males",2018,"75plus years",33994
+"1465","S08000021","Greater Glasgow and Clyde","Males",2018,"All",569757
+"1466","S08000022","Highland","Males",2018,"0-44 years",77765
+"1467","S08000022","Highland","Males",2018,"45-64 years",46575
+"1468","S08000022","Highland","Males",2018,"65-74 years",20329
+"1469","S08000022","Highland","Males",2018,"75plus years",13638
+"1470","S08000022","Highland","Males",2018,"All",158307
+"1471","S08000023","Lanarkshire","Males",2018,"0-44 years",174221
+"1472","S08000023","Lanarkshire","Males",2018,"45-64 years",92071
+"1473","S08000023","Lanarkshire","Males",2018,"65-74 years",32037
+"1474","S08000023","Lanarkshire","Males",2018,"75plus years",20693
+"1475","S08000023","Lanarkshire","Males",2018,"All",319022
+"1476","S08000024","Lothian","Males",2018,"0-44 years",260303
+"1477","S08000024","Lothian","Males",2018,"45-64 years",111897
+"1478","S08000024","Lothian","Males",2018,"65-74 years",38365
+"1479","S08000024","Lothian","Males",2018,"75plus years",26374
+"1480","S08000024","Lothian","Males",2018,"All",436939
+"1481","S08000025","Orkney","Males",2018,"0-44 years",5197
+"1482","S08000025","Orkney","Males",2018,"45-64 years",3353
+"1483","S08000025","Orkney","Males",2018,"65-74 years",1442
+"1484","S08000025","Orkney","Males",2018,"75plus years",1047
+"1485","S08000025","Orkney","Males",2018,"All",11039
+"1486","S08000026","Shetland","Males",2018,"0-44 years",6173
+"1487","S08000026","Shetland","Males",2018,"45-64 years",3343
+"1488","S08000026","Shetland","Males",2018,"65-74 years",1330
+"1489","S08000026","Shetland","Males",2018,"75plus years",867
+"1490","S08000026","Shetland","Males",2018,"All",11713
+"1491","S08000030","Tayside","Males",2018,"0-44 years",107895
+"1492","S08000030","Tayside","Males",2018,"45-64 years",54959
+"1493","S08000030","Tayside","Males",2018,"65-74 years",22937
+"1494","S08000030","Tayside","Males",2018,"75plus years",16895
+"1495","S08000030","Tayside","Males",2018,"All",202686
+"1496","S08000028","Western Isles","Males",2018,"0-44 years",6027
+"1497","S08000028","Western Isles","Males",2018,"45-64 years",4107
+"1498","S08000028","Western Isles","Males",2018,"65-74 years",1842
+"1499","S08000028","Western Isles","Males",2018,"75plus years",1271
+"1500","S08000028","Western Isles","Males",2018,"All",13247
+"1501","S92000003","Scotland","Females",2018,"0-44 years",1448866
+"1502","S92000003","Scotland","Females",2018,"45-64 years",774215
+"1503","S92000003","Scotland","Females",2018,"65-74 years",298009
+"1504","S92000003","Scotland","Females",2018,"75plus years",268259
+"1505","S92000003","Scotland","Females",2018,"All",2789349
+"1506","S08000015","Ayrshire and Arran","Females",2018,"0-44 years",89650
+"1507","S08000015","Ayrshire and Arran","Females",2018,"45-64 years",57353
+"1508","S08000015","Ayrshire and Arran","Females",2018,"65-74 years",24455
+"1509","S08000015","Ayrshire and Arran","Females",2018,"75plus years",20996
+"1510","S08000015","Ayrshire and Arran","Females",2018,"All",192454
+"1511","S08000016","Borders","Females",2018,"0-44 years",26007
+"1512","S08000016","Borders","Females",2018,"45-64 years",18188
+"1513","S08000016","Borders","Females",2018,"65-74 years",8113
+"1514","S08000016","Borders","Females",2018,"75plus years",6973
+"1515","S08000016","Borders","Females",2018,"All",59281
+"1516","S08000017","Dumfries and Galloway","Females",2018,"0-44 years",33083
+"1517","S08000017","Dumfries and Galloway","Females",2018,"45-64 years",23204
+"1518","S08000017","Dumfries and Galloway","Females",2018,"65-74 years",10614
+"1519","S08000017","Dumfries and Galloway","Females",2018,"75plus years",9568
+"1520","S08000017","Dumfries and Galloway","Females",2018,"All",76469
+"1521","S08000029","Fife","Females",2018,"0-44 years",96111
+"1522","S08000029","Fife","Females",2018,"45-64 years",53798
+"1523","S08000029","Fife","Females",2018,"65-74 years",22429
+"1524","S08000029","Fife","Females",2018,"75plus years",18952
+"1525","S08000029","Fife","Females",2018,"All",191290
+"1526","S08000019","Forth Valley","Females",2018,"0-44 years",80123
+"1527","S08000019","Forth Valley","Females",2018,"45-64 years",45017
+"1528","S08000019","Forth Valley","Females",2018,"65-74 years",17101
+"1529","S08000019","Forth Valley","Females",2018,"75plus years",14662
+"1530","S08000019","Forth Valley","Females",2018,"All",156903
+"1531","S08000020","Grampian","Females",2018,"0-44 years",156434
+"1532","S08000020","Grampian","Females",2018,"45-64 years",79983
+"1533","S08000020","Grampian","Females",2018,"65-74 years",30433
+"1534","S08000020","Grampian","Females",2018,"75plus years",26972
+"1535","S08000020","Grampian","Females",2018,"All",293822
+"1536","S08000021","Greater Glasgow and Clyde","Females",2018,"0-44 years",332275
+"1537","S08000021","Greater Glasgow and Clyde","Females",2018,"45-64 years",163295
+"1538","S08000021","Greater Glasgow and Clyde","Females",2018,"65-74 years",55494
+"1539","S08000021","Greater Glasgow and Clyde","Females",2018,"75plus years",54159
+"1540","S08000021","Greater Glasgow and Clyde","Females",2018,"All",605223
+"1541","S08000022","Highland","Females",2018,"0-44 years",74105
+"1542","S08000022","Highland","Females",2018,"45-64 years",49399
+"1543","S08000022","Highland","Females",2018,"65-74 years",21387
+"1544","S08000022","Highland","Females",2018,"75plus years",18602
+"1545","S08000022","Highland","Females",2018,"All",163493
+"1546","S08000023","Lanarkshire","Females",2018,"0-44 years",174391
+"1547","S08000023","Lanarkshire","Females",2018,"45-64 years",99216
+"1548","S08000023","Lanarkshire","Females",2018,"65-74 years",35799
+"1549","S08000023","Lanarkshire","Females",2018,"75plus years",30772
+"1550","S08000023","Lanarkshire","Females",2018,"All",340178
+"1551","S08000024","Lothian","Females",2018,"0-44 years",263583
+"1552","S08000024","Lothian","Females",2018,"45-64 years",115918
+"1553","S08000024","Lothian","Females",2018,"65-74 years",42781
+"1554","S08000024","Lothian","Females",2018,"75plus years",38549
+"1555","S08000024","Lothian","Females",2018,"All",460831
+"1556","S08000025","Orkney","Females",2018,"0-44 years",5091
+"1557","S08000025","Orkney","Females",2018,"45-64 years",3315
+"1558","S08000025","Orkney","Females",2018,"65-74 years",1447
+"1559","S08000025","Orkney","Females",2018,"75plus years",1298
+"1560","S08000025","Orkney","Females",2018,"All",11151
+"1561","S08000026","Shetland","Females",2018,"0-44 years",5671
+"1562","S08000026","Shetland","Females",2018,"45-64 years",3248
+"1563","S08000026","Shetland","Females",2018,"65-74 years",1259
+"1564","S08000026","Shetland","Females",2018,"75plus years",1099
+"1565","S08000026","Shetland","Females",2018,"All",11277
+"1566","S08000030","Tayside","Females",2018,"0-44 years",106471
+"1567","S08000030","Tayside","Females",2018,"45-64 years",58281
+"1568","S08000030","Tayside","Females",2018,"65-74 years",24874
+"1569","S08000030","Tayside","Females",2018,"75plus years",23768
+"1570","S08000030","Tayside","Females",2018,"All",213394
+"1571","S08000028","Western Isles","Females",2018,"0-44 years",5871
+"1572","S08000028","Western Isles","Females",2018,"45-64 years",4000
+"1573","S08000028","Western Isles","Females",2018,"65-74 years",1823
+"1574","S08000028","Western Isles","Females",2018,"75plus years",1889
+"1575","S08000028","Western Isles","Females",2018,"All",13583
+"1576","S92000003","Scotland","All",2019,"0-44 years",2918791
+"1577","S92000003","Scotland","All",2019,"45-64 years",1500364
+"1578","S92000003","Scotland","All",2019,"65-74 years",578300
+"1579","S92000003","Scotland","All",2019,"75plus years",465845
+"1580","S92000003","Scotland","All",2019,"All",5463300
+"1581","S08000015","Ayrshire and Arran","All",2019,"0-44 years",176609
+"1582","S08000015","Ayrshire and Arran","All",2019,"45-64 years",108523
+"1583","S08000015","Ayrshire and Arran","All",2019,"65-74 years",47011
+"1584","S08000015","Ayrshire and Arran","All",2019,"75plus years",37217
+"1585","S08000015","Ayrshire and Arran","All",2019,"All",369360
+"1586","S08000016","Borders","All",2019,"0-44 years",51378
+"1587","S08000016","Borders","All",2019,"45-64 years",35516
+"1588","S08000016","Borders","All",2019,"65-74 years",16002
+"1589","S08000016","Borders","All",2019,"75plus years",12614
+"1590","S08000016","Borders","All",2019,"All",115510
+"1591","S08000017","Dumfries and Galloway","All",2019,"0-44 years",65836
+"1592","S08000017","Dumfries and Galloway","All",2019,"45-64 years",44454
+"1593","S08000017","Dumfries and Galloway","All",2019,"65-74 years",21043
+"1594","S08000017","Dumfries and Galloway","All",2019,"75plus years",17527
+"1595","S08000017","Dumfries and Galloway","All",2019,"All",148860
+"1596","S08000029","Fife","All",2019,"0-44 years",191997
+"1597","S08000029","Fife","All",2019,"45-64 years",104529
+"1598","S08000029","Fife","All",2019,"65-74 years",43231
+"1599","S08000029","Fife","All",2019,"75plus years",33793
+"1600","S08000029","Fife","All",2019,"All",373550
+"1601","S08000019","Forth Valley","All",2019,"0-44 years",159542
+"1602","S08000019","Forth Valley","All",2019,"45-64 years",87924
+"1603","S08000019","Forth Valley","All",2019,"65-74 years",33222
+"1604","S08000019","Forth Valley","All",2019,"75plus years",25952
+"1605","S08000019","Forth Valley","All",2019,"All",306640
+"1606","S08000020","Grampian","All",2019,"0-44 years",319121
+"1607","S08000020","Grampian","All",2019,"45-64 years",158633
+"1608","S08000020","Grampian","All",2019,"65-74 years",60524
+"1609","S08000020","Grampian","All",2019,"75plus years",47422
+"1610","S08000020","Grampian","All",2019,"All",585700
+"1611","S08000031","Greater Glasgow and Clyde","All",2019,"0-44 years",676355
+"1612","S08000031","Greater Glasgow and Clyde","All",2019,"45-64 years",310813
+"1613","S08000031","Greater Glasgow and Clyde","All",2019,"65-74 years",106435
+"1614","S08000031","Greater Glasgow and Clyde","All",2019,"75plus years",89517
+"1615","S08000031","Greater Glasgow and Clyde","All",2019,"All",1183120
+"1616","S08000022","Highland","All",2019,"0-44 years",151048
+"1617","S08000022","Highland","All",2019,"45-64 years",95354
+"1618","S08000022","Highland","All",2019,"65-74 years",41989
+"1619","S08000022","Highland","All",2019,"75plus years",33309
+"1620","S08000022","Highland","All",2019,"All",321700
+"1621","S08000032","Lanarkshire","All",2019,"0-44 years",348936
+"1622","S08000032","Lanarkshire","All",2019,"45-64 years",191159
+"1623","S08000032","Lanarkshire","All",2019,"65-74 years",68997
+"1624","S08000032","Lanarkshire","All",2019,"75plus years",52808
+"1625","S08000032","Lanarkshire","All",2019,"All",661900
+"1626","S08000024","Lothian","All",2019,"0-44 years",529385
+"1627","S08000024","Lothian","All",2019,"45-64 years",229241
+"1628","S08000024","Lothian","All",2019,"65-74 years",82459
+"1629","S08000024","Lothian","All",2019,"75plus years",66495
+"1630","S08000024","Lothian","All",2019,"All",907580
+"1631","S08000025","Orkney","All",2019,"0-44 years",10312
+"1632","S08000025","Orkney","All",2019,"45-64 years",6652
+"1633","S08000025","Orkney","All",2019,"65-74 years",2874
+"1634","S08000025","Orkney","All",2019,"75plus years",2432
+"1635","S08000025","Orkney","All",2019,"All",22270
+"1636","S08000026","Shetland","All",2019,"0-44 years",11684
+"1637","S08000026","Shetland","All",2019,"45-64 years",6550
+"1638","S08000026","Shetland","All",2019,"65-74 years",2634
+"1639","S08000026","Shetland","All",2019,"75plus years",2052
+"1640","S08000026","Shetland","All",2019,"All",22920
+"1641","S08000030","Tayside","All",2019,"0-44 years",214871
+"1642","S08000030","Tayside","All",2019,"45-64 years",112908
+"1643","S08000030","Tayside","All",2019,"65-74 years",48213
+"1644","S08000030","Tayside","All",2019,"75plus years",41478
+"1645","S08000030","Tayside","All",2019,"All",417470
+"1646","S08000028","Western Isles","All",2019,"0-44 years",11717
+"1647","S08000028","Western Isles","All",2019,"45-64 years",8108
+"1648","S08000028","Western Isles","All",2019,"65-74 years",3666
+"1649","S08000028","Western Isles","All",2019,"75plus years",3229
+"1650","S08000028","Western Isles","All",2019,"All",26720
+"1651","S92000003","Scotland","Males",2019,"0-44 years",1467198
+"1652","S92000003","Scotland","Males",2019,"45-64 years",726379
+"1653","S92000003","Scotland","Males",2019,"65-74 years",276799
+"1654","S92000003","Scotland","Males",2019,"75plus years",192627
+"1655","S92000003","Scotland","Males",2019,"All",2663003
+"1656","S08000015","Ayrshire and Arran","Males",2019,"0-44 years",87606
+"1657","S08000015","Ayrshire and Arran","Males",2019,"45-64 years",51403
+"1658","S08000015","Ayrshire and Arran","Males",2019,"65-74 years",22358
+"1659","S08000015","Ayrshire and Arran","Males",2019,"75plus years",15682
+"1660","S08000015","Ayrshire and Arran","Males",2019,"All",177049
+"1661","S08000016","Borders","Males",2019,"0-44 years",25499
+"1662","S08000016","Borders","Males",2019,"45-64 years",17294
+"1663","S08000016","Borders","Males",2019,"65-74 years",7877
+"1664","S08000016","Borders","Males",2019,"75plus years",5453
+"1665","S08000016","Borders","Males",2019,"All",56123
+"1666","S08000017","Dumfries and Galloway","Males",2019,"0-44 years",32943
+"1667","S08000017","Dumfries and Galloway","Males",2019,"45-64 years",21376
+"1668","S08000017","Dumfries and Galloway","Males",2019,"65-74 years",10365
+"1669","S08000017","Dumfries and Galloway","Males",2019,"75plus years",7751
+"1670","S08000017","Dumfries and Galloway","Males",2019,"All",72435
+"1671","S08000029","Fife","Males",2019,"0-44 years",95681
+"1672","S08000029","Fife","Males",2019,"45-64 years",50753
+"1673","S08000029","Fife","Males",2019,"65-74 years",20660
+"1674","S08000029","Fife","Males",2019,"75plus years",14320
+"1675","S08000029","Fife","Males",2019,"All",181414
+"1676","S08000019","Forth Valley","Males",2019,"0-44 years",79946
+"1677","S08000019","Forth Valley","Males",2019,"45-64 years",42812
+"1678","S08000019","Forth Valley","Males",2019,"65-74 years",15967
+"1679","S08000019","Forth Valley","Males",2019,"75plus years",10902
+"1680","S08000019","Forth Valley","Males",2019,"All",149627
+"1681","S08000020","Grampian","Males",2019,"0-44 years",163184
+"1682","S08000020","Grampian","Males",2019,"45-64 years",78635
+"1683","S08000020","Grampian","Males",2019,"65-74 years",29501
+"1684","S08000020","Grampian","Males",2019,"75plus years",19963
+"1685","S08000020","Grampian","Males",2019,"All",291283
+"1686","S08000031","Greater Glasgow and Clyde","Males",2019,"0-44 years",341648
+"1687","S08000031","Greater Glasgow and Clyde","Males",2019,"45-64 years",148024
+"1688","S08000031","Greater Glasgow and Clyde","Males",2019,"65-74 years",50149
+"1689","S08000031","Greater Glasgow and Clyde","Males",2019,"75plus years",34873
+"1690","S08000031","Greater Glasgow and Clyde","Males",2019,"All",574694
+"1691","S08000022","Highland","Males",2019,"0-44 years",77469
+"1692","S08000022","Highland","Males",2019,"45-64 years",46116
+"1693","S08000022","Highland","Males",2019,"65-74 years",20462
+"1694","S08000022","Highland","Males",2019,"75plus years",14264
+"1695","S08000022","Highland","Males",2019,"All",158311
+"1696","S08000032","Lanarkshire","Males",2019,"0-44 years",174346
+"1697","S08000032","Lanarkshire","Males",2019,"45-64 years",91972
+"1698","S08000032","Lanarkshire","Males",2019,"65-74 years",32640
+"1699","S08000032","Lanarkshire","Males",2019,"75plus years",21438
+"1700","S08000032","Lanarkshire","Males",2019,"All",320396
+"1701","S08000024","Lothian","Males",2019,"0-44 years",263186
+"1702","S08000024","Lothian","Males",2019,"45-64 years",112635
+"1703","S08000024","Lothian","Males",2019,"65-74 years",39101
+"1704","S08000024","Lothian","Males",2019,"75plus years",27201
+"1705","S08000024","Lothian","Males",2019,"All",442123
+"1706","S08000025","Orkney","Males",2019,"0-44 years",5246
+"1707","S08000025","Orkney","Males",2019,"45-64 years",3299
+"1708","S08000025","Orkney","Males",2019,"65-74 years",1436
+"1709","S08000025","Orkney","Males",2019,"75plus years",1105
+"1710","S08000025","Orkney","Males",2019,"All",11086
+"1711","S08000026","Shetland","Males",2019,"0-44 years",6099
+"1712","S08000026","Shetland","Males",2019,"45-64 years",3323
+"1713","S08000026","Shetland","Males",2019,"65-74 years",1344
+"1714","S08000026","Shetland","Males",2019,"75plus years",919
+"1715","S08000026","Shetland","Males",2019,"All",11685
+"1716","S08000030","Tayside","Males",2019,"0-44 years",108425
+"1717","S08000030","Tayside","Males",2019,"45-64 years",54616
+"1718","S08000030","Tayside","Males",2019,"65-74 years",23112
+"1719","S08000030","Tayside","Males",2019,"75plus years",17428
+"1720","S08000030","Tayside","Males",2019,"All",203581
+"1721","S08000028","Western Isles","Males",2019,"0-44 years",5920
+"1722","S08000028","Western Isles","Males",2019,"45-64 years",4121
+"1723","S08000028","Western Isles","Males",2019,"65-74 years",1827
+"1724","S08000028","Western Isles","Males",2019,"75plus years",1328
+"1725","S08000028","Western Isles","Males",2019,"All",13196
+"1726","S92000003","Scotland","Females",2019,"0-44 years",1451593
+"1727","S92000003","Scotland","Females",2019,"45-64 years",773985
+"1728","S92000003","Scotland","Females",2019,"65-74 years",301501
+"1729","S92000003","Scotland","Females",2019,"75plus years",273218
+"1730","S92000003","Scotland","Females",2019,"All",2800297
+"1731","S08000015","Ayrshire and Arran","Females",2019,"0-44 years",89003
+"1732","S08000015","Ayrshire and Arran","Females",2019,"45-64 years",57120
+"1733","S08000015","Ayrshire and Arran","Females",2019,"65-74 years",24653
+"1734","S08000015","Ayrshire and Arran","Females",2019,"75plus years",21535
+"1735","S08000015","Ayrshire and Arran","Females",2019,"All",192311
+"1736","S08000016","Borders","Females",2019,"0-44 years",25879
+"1737","S08000016","Borders","Females",2019,"45-64 years",18222
+"1738","S08000016","Borders","Females",2019,"65-74 years",8125
+"1739","S08000016","Borders","Females",2019,"75plus years",7161
+"1740","S08000016","Borders","Females",2019,"All",59387
+"1741","S08000017","Dumfries and Galloway","Females",2019,"0-44 years",32893
+"1742","S08000017","Dumfries and Galloway","Females",2019,"45-64 years",23078
+"1743","S08000017","Dumfries and Galloway","Females",2019,"65-74 years",10678
+"1744","S08000017","Dumfries and Galloway","Females",2019,"75plus years",9776
+"1745","S08000017","Dumfries and Galloway","Females",2019,"All",76425
+"1746","S08000029","Fife","Females",2019,"0-44 years",96316
+"1747","S08000029","Fife","Females",2019,"45-64 years",53776
+"1748","S08000029","Fife","Females",2019,"65-74 years",22571
+"1749","S08000029","Fife","Females",2019,"75plus years",19473
+"1750","S08000029","Fife","Females",2019,"All",192136
+"1751","S08000019","Forth Valley","Females",2019,"0-44 years",79596
+"1752","S08000019","Forth Valley","Females",2019,"45-64 years",45112
+"1753","S08000019","Forth Valley","Females",2019,"65-74 years",17255
+"1754","S08000019","Forth Valley","Females",2019,"75plus years",15050
+"1755","S08000019","Forth Valley","Females",2019,"All",157013
+"1756","S08000020","Grampian","Females",2019,"0-44 years",155937
+"1757","S08000020","Grampian","Females",2019,"45-64 years",79998
+"1758","S08000020","Grampian","Females",2019,"65-74 years",31023
+"1759","S08000020","Grampian","Females",2019,"75plus years",27459
+"1760","S08000020","Grampian","Females",2019,"All",294417
+"1761","S08000031","Greater Glasgow and Clyde","Females",2019,"0-44 years",334707
+"1762","S08000031","Greater Glasgow and Clyde","Females",2019,"45-64 years",162789
+"1763","S08000031","Greater Glasgow and Clyde","Females",2019,"65-74 years",56286
+"1764","S08000031","Greater Glasgow and Clyde","Females",2019,"75plus years",54644
+"1765","S08000031","Greater Glasgow and Clyde","Females",2019,"All",608426
+"1766","S08000022","Highland","Females",2019,"0-44 years",73579
+"1767","S08000022","Highland","Females",2019,"45-64 years",49238
+"1768","S08000022","Highland","Females",2019,"65-74 years",21527
+"1769","S08000022","Highland","Females",2019,"75plus years",19045
+"1770","S08000022","Highland","Females",2019,"All",163389
+"1771","S08000032","Lanarkshire","Females",2019,"0-44 years",174590
+"1772","S08000032","Lanarkshire","Females",2019,"45-64 years",99187
+"1773","S08000032","Lanarkshire","Females",2019,"65-74 years",36357
+"1774","S08000032","Lanarkshire","Females",2019,"75plus years",31370
+"1775","S08000032","Lanarkshire","Females",2019,"All",341504
+"1776","S08000024","Lothian","Females",2019,"0-44 years",266199
+"1777","S08000024","Lothian","Females",2019,"45-64 years",116606
+"1778","S08000024","Lothian","Females",2019,"65-74 years",43358
+"1779","S08000024","Lothian","Females",2019,"75plus years",39294
+"1780","S08000024","Lothian","Females",2019,"All",465457
+"1781","S08000025","Orkney","Females",2019,"0-44 years",5066
+"1782","S08000025","Orkney","Females",2019,"45-64 years",3353
+"1783","S08000025","Orkney","Females",2019,"65-74 years",1438
+"1784","S08000025","Orkney","Females",2019,"75plus years",1327
+"1785","S08000025","Orkney","Females",2019,"All",11184
+"1786","S08000026","Shetland","Females",2019,"0-44 years",5585
+"1787","S08000026","Shetland","Females",2019,"45-64 years",3227
+"1788","S08000026","Shetland","Females",2019,"65-74 years",1290
+"1789","S08000026","Shetland","Females",2019,"75plus years",1133
+"1790","S08000026","Shetland","Females",2019,"All",11235
+"1791","S08000030","Tayside","Females",2019,"0-44 years",106446
+"1792","S08000030","Tayside","Females",2019,"45-64 years",58292
+"1793","S08000030","Tayside","Females",2019,"65-74 years",25101
+"1794","S08000030","Tayside","Females",2019,"75plus years",24050
+"1795","S08000030","Tayside","Females",2019,"All",213889
+"1796","S08000028","Western Isles","Females",2019,"0-44 years",5797
+"1797","S08000028","Western Isles","Females",2019,"45-64 years",3987
+"1798","S08000028","Western Isles","Females",2019,"65-74 years",1839
+"1799","S08000028","Western Isles","Females",2019,"75plus years",1901
+"1800","S08000028","Western Isles","Females",2019,"All",13524
+"1801","S92000003","Scotland","All",2020,"0-44 years",2914970
+"1802","S92000003","Scotland","All",2020,"45-64 years",1494950
+"1803","S92000003","Scotland","All",2020,"65-74 years",586263
+"1804","S92000003","Scotland","All",2020,"75plus years",469817
+"1805","S92000003","Scotland","All",2020,"All",5466000
+"1806","S08000015","Ayrshire and Arran","All",2020,"0-44 years",175246
+"1807","S08000015","Ayrshire and Arran","All",2020,"45-64 years",107722
+"1808","S08000015","Ayrshire and Arran","All",2020,"65-74 years",47376
+"1809","S08000015","Ayrshire and Arran","All",2020,"75plus years",37646
+"1810","S08000015","Ayrshire and Arran","All",2020,"All",367990
+"1811","S08000016","Borders","All",2020,"0-44 years",51020
+"1812","S08000016","Borders","All",2020,"45-64 years",35136
+"1813","S08000016","Borders","All",2020,"65-74 years",16197
+"1814","S08000016","Borders","All",2020,"75plus years",12887
+"1815","S08000016","Borders","All",2020,"All",115240
+"1816","S08000017","Dumfries and Galloway","All",2020,"0-44 years",65404
+"1817","S08000017","Dumfries and Galloway","All",2020,"45-64 years",43828
+"1818","S08000017","Dumfries and Galloway","All",2020,"65-74 years",21241
+"1819","S08000017","Dumfries and Galloway","All",2020,"75plus years",17817
+"1820","S08000017","Dumfries and Galloway","All",2020,"All",148290
+"1821","S08000029","Fife","All",2020,"0-44 years",191642
+"1822","S08000029","Fife","All",2020,"45-64 years",104319
+"1823","S08000029","Fife","All",2020,"65-74 years",43565
+"1824","S08000029","Fife","All",2020,"75plus years",34604
+"1825","S08000029","Fife","All",2020,"All",374130
+"1826","S08000019","Forth Valley","All",2020,"0-44 years",158365
+"1827","S08000019","Forth Valley","All",2020,"45-64 years",87818
+"1828","S08000019","Forth Valley","All",2020,"65-74 years",33475
+"1829","S08000019","Forth Valley","All",2020,"75plus years",26272
+"1830","S08000019","Forth Valley","All",2020,"All",305930
+"1831","S08000020","Grampian","All",2020,"0-44 years",317439
+"1832","S08000020","Grampian","All",2020,"45-64 years",158323
+"1833","S08000020","Grampian","All",2020,"65-74 years",61872
+"1834","S08000020","Grampian","All",2020,"75plus years",47916
+"1835","S08000020","Grampian","All",2020,"All",585550
+"1836","S08000031","Greater Glasgow and Clyde","All",2020,"0-44 years",679076
+"1837","S08000031","Greater Glasgow and Clyde","All",2020,"45-64 years",308851
+"1838","S08000031","Greater Glasgow and Clyde","All",2020,"65-74 years",108323
+"1839","S08000031","Greater Glasgow and Clyde","All",2020,"75plus years",88990
+"1840","S08000031","Greater Glasgow and Clyde","All",2020,"All",1185240
+"1841","S08000022","Highland","All",2020,"0-44 years",149675
+"1842","S08000022","Highland","All",2020,"45-64 years",94842
+"1843","S08000022","Highland","All",2020,"65-74 years",42453
+"1844","S08000022","Highland","All",2020,"75plus years",33890
+"1845","S08000022","Highland","All",2020,"All",320860
+"1846","S08000032","Lanarkshire","All",2020,"0-44 years",348065
+"1847","S08000032","Lanarkshire","All",2020,"45-64 years",190604
+"1848","S08000032","Lanarkshire","All",2020,"65-74 years",70194
+"1849","S08000032","Lanarkshire","All",2020,"75plus years",53097
+"1850","S08000032","Lanarkshire","All",2020,"All",661960
+"1851","S08000024","Lothian","All",2020,"0-44 years",531345
+"1852","S08000024","Lothian","All",2020,"45-64 years",230501
+"1853","S08000024","Lothian","All",2020,"65-74 years",83581
+"1854","S08000024","Lothian","All",2020,"75plus years",67063
+"1855","S08000024","Lothian","All",2020,"All",912490
+"1856","S08000025","Orkney","All",2020,"0-44 years",10296
+"1857","S08000025","Orkney","All",2020,"45-64 years",6661
+"1858","S08000025","Orkney","All",2020,"65-74 years",2924
+"1859","S08000025","Orkney","All",2020,"75plus years",2519
+"1860","S08000025","Orkney","All",2020,"All",22400
+"1861","S08000026","Shetland","All",2020,"0-44 years",11580
+"1862","S08000026","Shetland","All",2020,"45-64 years",6483
+"1863","S08000026","Shetland","All",2020,"65-74 years",2683
+"1864","S08000026","Shetland","All",2020,"75plus years",2124
+"1865","S08000026","Shetland","All",2020,"All",22870
+"1866","S08000030","Tayside","All",2020,"0-44 years",214306
+"1867","S08000030","Tayside","All",2020,"45-64 years",111846
+"1868","S08000030","Tayside","All",2020,"65-74 years",48624
+"1869","S08000030","Tayside","All",2020,"75plus years",41774
+"1870","S08000030","Tayside","All",2020,"All",416550
+"1871","S08000028","Western Isles","All",2020,"0-44 years",11511
+"1872","S08000028","Western Isles","All",2020,"45-64 years",8016
+"1873","S08000028","Western Isles","All",2020,"65-74 years",3755
+"1874","S08000028","Western Isles","All",2020,"75plus years",3218
+"1875","S08000028","Western Isles","All",2020,"All",26500
+"1876","S92000003","Scotland","Males",2020,"0-44 years",1466631
+"1877","S92000003","Scotland","Males",2020,"45-64 years",722780
+"1878","S92000003","Scotland","Males",2020,"65-74 years",280439
+"1879","S92000003","Scotland","Males",2020,"75plus years",195362
+"1880","S92000003","Scotland","Males",2020,"All",2665212
+"1881","S08000015","Ayrshire and Arran","Males",2020,"0-44 years",87075
+"1882","S08000015","Ayrshire and Arran","Males",2020,"45-64 years",50871
+"1883","S08000015","Ayrshire and Arran","Males",2020,"65-74 years",22500
+"1884","S08000015","Ayrshire and Arran","Males",2020,"75plus years",15955
+"1885","S08000015","Ayrshire and Arran","Males",2020,"All",176401
+"1886","S08000016","Borders","Males",2020,"0-44 years",25380
+"1887","S08000016","Borders","Males",2020,"45-64 years",17059
+"1888","S08000016","Borders","Males",2020,"65-74 years",8005
+"1889","S08000016","Borders","Males",2020,"75plus years",5608
+"1890","S08000016","Borders","Males",2020,"All",56052
+"1891","S08000017","Dumfries and Galloway","Males",2020,"0-44 years",32802
+"1892","S08000017","Dumfries and Galloway","Males",2020,"45-64 years",21021
+"1893","S08000017","Dumfries and Galloway","Males",2020,"65-74 years",10461
+"1894","S08000017","Dumfries and Galloway","Males",2020,"75plus years",7891
+"1895","S08000017","Dumfries and Galloway","Males",2020,"All",72175
+"1896","S08000029","Fife","Males",2020,"0-44 years",95665
+"1897","S08000029","Fife","Males",2020,"45-64 years",50556
+"1898","S08000029","Fife","Males",2020,"65-74 years",20792
+"1899","S08000029","Fife","Males",2020,"75plus years",14736
+"1900","S08000029","Fife","Males",2020,"All",181749
+"1901","S08000019","Forth Valley","Males",2020,"0-44 years",79298
+"1902","S08000019","Forth Valley","Males",2020,"45-64 years",42707
+"1903","S08000019","Forth Valley","Males",2020,"65-74 years",16049
+"1904","S08000019","Forth Valley","Males",2020,"75plus years",11067
+"1905","S08000019","Forth Valley","Males",2020,"All",149121
+"1906","S08000020","Grampian","Males",2020,"0-44 years",162278
+"1907","S08000020","Grampian","Males",2020,"45-64 years",78384
+"1908","S08000020","Grampian","Males",2020,"65-74 years",30191
+"1909","S08000020","Grampian","Males",2020,"75plus years",20197
+"1910","S08000020","Grampian","Males",2020,"All",291050
+"1911","S08000031","Greater Glasgow and Clyde","Males",2020,"0-44 years",343722
+"1912","S08000031","Greater Glasgow and Clyde","Males",2020,"45-64 years",146825
+"1913","S08000031","Greater Glasgow and Clyde","Males",2020,"65-74 years",51058
+"1914","S08000031","Greater Glasgow and Clyde","Males",2020,"75plus years",34915
+"1915","S08000031","Greater Glasgow and Clyde","Males",2020,"All",576520
+"1916","S08000022","Highland","Males",2020,"0-44 years",77045
+"1917","S08000022","Highland","Males",2020,"45-64 years",45757
+"1918","S08000022","Highland","Males",2020,"65-74 years",20701
+"1919","S08000022","Highland","Males",2020,"75plus years",14650
+"1920","S08000022","Highland","Males",2020,"All",158153
+"1921","S08000032","Lanarkshire","Males",2020,"0-44 years",173935
+"1922","S08000032","Lanarkshire","Males",2020,"45-64 years",91740
+"1923","S08000032","Lanarkshire","Males",2020,"65-74 years",33036
+"1924","S08000032","Lanarkshire","Males",2020,"75plus years",21685
+"1925","S08000032","Lanarkshire","Males",2020,"All",320396
+"1926","S08000024","Lothian","Males",2020,"0-44 years",264145
+"1927","S08000024","Lothian","Males",2020,"45-64 years",113261
+"1928","S08000024","Lothian","Males",2020,"65-74 years",39598
+"1929","S08000024","Lothian","Males",2020,"75plus years",27654
+"1930","S08000024","Lothian","Males",2020,"All",444658
+"1931","S08000025","Orkney","Males",2020,"0-44 years",5263
+"1932","S08000025","Orkney","Males",2020,"45-64 years",3297
+"1933","S08000025","Orkney","Males",2020,"65-74 years",1452
+"1934","S08000025","Orkney","Males",2020,"75plus years",1147
+"1935","S08000025","Orkney","Males",2020,"All",11159
+"1936","S08000026","Shetland","Males",2020,"0-44 years",6004
+"1937","S08000026","Shetland","Males",2020,"45-64 years",3294
+"1938","S08000026","Shetland","Males",2020,"65-74 years",1376
+"1939","S08000026","Shetland","Males",2020,"75plus years",938
+"1940","S08000026","Shetland","Males",2020,"All",11612
+"1941","S08000030","Tayside","Males",2020,"0-44 years",108201
+"1942","S08000030","Tayside","Males",2020,"45-64 years",53957
+"1943","S08000030","Tayside","Males",2020,"65-74 years",23349
+"1944","S08000030","Tayside","Males",2020,"75plus years",17588
+"1945","S08000030","Tayside","Males",2020,"All",203095
+"1946","S08000028","Western Isles","Males",2020,"0-44 years",5818
+"1947","S08000028","Western Isles","Males",2020,"45-64 years",4051
+"1948","S08000028","Western Isles","Males",2020,"65-74 years",1871
+"1949","S08000028","Western Isles","Males",2020,"75plus years",1331
+"1950","S08000028","Western Isles","Males",2020,"All",13071
+"1951","S92000003","Scotland","Females",2020,"0-44 years",1448339
+"1952","S92000003","Scotland","Females",2020,"45-64 years",772170
+"1953","S92000003","Scotland","Females",2020,"65-74 years",305824
+"1954","S92000003","Scotland","Females",2020,"75plus years",274455
+"1955","S92000003","Scotland","Females",2020,"All",2800788
+"1956","S08000015","Ayrshire and Arran","Females",2020,"0-44 years",88171
+"1957","S08000015","Ayrshire and Arran","Females",2020,"45-64 years",56851
+"1958","S08000015","Ayrshire and Arran","Females",2020,"65-74 years",24876
+"1959","S08000015","Ayrshire and Arran","Females",2020,"75plus years",21691
+"1960","S08000015","Ayrshire and Arran","Females",2020,"All",191589
+"1961","S08000016","Borders","Females",2020,"0-44 years",25640
+"1962","S08000016","Borders","Females",2020,"45-64 years",18077
+"1963","S08000016","Borders","Females",2020,"65-74 years",8192
+"1964","S08000016","Borders","Females",2020,"75plus years",7279
+"1965","S08000016","Borders","Females",2020,"All",59188
+"1966","S08000017","Dumfries and Galloway","Females",2020,"0-44 years",32602
+"1967","S08000017","Dumfries and Galloway","Females",2020,"45-64 years",22807
+"1968","S08000017","Dumfries and Galloway","Females",2020,"65-74 years",10780
+"1969","S08000017","Dumfries and Galloway","Females",2020,"75plus years",9926
+"1970","S08000017","Dumfries and Galloway","Females",2020,"All",76115
+"1971","S08000029","Fife","Females",2020,"0-44 years",95977
+"1972","S08000029","Fife","Females",2020,"45-64 years",53763
+"1973","S08000029","Fife","Females",2020,"65-74 years",22773
+"1974","S08000029","Fife","Females",2020,"75plus years",19868
+"1975","S08000029","Fife","Females",2020,"All",192381
+"1976","S08000019","Forth Valley","Females",2020,"0-44 years",79067
+"1977","S08000019","Forth Valley","Females",2020,"45-64 years",45111
+"1978","S08000019","Forth Valley","Females",2020,"65-74 years",17426
+"1979","S08000019","Forth Valley","Females",2020,"75plus years",15205
+"1980","S08000019","Forth Valley","Females",2020,"All",156809
+"1981","S08000020","Grampian","Females",2020,"0-44 years",155161
+"1982","S08000020","Grampian","Females",2020,"45-64 years",79939
+"1983","S08000020","Grampian","Females",2020,"65-74 years",31681
+"1984","S08000020","Grampian","Females",2020,"75plus years",27719
+"1985","S08000020","Grampian","Females",2020,"All",294500
+"1986","S08000031","Greater Glasgow and Clyde","Females",2020,"0-44 years",335354
+"1987","S08000031","Greater Glasgow and Clyde","Females",2020,"45-64 years",162026
+"1988","S08000031","Greater Glasgow and Clyde","Females",2020,"65-74 years",57265
+"1989","S08000031","Greater Glasgow and Clyde","Females",2020,"75plus years",54075
+"1990","S08000031","Greater Glasgow and Clyde","Females",2020,"All",608720
+"1991","S08000022","Highland","Females",2020,"0-44 years",72630
+"1992","S08000022","Highland","Females",2020,"45-64 years",49085
+"1993","S08000022","Highland","Females",2020,"65-74 years",21752
+"1994","S08000022","Highland","Females",2020,"75plus years",19240
+"1995","S08000022","Highland","Females",2020,"All",162707
+"1996","S08000032","Lanarkshire","Females",2020,"0-44 years",174130
+"1997","S08000032","Lanarkshire","Females",2020,"45-64 years",98864
+"1998","S08000032","Lanarkshire","Females",2020,"65-74 years",37158
+"1999","S08000032","Lanarkshire","Females",2020,"75plus years",31412
+"2000","S08000032","Lanarkshire","Females",2020,"All",341564
+"2001","S08000024","Lothian","Females",2020,"0-44 years",267200
+"2002","S08000024","Lothian","Females",2020,"45-64 years",117240
+"2003","S08000024","Lothian","Females",2020,"65-74 years",43983
+"2004","S08000024","Lothian","Females",2020,"75plus years",39409
+"2005","S08000024","Lothian","Females",2020,"All",467832
+"2006","S08000025","Orkney","Females",2020,"0-44 years",5033
+"2007","S08000025","Orkney","Females",2020,"45-64 years",3364
+"2008","S08000025","Orkney","Females",2020,"65-74 years",1472
+"2009","S08000025","Orkney","Females",2020,"75plus years",1372
+"2010","S08000025","Orkney","Females",2020,"All",11241
+"2011","S08000026","Shetland","Females",2020,"0-44 years",5576
+"2012","S08000026","Shetland","Females",2020,"45-64 years",3189
+"2013","S08000026","Shetland","Females",2020,"65-74 years",1307
+"2014","S08000026","Shetland","Females",2020,"75plus years",1186
+"2015","S08000026","Shetland","Females",2020,"All",11258
+"2016","S08000030","Tayside","Females",2020,"0-44 years",106105
+"2017","S08000030","Tayside","Females",2020,"45-64 years",57889
+"2018","S08000030","Tayside","Females",2020,"65-74 years",25275
+"2019","S08000030","Tayside","Females",2020,"75plus years",24186
+"2020","S08000030","Tayside","Females",2020,"All",213455
+"2021","S08000028","Western Isles","Females",2020,"0-44 years",5693
+"2022","S08000028","Western Isles","Females",2020,"45-64 years",3965
+"2023","S08000028","Western Isles","Females",2020,"65-74 years",1884
+"2024","S08000028","Western Isles","Females",2020,"75plus years",1887
+"2025","S08000028","Western Isles","Females",2020,"All",13429
+"2026","S92000003","Scotland","All",2021,"0-44 years",2915914
+"2027","S92000003","Scotland","All",2021,"45-64 years",1490125
+"2028","S92000003","Scotland","All",2021,"65-74 years",595578
+"2029","S92000003","Scotland","All",2021,"75plus years",478283
+"2030","S92000003","Scotland","All",2021,"All",5479900
+"2031","S08000015","Ayrshire and Arran","All",2021,"0-44 years",175273
+"2032","S08000015","Ayrshire and Arran","All",2021,"45-64 years",107187
+"2033","S08000015","Ayrshire and Arran","All",2021,"65-74 years",47979
+"2034","S08000015","Ayrshire and Arran","All",2021,"75plus years",38251
+"2035","S08000015","Ayrshire and Arran","All",2021,"All",368690
+"2036","S08000016","Borders","All",2021,"0-44 years",51285
+"2037","S08000016","Borders","All",2021,"45-64 years",35080
+"2038","S08000016","Borders","All",2021,"65-74 years",16418
+"2039","S08000016","Borders","All",2021,"75plus years",13237
+"2040","S08000016","Borders","All",2021,"All",116020
+"2041","S08000017","Dumfries and Galloway","All",2021,"0-44 years",65572
+"2042","S08000017","Dumfries and Galloway","All",2021,"45-64 years",43656
+"2043","S08000017","Dumfries and Galloway","All",2021,"65-74 years",21393
+"2044","S08000017","Dumfries and Galloway","All",2021,"75plus years",18169
+"2045","S08000017","Dumfries and Galloway","All",2021,"All",148790
+"2046","S08000029","Fife","All",2021,"0-44 years",191303
+"2047","S08000029","Fife","All",2021,"45-64 years",104012
+"2048","S08000029","Fife","All",2021,"65-74 years",44030
+"2049","S08000029","Fife","All",2021,"75plus years",35385
+"2050","S08000029","Fife","All",2021,"All",374730
+"2051","S08000019","Forth Valley","All",2021,"0-44 years",157458
+"2052","S08000019","Forth Valley","All",2021,"45-64 years",87628
+"2053","S08000019","Forth Valley","All",2021,"65-74 years",33781
+"2054","S08000019","Forth Valley","All",2021,"75plus years",26843
+"2055","S08000019","Forth Valley","All",2021,"All",305710
+"2056","S08000020","Grampian","All",2021,"0-44 years",315757
+"2057","S08000020","Grampian","All",2021,"45-64 years",158281
+"2058","S08000020","Grampian","All",2021,"65-74 years",63192
+"2059","S08000020","Grampian","All",2021,"75plus years",49300
+"2060","S08000020","Grampian","All",2021,"All",586530
+"2061","S08000031","Greater Glasgow and Clyde","All",2021,"0-44 years",679361
+"2062","S08000031","Greater Glasgow and Clyde","All",2021,"45-64 years",305716
+"2063","S08000031","Greater Glasgow and Clyde","All",2021,"65-74 years",110726
+"2064","S08000031","Greater Glasgow and Clyde","All",2021,"75plus years",89237
+"2065","S08000031","Greater Glasgow and Clyde","All",2021,"All",1185040
+"2066","S08000022","Highland","All",2021,"0-44 years",151170
+"2067","S08000022","Highland","All",2021,"45-64 years",95109
+"2068","S08000022","Highland","All",2021,"65-74 years",43119
+"2069","S08000022","Highland","All",2021,"75plus years",34882
+"2070","S08000022","Highland","All",2021,"All",324280
+"2071","S08000032","Lanarkshire","All",2021,"0-44 years",349241
+"2072","S08000032","Lanarkshire","All",2021,"45-64 years",189673
+"2073","S08000032","Lanarkshire","All",2021,"65-74 years",71400
+"2074","S08000032","Lanarkshire","All",2021,"75plus years",53716
+"2075","S08000032","Lanarkshire","All",2021,"All",664030
+"2076","S08000024","Lothian","All",2021,"0-44 years",531943
+"2077","S08000024","Lothian","All",2021,"45-64 years",230805
+"2078","S08000024","Lothian","All",2021,"65-74 years",84921
+"2079","S08000024","Lothian","All",2021,"75plus years",68641
+"2080","S08000024","Lothian","All",2021,"All",916310
+"2081","S08000025","Orkney","All",2021,"0-44 years",10340
+"2082","S08000025","Orkney","All",2021,"45-64 years",6660
+"2083","S08000025","Orkney","All",2021,"65-74 years",2957
+"2084","S08000025","Orkney","All",2021,"75plus years",2583
+"2085","S08000025","Orkney","All",2021,"All",22540
+"2086","S08000026","Shetland","All",2021,"0-44 years",11551
+"2087","S08000026","Shetland","All",2021,"45-64 years",6465
+"2088","S08000026","Shetland","All",2021,"65-74 years",2740
+"2089","S08000026","Shetland","All",2021,"75plus years",2184
+"2090","S08000026","Shetland","All",2021,"All",22940
+"2091","S08000030","Tayside","All",2021,"0-44 years",214170
+"2092","S08000030","Tayside","All",2021,"45-64 years",111775
+"2093","S08000030","Tayside","All",2021,"65-74 years",49146
+"2094","S08000030","Tayside","All",2021,"75plus years",42559
+"2095","S08000030","Tayside","All",2021,"All",417650
+"2096","S08000028","Western Isles","All",2021,"0-44 years",11490
+"2097","S08000028","Western Isles","All",2021,"45-64 years",8078
+"2098","S08000028","Western Isles","All",2021,"65-74 years",3776
+"2099","S08000028","Western Isles","All",2021,"75plus years",3296
+"2100","S08000028","Western Isles","All",2021,"All",26640
+"2101","S92000003","Scotland","Males",2021,"0-44 years",1468135
+"2102","S92000003","Scotland","Males",2021,"45-64 years",719686
+"2103","S92000003","Scotland","Males",2021,"65-74 years",284561
+"2104","S92000003","Scotland","Males",2021,"75plus years",200180
+"2105","S92000003","Scotland","Males",2021,"All",2672562
+"2106","S08000015","Ayrshire and Arran","Males",2021,"0-44 years",87166
+"2107","S08000015","Ayrshire and Arran","Males",2021,"45-64 years",50432
+"2108","S08000015","Ayrshire and Arran","Males",2021,"65-74 years",22824
+"2109","S08000015","Ayrshire and Arran","Males",2021,"75plus years",16254
+"2110","S08000015","Ayrshire and Arran","Males",2021,"All",176676
+"2111","S08000016","Borders","Males",2021,"0-44 years",25573
+"2112","S08000016","Borders","Males",2021,"45-64 years",17032
+"2113","S08000016","Borders","Males",2021,"65-74 years",8095
+"2114","S08000016","Borders","Males",2021,"75plus years",5834
+"2115","S08000016","Borders","Males",2021,"All",56534
+"2116","S08000017","Dumfries and Galloway","Males",2021,"0-44 years",32889
+"2117","S08000017","Dumfries and Galloway","Males",2021,"45-64 years",20948
+"2118","S08000017","Dumfries and Galloway","Males",2021,"65-74 years",10451
+"2119","S08000017","Dumfries and Galloway","Males",2021,"75plus years",8068
+"2120","S08000017","Dumfries and Galloway","Males",2021,"All",72356
+"2121","S08000029","Fife","Males",2021,"0-44 years",95543
+"2122","S08000029","Fife","Males",2021,"45-64 years",50399
+"2123","S08000029","Fife","Males",2021,"65-74 years",20960
+"2124","S08000029","Fife","Males",2021,"75plus years",15170
+"2125","S08000029","Fife","Males",2021,"All",182072
+"2126","S08000019","Forth Valley","Males",2021,"0-44 years",78838
+"2127","S08000019","Forth Valley","Males",2021,"45-64 years",42623
+"2128","S08000019","Forth Valley","Males",2021,"65-74 years",16117
+"2129","S08000019","Forth Valley","Males",2021,"75plus years",11355
+"2130","S08000019","Forth Valley","Males",2021,"All",148933
+"2131","S08000020","Grampian","Males",2021,"0-44 years",161377
+"2132","S08000020","Grampian","Males",2021,"45-64 years",78283
+"2133","S08000020","Grampian","Males",2021,"65-74 years",30824
+"2134","S08000020","Grampian","Males",2021,"75plus years",20938
+"2135","S08000020","Grampian","Males",2021,"All",291422
+"2136","S08000031","Greater Glasgow and Clyde","Males",2021,"0-44 years",344794
+"2137","S08000031","Greater Glasgow and Clyde","Males",2021,"45-64 years",144991
+"2138","S08000031","Greater Glasgow and Clyde","Males",2021,"65-74 years",52058
+"2139","S08000031","Greater Glasgow and Clyde","Males",2021,"75plus years",35319
+"2140","S08000031","Greater Glasgow and Clyde","Males",2021,"All",577162
+"2141","S08000022","Highland","Males",2021,"0-44 years",77796
+"2142","S08000022","Highland","Males",2021,"45-64 years",45877
+"2143","S08000022","Highland","Males",2021,"65-74 years",20995
+"2144","S08000022","Highland","Males",2021,"75plus years",15165
+"2145","S08000022","Highland","Males",2021,"All",159833
+"2146","S08000032","Lanarkshire","Males",2021,"0-44 years",174761
+"2147","S08000032","Lanarkshire","Males",2021,"45-64 years",91298
+"2148","S08000032","Lanarkshire","Males",2021,"65-74 years",33561
+"2149","S08000032","Lanarkshire","Males",2021,"75plus years",22071
+"2150","S08000032","Lanarkshire","Males",2021,"All",321691
+"2151","S08000024","Lothian","Males",2021,"0-44 years",264380
+"2152","S08000024","Lothian","Males",2021,"45-64 years",113209
+"2153","S08000024","Lothian","Males",2021,"65-74 years",40362
+"2154","S08000024","Lothian","Males",2021,"75plus years",28439
+"2155","S08000024","Lothian","Males",2021,"All",446390
+"2156","S08000025","Orkney","Males",2021,"0-44 years",5260
+"2157","S08000025","Orkney","Males",2021,"45-64 years",3303
+"2158","S08000025","Orkney","Males",2021,"65-74 years",1456
+"2159","S08000025","Orkney","Males",2021,"75plus years",1185
+"2160","S08000025","Orkney","Males",2021,"All",11204
+"2161","S08000026","Shetland","Males",2021,"0-44 years",5968
+"2162","S08000026","Shetland","Males",2021,"45-64 years",3295
+"2163","S08000026","Shetland","Males",2021,"65-74 years",1403
+"2164","S08000026","Shetland","Males",2021,"75plus years",964
+"2165","S08000026","Shetland","Males",2021,"All",11630
+"2166","S08000030","Tayside","Males",2021,"0-44 years",107965
+"2167","S08000030","Tayside","Males",2021,"45-64 years",53911
+"2168","S08000030","Tayside","Males",2021,"65-74 years",23568
+"2169","S08000030","Tayside","Males",2021,"75plus years",18026
+"2170","S08000030","Tayside","Males",2021,"All",203470
+"2171","S08000028","Western Isles","Males",2021,"0-44 years",5825
+"2172","S08000028","Western Isles","Males",2021,"45-64 years",4085
+"2173","S08000028","Western Isles","Males",2021,"65-74 years",1887
+"2174","S08000028","Western Isles","Males",2021,"75plus years",1392
+"2175","S08000028","Western Isles","Males",2021,"All",13189
+"2176","S92000003","Scotland","Females",2021,"0-44 years",1447779
+"2177","S92000003","Scotland","Females",2021,"45-64 years",770439
+"2178","S92000003","Scotland","Females",2021,"65-74 years",311017
+"2179","S92000003","Scotland","Females",2021,"75plus years",278103
+"2180","S92000003","Scotland","Females",2021,"All",2807338
+"2181","S08000015","Ayrshire and Arran","Females",2021,"0-44 years",88107
+"2182","S08000015","Ayrshire and Arran","Females",2021,"45-64 years",56755
+"2183","S08000015","Ayrshire and Arran","Females",2021,"65-74 years",25155
+"2184","S08000015","Ayrshire and Arran","Females",2021,"75plus years",21997
+"2185","S08000015","Ayrshire and Arran","Females",2021,"All",192014
+"2186","S08000016","Borders","Females",2021,"0-44 years",25712
+"2187","S08000016","Borders","Females",2021,"45-64 years",18048
+"2188","S08000016","Borders","Females",2021,"65-74 years",8323
+"2189","S08000016","Borders","Females",2021,"75plus years",7403
+"2190","S08000016","Borders","Females",2021,"All",59486
+"2191","S08000017","Dumfries and Galloway","Females",2021,"0-44 years",32683
+"2192","S08000017","Dumfries and Galloway","Females",2021,"45-64 years",22708
+"2193","S08000017","Dumfries and Galloway","Females",2021,"65-74 years",10942
+"2194","S08000017","Dumfries and Galloway","Females",2021,"75plus years",10101
+"2195","S08000017","Dumfries and Galloway","Females",2021,"All",76434
+"2196","S08000029","Fife","Females",2021,"0-44 years",95760
+"2197","S08000029","Fife","Females",2021,"45-64 years",53613
+"2198","S08000029","Fife","Females",2021,"65-74 years",23070
+"2199","S08000029","Fife","Females",2021,"75plus years",20215
+"2200","S08000029","Fife","Females",2021,"All",192658
+"2201","S08000019","Forth Valley","Females",2021,"0-44 years",78620
+"2202","S08000019","Forth Valley","Females",2021,"45-64 years",45005
+"2203","S08000019","Forth Valley","Females",2021,"65-74 years",17664
+"2204","S08000019","Forth Valley","Females",2021,"75plus years",15488
+"2205","S08000019","Forth Valley","Females",2021,"All",156777
+"2206","S08000020","Grampian","Females",2021,"0-44 years",154380
+"2207","S08000020","Grampian","Females",2021,"45-64 years",79998
+"2208","S08000020","Grampian","Females",2021,"65-74 years",32368
+"2209","S08000020","Grampian","Females",2021,"75plus years",28362
+"2210","S08000020","Grampian","Females",2021,"All",295108
+"2211","S08000031","Greater Glasgow and Clyde","Females",2021,"0-44 years",334567
+"2212","S08000031","Greater Glasgow and Clyde","Females",2021,"45-64 years",160725
+"2213","S08000031","Greater Glasgow and Clyde","Females",2021,"65-74 years",58668
+"2214","S08000031","Greater Glasgow and Clyde","Females",2021,"75plus years",53918
+"2215","S08000031","Greater Glasgow and Clyde","Females",2021,"All",607878
+"2216","S08000022","Highland","Females",2021,"0-44 years",73374
+"2217","S08000022","Highland","Females",2021,"45-64 years",49232
+"2218","S08000022","Highland","Females",2021,"65-74 years",22124
+"2219","S08000022","Highland","Females",2021,"75plus years",19717
+"2220","S08000022","Highland","Females",2021,"All",164447
+"2221","S08000032","Lanarkshire","Females",2021,"0-44 years",174480
+"2222","S08000032","Lanarkshire","Females",2021,"45-64 years",98375
+"2223","S08000032","Lanarkshire","Females",2021,"65-74 years",37839
+"2224","S08000032","Lanarkshire","Females",2021,"75plus years",31645
+"2225","S08000032","Lanarkshire","Females",2021,"All",342339
+"2226","S08000024","Lothian","Females",2021,"0-44 years",267563
+"2227","S08000024","Lothian","Females",2021,"45-64 years",117596
+"2228","S08000024","Lothian","Females",2021,"65-74 years",44559
+"2229","S08000024","Lothian","Females",2021,"75plus years",40202
+"2230","S08000024","Lothian","Females",2021,"All",469920
+"2231","S08000025","Orkney","Females",2021,"0-44 years",5080
+"2232","S08000025","Orkney","Females",2021,"45-64 years",3357
+"2233","S08000025","Orkney","Females",2021,"65-74 years",1501
+"2234","S08000025","Orkney","Females",2021,"75plus years",1398
+"2235","S08000025","Orkney","Females",2021,"All",11336
+"2236","S08000026","Shetland","Females",2021,"0-44 years",5583
+"2237","S08000026","Shetland","Females",2021,"45-64 years",3170
+"2238","S08000026","Shetland","Females",2021,"65-74 years",1337
+"2239","S08000026","Shetland","Females",2021,"75plus years",1220
+"2240","S08000026","Shetland","Females",2021,"All",11310
+"2241","S08000030","Tayside","Females",2021,"0-44 years",106205
+"2242","S08000030","Tayside","Females",2021,"45-64 years",57864
+"2243","S08000030","Tayside","Females",2021,"65-74 years",25578
+"2244","S08000030","Tayside","Females",2021,"75plus years",24533
+"2245","S08000030","Tayside","Females",2021,"All",214180
+"2246","S08000028","Western Isles","Females",2021,"0-44 years",5665
+"2247","S08000028","Western Isles","Females",2021,"45-64 years",3993
+"2248","S08000028","Western Isles","Females",2021,"65-74 years",1889
+"2249","S08000028","Western Isles","Females",2021,"75plus years",1904
+"2250","S08000028","Western Isles","Females",2021,"All",13451

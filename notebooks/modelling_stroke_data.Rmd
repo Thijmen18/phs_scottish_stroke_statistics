@@ -1,0 +1,24 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# PHS Scottish Stroke Statistics
+
+This notebook contains steps to create a predictive multivariate model to predict 
+future stroke incidence rates using future population predictions per year
+as published by NRS (National Records Scotland)
+
+```{r}
+library(tidyverse)
+
+activity_hb <- read_csv("../clean_data/stroke_activity_healthboard.csv")
+```
+
+```{r}
+activity_hb %>% 
+  select(financial_year, hbr, admission_type, age_group, sex, number_of_discharges, crude_rate, easr) %>% 
+  head()
+```
+
+

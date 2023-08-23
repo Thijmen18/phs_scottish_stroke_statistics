@@ -57,6 +57,7 @@ Initially we focus on Health boards as data contents are similar except for area
 # general exploration activity
 
 head(activity_hb)
+view(activity_hb)
 
 activity_hb %>% 
   filter(age_group == "All") %>% 
@@ -295,7 +296,7 @@ Visualise the number of deaths (use age-sex standardised rate per 100k populatio
 ```{r}
 head(mortality_simd)
 
-mortality_simd %>% 
+plot_cd_mortality_simd <- mortality_simd %>% 
   mutate(quintile = recode(quintile,
                            "1" = "Q1",
                            "2" = "Q2",
@@ -317,10 +318,14 @@ mortality_simd %>%
   theme_light() +
   labs(
     x = "\nYear",
-    y = "Standardised mortality rate per 100,000 population",
+    y = "Standardised mortality rate per 100,000 population\n",
     title = "Cerebrovascular Disease Mortality rates by Deprivation Level",
     subtitle = "Age-Sex standardised mortality rates by SIMD quintile and year",
     colour = "SIMD quintile")
+
+# save the plot:
+ggsave(plot_cd_mortality_simd, filename = "cd_mortality_simd.pdf", 
+       path = "../outputs/", width = 19, height = 12, units = "cm")
   
   
 ```
@@ -333,7 +338,7 @@ split per age-group and sex
 
 __sex__
 ```{r}
-activity_hb %>% 
+plot_cd_incidence_sex <- activity_hb %>% 
   select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
   filter(age_group == "All",
          admission_type == "All",
@@ -347,7 +352,7 @@ activity_hb %>%
   theme_light() +
   labs(
     x = "\nYear", 
-    y = "age-sex adjusted incidence rate per 100,000 population",
+    y = "age-sex adjusted incidence rate per 100,000 population\n",
     title = "Cerebrovascular Disease Standardised Incidences per Sex",
     subtitle = "age and sex adjusted incidence rates per year (ESP-2013)"
   ) +
@@ -357,6 +362,10 @@ activity_hb %>%
       "Males" = "palegreen4",
       "Females" = "palegreen1")
     )
+
+# save the plot:
+ggsave(plot_cd_incidence_sex, filename = "cd_incidence_sex.pdf", 
+       path = "../outputs/", width = 19, height = 12, units = "cm")
 ```
 
 __age_group__
@@ -398,7 +407,7 @@ split per age-group and sex
 
 __sex__
 ```{r}
-mortality_hb %>% 
+plot_cd_mortality_sex <- mortality_hb %>% 
   select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr, crude_rate) %>% 
   filter(age_group == "All",
          sex == "Males" | sex == "Females",
@@ -411,7 +420,7 @@ mortality_hb %>%
   theme_light() +
   labs(
     x = "\nYear", 
-    y = "age-sex adjusted death rate per 100,000 population",
+    y = "age-sex adjusted death rate per 100,000 population\n",
     title = "Cerebrovascular Disease Standardised Death rate per Sex",
     subtitle = "age and sex adjusted death rates per year (ESP-2013)"
   ) +
@@ -422,11 +431,14 @@ mortality_hb %>%
       "Females" = "palegreen1")
     )
 
+ggsave(plot_cd_mortality_sex, filename = "cd_mortality_sex.pdf", 
+       path = "../outputs/", width = 19, height = 12, units = "cm")
+
 ```
 
 __age_group__
 ```{r}
-mortality_hb %>% 
+plot_cd_mortality_age <- mortality_hb %>% 
   select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr, crude_rate) %>% 
   filter(age_group == "0-44 years" | age_group == "45-64 years" | 
            age_group == "65-74 years" | age_group == "75plus years",
@@ -440,7 +452,7 @@ mortality_hb %>%
   theme_light() +
   labs(
     x = "\nYear", 
-    y = "age-sex adjusted death rate per 100,000 population",
+    y = "age-sex adjusted death rate per 100,000 population\n",
     title = "Cerebrovascular Disease Standardised Death rate per Age-group",
     subtitle = "age and sex adjusted death rates per year (ESP-2013)",
     colour = "Age group"
@@ -454,15 +466,9 @@ mortality_hb %>%
       "75plus years" = "limegreen")
     )
 
+ggsave(plot_cd_mortality_age, filename = "cd_mortality_age.pdf", 
+       path = "../outputs/", width = 19, height = 12, units = "cm")
 
 ```
-
-
-
-```{r}
-colnames(activity_hb)
-colnames(mortality_hb)
-```
-
 
 

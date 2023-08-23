@@ -50,3 +50,9 @@ rsconnect/
 
 # all files and docs in folder
 notes_and_misc/
+
+# all raw files in subfolder in raw_data (raw nrs data)
+raw_data/pop-proj-principal-2018-council-area/
+raw_data/pop-proj-principal-2018-council-year/
+raw_data/pop-proj-principle-2018-health-board-area/
+raw_data/pop-proj-principle-2018-health-board-year/
