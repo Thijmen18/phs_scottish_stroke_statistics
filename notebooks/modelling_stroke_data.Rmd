@@ -11,14 +11,156 @@ as published by NRS (National Records Scotland)
 
 ```{r}
 library(tidyverse)
+library(GGally)
 
 activity_hb <- read_csv("../clean_data/stroke_activity_healthboard.csv")
 ```
+## Joining
+
+Next step: join the population estimates to the activity_hb dataset.
 
 ```{r}
-activity_hb %>% 
-  select(financial_year, hbr, admission_type, age_group, sex, number_of_discharges, crude_rate, easr) %>% 
-  head()
+pop_est <- read_csv("../clean_data/pop_est_nhs_format.csv")
 ```
+```{r}
+# in activity_hb change financial year into regular year
+# since its mid-year population estimates, this does not matter for the join
+
+activity_hb_reduced <- activity_hb %>% 
+  mutate(year = as.numeric(str_sub(financial_year, start = 1, end = 4), .before = financial_year)) %>% 
+  select(year, hbr, admission_type, age_group, sex, diagnosis, number_of_discharges, crude_rate, easr)
+```
+
+```{r}
+# Healthboard numbers in population estimate dataset are mixed of old and new numbers
+# recode so all are new codes
+
+pop_est_hb <- pop_est %>% 
+  mutate(hbr = recode(hbr,
+                     "S08000001" = "S08000015",
+                     "S08000002" = "S08000016",
+                     "S08000003" = "S08000017",
+                     "S08000004" = "S08000029",
+                     "S08000005" = "S08000019",
+                     "S08000006" = "S08000020",
+                     "S08000007" = "S08000031",
+                     "S08000008" = "S08000022",
+                     "S08000009" = "S08000032",
+                     "S08000010" = "S08000024",
+                     "S08000011" = "S08000025",
+                     "S08000012" = "S08000026",
+                     "S08000013" = "S08000030",
+                     "S08000014" = "S08000028"))
+```
+
+Join!
+```{r}
+# join
+activity_popest_hb <- activity_hb_reduced %>% 
+  left_join(pop_est_hb, by = c("hbr" = "hbr", "sex" = "sex", "year" = "year", "age_group" = "age_group")) %>% 
+  select(!"...1")
+
+activity_popest_hb
+```
+
+## further data wrangling
+
+```{r}
+#check for NAs, and drop the missing number of discharges missing 
+# (these are removed by NHS due to confidentiality reasons)
+# there are also missing population_size numbers since, 
+# not all age_groups exist in my dataset
+
+activity_popest_clean <- activity_popest_hb %>% 
+  drop_na("number_of_discharges") %>% 
+  drop_na("population_size") 
+```
+
+Secondly, there are multiple diagnosis types and admission types that are subdivided 
+in multiple categories. I am only interested in the total in admission_type this is
+categorised under "all" and for diagnosis this is categorised under Cerebrovascular disease
+
+```{r}
+activity_popest_clean <- activity_popest_clean %>% 
+  filter(admission_type == "All") %>% 
+  filter(diagnosis == "Cerebrovascular Disease")
+
+activity_popest_clean %>% 
+  distinct(diagnosis)
+```
+
+## Step 1: look at relationships between variables and Crude_rate/ number_of_discharges
+
+```{r}
+# How is crude_rate distributed?
+
+activity_popest_clean %>% 
+  ggplot() +
+  aes(x = year, y = crude_rate/100000) +
+  geom_point()
+
+# so it runs from 0 to almost 6%
+```
+
+```{r message = FALSE}
+# first check the relationships between variables and the crude_rate 
+
+set_1 <- activity_popest_clean %>% 
+  select(crude_rate, year, hbr, age_group, sex, number_of_discharges)
+
+set_2 <- activity_popest_clean %>% 
+  select(crude_rate, admission_type, diagnosis, easr, population_size)
+
+ggpairs(set_1)
+ggpairs(set_2)
+# variables of interest: hbr, age_group and sex (but not so obvious from the ggpairs plot)?
+# definitely interaction between those!
+```
+
+## Step 2: convert character columns to factor
+
+
+
+
+
+
+```{r}
+activity_popest_clean %>% 
+  distinct(diagnosis)
+```
+
+
+```{r}
+activity_popest_clean %>% 
+  distinct(admission_type)
+```
+
+
+
+
+
+
+
+```{r}
+# How is crude_rate distributed?
+
+activity_popest_clean %>% 
+  ggplot() +
+  aes(x = year, y = crude_rate/100000) +
+  geom_point()
+
+# so it runs from 0 to almost 6%
+```
+
+## let's go for manual model 
+
+Step 2: convert character columns of interest into factors
+```{r}
+activity_popest_clean %>% 
+  distinct(diagnosis)
+```
+
+
+
 
 

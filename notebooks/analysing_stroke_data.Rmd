@@ -97,6 +97,7 @@ activity_hb %>%
 mortality_hb %>% 
   distinct(diagnosis)
 # 3 diagnosis types: Cerebrovascular disease, stroke, Subarachnoid haemorrhage
+
 ```
 
 __crude rate and easr__
