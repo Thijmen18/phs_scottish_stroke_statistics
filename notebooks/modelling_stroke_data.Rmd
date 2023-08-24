@@ -12,9 +12,13 @@ as published by NRS (National Records Scotland)
 ```{r}
 library(tidyverse)
 library(GGally)
+library(janitor)
+library(modelr)
+library(broom)
 
 activity_hb <- read_csv("../clean_data/stroke_activity_healthboard.csv")
 ```
+
 ## Joining
 
 Next step: join the population estimates to the activity_hb dataset.
@@ -119,48 +123,91 @@ ggpairs(set_2)
 
 ## Step 2: convert character columns to factor
 
+```{r}
+# change crude_rate into proportion (/1000)
+activity_popest_red <- activity_popest_clean %>% 
+  mutate(crude_prop = crude_rate/100000, .before = hbr) %>% 
+# select only columns of interest
+  select(year, crude_prop, hbr, age_group, sex, number_of_discharges, 
+         crude_rate, easr, area_name, population_size) %>% 
+  mutate(year = as.factor(year),
+         hbr = as.factor(hbr),
+         sex = as.factor(sex),
+         area_name = as.factor(area_name),
+         age_group = as.factor(age_group))
+  
+```
+
+## step 3: divide into test and train dataset
+
+```{r}
+n_data <- nrow(activity_popest_red)
+
+
+test_index <- sample(1:n_data, size = n_data*0.2)
+
+test_data <- slice(activity_popest_red, test_index)
+train_data <- slice(activity_popest_red, -test_index)
+
+
+# checking proportions in all datasets:
+activity_popest_red %>% 
+  janitor::tabyl(hbr)
+
+train_data %>% 
+  janitor::tabyl(sex)
+
+test_data %>% 
+  janitor::tabyl(sex)
+
+# not all that far off, we are good to go.
+```
+
+## step 4: modelling
+
+```{r}
+# model with single predictor (age_group)
+model1 <- glm(crude_prop ~ age_group, data = train_data, family = binomial(link = 'logit'))
+
+# model with single pred (sex)
+model2 <- glm(crude_prop ~ sex, data = train_data, family = binomial(link = 'logit'))
+
+#model with single pred (hbr)
+model3 <- glm(crude_prop ~ hbr, data = train_data, family = binomial(link = 'logit'))
+
+#model with single pred (population)
+model4 <- glm(crude_prop ~ population_size, data = train_data, family = binomial(link = 'logit'))
+
+clean_names(tidy(model1))
+clean_names(tidy(model2))
+clean_names(tidy(model3))
+clean_names(tidy(model4))
+```
+
+
+```{r}
+# linear model
+model1A <- lm(number_of_discharges ~ age_group, data = train_data)
+
+model2A <- lm(number_of_discharges ~ sex, data = train_data)
+
+model3A <- lm(number_of_discharges ~ hbr, data = train_data)
+
+model4A <- lm(number_of_discharges ~ population_size, data = train_data)
+
+summary(model1A)
+summary(model2A)
+```
+
+```{r}
+colnames(activity_popest_red)
+```
 
 
 
 
 
 ```{r}
-activity_popest_clean %>% 
-  distinct(diagnosis)
+activity_popest_red
 ```
-
-
-```{r}
-activity_popest_clean %>% 
-  distinct(admission_type)
-```
-
-
-
-
-
-
-
-```{r}
-# How is crude_rate distributed?
-
-activity_popest_clean %>% 
-  ggplot() +
-  aes(x = year, y = crude_rate/100000) +
-  geom_point()
-
-# so it runs from 0 to almost 6%
-```
-
-## let's go for manual model 
-
-Step 2: convert character columns of interest into factors
-```{r}
-activity_popest_clean %>% 
-  distinct(diagnosis)
-```
-
-
-
-
 
