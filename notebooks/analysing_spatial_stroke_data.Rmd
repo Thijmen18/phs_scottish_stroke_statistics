@@ -1,0 +1,156 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# PHS stroke statistics spatial analysis
+
+This notebook contains steps and analyses to perform spatial analysis of stroke statistics
+across the healthboards of scotland
+
+Datafiles, NHS health boards, ESRI Shapefile Download:
+https://spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/f12c3826-4b4b-40e6-bf4f-77b9ed01dc14
+
+saved here: notebooks/SG_NHS_HealthBoards_2019/
+
+```{r}
+library(sf)
+library(tidyverse)
+```
+
+```{r}
+# read in data about scotland, healthboards using the st_read function
+
+scotland_healthboards_2019 <- st_read(
+  dsn = "SG_NHS_HealthBoards_2019/",
+  layer = "SG_NHS_HealthBoards_2019"
+)
+```
+
+```{r}
+#check class and look at the data
+class(scotland_healthboards_2019)
+
+head(scotland_healthboards_2019, 3)
+```
+
+```{r}
+attr(scotland_healthboards_2019, "sf_column")
+```
+
+```{r}
+# plotting some geometries
+# plot(scotland_healthboards_2019)
+
+# that works!
+```
+
+## Let's join the stroke info data together with shape data, and lets try to plot this.
+
+## spatial visualisations in ggplot
+
+```{r}
+head(activity_popest_hb)
+```
+
+
+```{r}
+# I've not managed to join the full df with all stroke statistics data
+# but instead you will need to do filtering to get the right number per health board
+# first, before visualisation.
+
+activity_popest_hb <- read_csv("../clean_data/activity_popest_hb.csv")
+
+# like this:
+test_14 <-  activity_popest_hb %>% 
+  filter(admission_type == "All",
+         diagnosis == "Cerebrovascular Disease",
+         year == 2012,
+         sex == "All",
+         age_group == "45-64 years",
+         hbr != "S92000003")
+
+scotland_healthboards_2019 %>% 
+  left_join(test_14, by = c("HBCode" = "hbr")) %>% 
+  ggplot() +
+  aes(fill = crude_rate) +
+  geom_sf() +
+  scale_fill_continuous(labels = scales::label_comma())
+```
+
+## Spatial analysis with leaflet
+
+```{r}
+library(leaflet)
+library(jsonlite)
+library(rgdal)
+
+scotland_healthboards_2019 <- st_read(
+  dsn = "SG_NHS_HealthBoards_2019/",
+  layer = "SG_NHS_HealthBoards_2019"
+)
+
+# add incidence rate to shape file:
+join_incidence_shape <- scotland_healthboards_2019 %>% 
+  left_join(test_14, by = c("HBCode" = "hbr"))
+
+head(join_incidence_shape)
+
+#transform for leaflet
+join_incidence_shape_leaflet <- st_transform(join_incidence_shape, '+proj=longlat +datum=WGS84')
+
+pal <- colorFactor(
+  palette = "viridis",
+  domain = join_incidence_shape_leaflet$crude_rate)
+  
+# sets the leaflet background map at 100% width
+nm <- leaflet(width = "100%")
+
+#add layers to the map
+leaflet_map <- leaflet() %>% 
+  addTiles() %>% 
+  #adds the datazone shapes based on the shapefile
+  addPolygons(data = join_incidence_shape_leaflet,
+              #defines how much to simplify the polygon line on each zoom level
+              smoothFactor = 0.3,
+              #makes shapes slightly see through
+              fillOpacity = 0.6,
+              #Fill shapes with the defines palette above based on crude_rate
+              fillColor = ~pal(crude_rate),
+              # sets pop up labels for each healthboard shape
+              label = ~paste0("Healthboard: ", HBCode,
+                              "<br>",
+                              "Crude_rate: ", crude_rate) %>% 
+                #the label has to be piped into html to render html in the labels
+                lapply(htmltools::HTML),
+              weight = 1,
+              #highlights the shape you are hoovering over and brings it to the front
+              highlightOptions = highlightOptions(color = "white",
+                                                  weight = 2,
+                                                  bringToFront = TRUE)) %>% 
+  #set the viewing pane for ther map
+ # setView(-2.9, 55.9, zoom = 6) %>% 
+  #adds legend for the palette
+  addLegend(
+    #shows the palette
+    pal = pal,
+    #shows the values associated with the palette
+    values = join_incidence_shape_leaflet$crude_rate,
+    opacity = 0.5,
+    title = "Stroke incidences per 100k population")
+
+# saving a Leaflet Map as a html widget in R
+library(htmlwidgets)
+
+saveWidget(leaflet_map, file = "../outputs/leaflet_map.html")
+
+```
+
+
+
+
+
+
+
+
+

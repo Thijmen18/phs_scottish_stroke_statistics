@@ -15,6 +15,7 @@ library(GGally)
 library(janitor)
 library(modelr)
 library(broom)
+library(ggfortify)
 
 activity_hb <- read_csv("../clean_data/stroke_activity_healthboard.csv")
 ```
@@ -65,6 +66,11 @@ activity_popest_hb <- activity_hb_reduced %>%
   select(!"...1")
 
 activity_popest_hb
+
+# save the join to clean_data
+write.csv(activity_popest_hb, file = "../clean_data/activity_popest_hb.csv")
+
+#write.csv(population_estimates_nhs_format, file = "clean_data/pop_est_nhs_format.csv")
 ```
 
 ## further data wrangling
@@ -182,7 +188,32 @@ clean_names(tidy(model1))
 clean_names(tidy(model2))
 clean_names(tidy(model3))
 clean_names(tidy(model4))
+
 ```
+
+We see that all predictors (of interest) show to be non-significant in terms of 
+predicting proportion of strokes (when added in a single
+predictor model). This basically tells us that our data might be too aggregated and
+we have too little variables that can explain/predict stroke proportions in a population.
+
+Multiple options:
+- in an ideal situation I have each row representing a single person, with additional 
+variables (e.g. smoking, diet, obesity level, etc. etc.) that can help me predict 
+the chance of getting a stroke.
+- Augmentation: find more data online about the smoking lvel under different 
+age-groups in each health board. Obesity levels, etc. This helps to add additional 
+variables for each group to explain stroke proportions.
+- alternative is to do future forecasting (see classnotes), however: this data is not
+necessarily seasonal and more importantly the data is on a yearly scale. That means I only have effectively
+9 datapoints.
+  - Plus I have future population predictions I want to use to predict strokes.
+  
+-> I can decide to continue with just creating a simple linear regression model.
+Below code-chunks says that each predictor is significant (according to Jamie this 
+is highly unreliable as the logistic regression model above with proportions already
+showed its not). 
+Basically the linear regression model of single predictors now says: with an increasing
+population size, the number of strokes increase. (and similar for the other variables).
 
 
 ```{r}
@@ -199,15 +230,139 @@ summary(model1A)
 summary(model2A)
 ```
 
+## Let's continue and create a linear regression using automated model development
+
+This is not the right way -> please see above under "Multiple options:"
+but this allows me (for the sake of the story and steps) do predictions on stroke incidence
+proportions for the future based on future population estimates. And create spatial heatmaps
+
 ```{r}
-colnames(activity_popest_red)
+library(leaps)
+library(glmulti)
+```
+
+I follow an automated approach to create a predictive linear model using Leaps with
+an exhaustive search. 
+```{r}
+regsubsets_exhaustive <- regsubsets(number_of_discharges ~ year + hbr + age_group + sex + population_size,
+                                    data = train_data, nvmax = 5, method = "exhaustive")
+
+plot(regsubsets_exhaustive)
+
+```
+From the plot, it seems like the best perfoming model has:
+hbr (certain categories), age_group and population size. 
+Not sex and not years..
+
+```{r}
+# see whats in the model
+sum_regsubsets_exhaustive <- summary(regsubsets_exhaustive)
+
+sum_regsubsets_exhaustive$bic
+```
+```{r}
+# plotting the BIC scores
+
+plot(summary(regsubsets_exhaustive)$bic, type = "b")
+```
+So the BIC score is lowest at 5 different variables. These are:
+
+```{r}
+sum_regsubsets_exhaustive$which[5, ]
+```
+-> hbr, age_group, population_size
+
+## let's create the model as found above
+
+```{r}
+model_linear <- lm(number_of_discharges ~ hbr + age_group + population_size, data = train_data)
+  
+summary(model_linear)
+# Adjusted R-squared:  0.763
+
+##quick test if adding sex, would help in explaining more of the variance
+model_linear_a <- lm(number_of_discharges ~ hbr + age_group + population_size + sex, data = train_data)
+
+summary(model_linear_a)  
+# adjusted R-squared: 0.764, so no reason to include
+
+## quick test if interaction between hbr and age_group is helping here
+model_linear_b <- lm(number_of_discharges ~ hbr + age_group + population_size + age_group:hbr, data = train_data)
+summary(model_linear_b)  
+
+# The adjusted R-squared is now really high: 0.95, but I am afraid I am now really 
+# overfitting. And since we are just creating a model for the sake of predicting values. I 
+# will stick to model with hbr + age_group + population_size as the predictors.
+```
+
+```{r}
+# summary of model we choose:
+
+summary(model_linear)
+autoplot(model_linear)
+```
+As expected, diagnostic plots look awful. But we are continuing for the sake of 
+'the story'
+
+## Fit the model on both training and test dataset and check mean squared error
+
+```{r}
+#training set
+
+predictions_train <- train_data %>% 
+  add_predictions(model_linear) %>% 
+  select(number_of_discharges, pred)
+
+predictions_test <- test_data %>% 
+  add_predictions(model_linear) %>% 
+  select(number_of_discharges, pred)
+
+# calculate the mean squared error
+
+mse_train <- mean((predictions_train$pred - train_data$number_of_discharges)^2)
+mse_test <- mean((predictions_test$pred - test_data$number_of_discharges)**2)
+
+mse_train
+mse_test
+
+# so the error is lower when predicting on the training data. But error is 
+# not even that bad (does not seem to be random) when applied to the test data set.
+```
+
+```{r}
+train_data %>% 
+  add_predictions(model_linear) %>% 
+  view()
+```
+
+EEEEHHHHH, this is not helpful. Some of my predicted models are even negative.
+So I conclude this dataset is not useful to model stroke incidences, and make a predicter model.
+It would be helpful to e.g. augment the data -> get more helpful variables included to
+help explain stroke incidences. 
+E.g. smoking rate, obesity rate per health board and age_group.
+
+So for now, I stop the modelling and decide that if I want to calculate future 
+stroke incidence levels I will just calculate this based on current (most recent years proportions)
+
+
+
+```{r}
+train_data %>% 
+  distinct(hbr)
 ```
 
 
 
 
-
 ```{r}
-activity_popest_red
+activity_popest_red %>% 
+  head()
 ```
+```{r}
+train_data %>% 
+  head()
+```
+
+
+
 
