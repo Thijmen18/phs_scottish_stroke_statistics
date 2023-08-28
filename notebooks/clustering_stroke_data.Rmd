@@ -185,11 +185,13 @@ dend_diff(clustering_activity, clustering_mortality)
 # Improve plots and draw clustering/grouping
 
 #mortality
+#pdf(file = "cluster_mortality.pdf")
 plot(clusters_mortality, cex = 1, hang = -1)
 rect.hclust(clusters_mortality, k = 4, border = 2:5)
 
 
 #activity
+#pdf(file = "cluster_activity.pdf")
 plot(clusters, cex = 1, hang = -1)
 rect.hclust(clusters, k = 3, border = 2:5)
 
