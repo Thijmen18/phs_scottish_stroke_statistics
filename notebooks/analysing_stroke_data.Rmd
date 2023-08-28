@@ -180,17 +180,41 @@ activity_hb %>%
 __What is the number of total stroke incidences split per diagnosis type?__
 
 ```{r}
-activity_hb %>% 
+plot_diagnosis_incidences <- activity_hb %>% 
   select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
   filter(age_group == "All",
-         admission_type == "All",
+         admission_type == "Emergency",
          sex == "All",
          hbr == "S92000003") %>% 
+  mutate(diagnosis = recode(diagnosis, "TIAs and related syndromes" = "TIA")) %>% 
   group_by(financial_year, diagnosis) %>% 
   summarise(total_incidences_easr = sum(easr)) %>% 
   ggplot() +
   aes(x = financial_year, y = total_incidences_easr, fill = diagnosis) +
-  geom_col(position = "dodge")
+  geom_col(position = "dodge") +
+  theme_light(base_size = 15) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1), 
+        legend.position = "none",
+        legend.text = element_text(size = 10)) +
+  labs(
+    x = "\nYear", 
+    y = "incidence rate per 100k population",
+    title = "Cerebrovascular Disease",
+    subtitle = "age and sex adjusted incidence rates per year"
+  ) +
+   scale_fill_manual(
+    values = c(
+      "Cerebrovascular Disease" = "indianred",
+      "Stroke" = "springgreen3",
+      "Subarachnoid Haemorrhage" = "springgreen4",
+      "TIA" = "darkgreen")
+    )
+
+plot_diagnosis_incidences
+
+# save the plot:
+ggsave(plot_diagnosis_incidences, filename = "plot_diagnosis_incidences.pdf", 
+       path = "../outputs/", width = 19, height = 12, units = "cm")
 ```
 Graph shows the total number of stroke incidences in Scotland over the years 
 2012/13 - 2021/22 divided for diagnosis type. 
@@ -227,7 +251,8 @@ mortality_hb %>%
   select(year, hbr, age_group, sex, diagnosis, number_of_deaths) %>% 
   filter(age_group == "All",
          sex == "All",
-         hbr == "S92000003") %>% 
+         hbr == "S92000003",
+         diagnosis == "Cerebrovascular Disease") %>% 
   group_by(year) %>% 
   summarise(total_deaths = sum(number_of_deaths)) %>% 
   ggplot() +
@@ -240,6 +265,35 @@ mortality_hb %>%
     title = "Total deaths for Cerebrovascular Disease per Year\n"
   ) +
   scale_y_continuous(limits = c(0, 7500))
+
+#Saved for presentation: absolute stroke mortality rate in Scotland including gender:
+mortality_absolute_gender <- mortality_hb %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths) %>% 
+  filter(age_group == "All",
+         #sex == "All",
+         hbr == "S92000003",
+         diagnosis == "Cerebrovascular Disease") %>% 
+  group_by(year, sex) %>% 
+  summarise(total_deaths = sum(number_of_deaths)) %>% 
+  ggplot() +
+  aes(x = year, y = total_deaths, colour = sex) +
+  geom_line(aes(group = sex), size = 2) +
+  theme_light(base_size = 15) +
+  labs(
+    x = "\nYear", 
+    y = "Total deaths",
+    title = "Total deaths for Cerebrovascular Disease per Year\n"
+  ) +
+  scale_y_continuous(limits = c(0, 7500)) +
+  scale_colour_manual(
+    values = c(
+      "All" = "indianred",
+      "Males" = "springgreen3",
+      "Females" = "springgreen4")
+    )
+
+ggsave(mortality_absolute_gender, filename = "mortality_absolute_gender.pdf", 
+       path = "../outputs/", width = 19, height = 12, units = "cm")
 
 ```
 Graph shows the total number of deaths due to strokes in Scotland over the year 2012-2021.
@@ -316,16 +370,18 @@ plot_cd_mortality_simd <- mortality_simd %>%
       "Q5" = "navyblue"
     )
   ) +
-  theme_light() +
+  theme_light(base_size = 15) +
   labs(
     x = "\nYear",
-    y = "Standardised mortality rate per 100,000 population\n",
-    title = "Cerebrovascular Disease Mortality rates by Deprivation Level",
+    y = "mortality rate per 100,000 population\n",
+    title = "Cerebrovascular Disease",
     subtitle = "Age-Sex standardised mortality rates by SIMD quintile and year",
     colour = "SIMD quintile")
 
+plot_cd_mortality_simd
+
 # save the plot:
-ggsave(plot_cd_mortality_simd, filename = "cd_mortality_simd.pdf", 
+ggsave(plot_cd_mortality_simd, filename = "cd_mortality_simd_2.pdf", 
        path = "../outputs/", width = 19, height = 12, units = "cm")
   
   
@@ -344,13 +400,14 @@ plot_cd_incidence_sex <- activity_hb %>%
   filter(age_group == "All",
          admission_type == "All",
          sex == "Males" | sex == "Females",
-         hbr == "S92000003") %>% 
+         hbr == "S92000003",
+         diagnosis == "Cerebrovascular Disease") %>% 
   group_by(financial_year, sex) %>% 
   summarise(total_incidences_easr = sum(easr)) %>% 
   ggplot() +
   aes(x = financial_year, y = total_incidences_easr) +
   geom_line(aes(group = sex, colour = sex), size = 2) +
-  theme_light() +
+  theme_light(base_size = 15) +
   labs(
     x = "\nYear", 
     y = "age-sex adjusted incidence rate per 100,000 population\n",
@@ -360,9 +417,11 @@ plot_cd_incidence_sex <- activity_hb %>%
   scale_y_continuous(limits = c(0, 1500)) +
   scale_colour_manual(
     values = c(
-      "Males" = "palegreen4",
-      "Females" = "palegreen1")
+      "Males" = "springgreen3",
+      "Females" = "springgreen4")
     )
+
+plot_cd_incidence_sex
 
 # save the plot:
 ggsave(plot_cd_incidence_sex, filename = "cd_incidence_sex.pdf", 
@@ -412,27 +471,30 @@ plot_cd_mortality_sex <- mortality_hb %>%
   select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr, crude_rate) %>% 
   filter(age_group == "All",
          sex == "Males" | sex == "Females",
-         hbr == "S92000003") %>% 
+         hbr == "S92000003",
+         diagnosis == "Cerebrovascular Disease") %>% 
   group_by(year, sex) %>% 
   summarise(total_deaths_easr = sum(easr)) %>% 
   ggplot() +
   aes(x = as.factor(year), y = total_deaths_easr) +
   geom_line(aes(group = sex, colour = sex), size = 2) +
-  theme_light() +
+  theme_light(base_size = 15) +
   labs(
     x = "\nYear", 
-    y = "age-sex adjusted death rate per 100,000 population\n",
-    title = "Cerebrovascular Disease Standardised Death rate per Sex",
+    y = "death rate per 100,000 population\n",
+    title = "Cerebrovascular Disease Death rate per Sex",
     subtitle = "age and sex adjusted death rates per year (ESP-2013)"
   ) +
   scale_y_continuous(limits = c(0, 400)) +
   scale_colour_manual(
     values = c(
-      "Males" = "palegreen4",
-      "Females" = "palegreen1")
+      "Females" = "palegreen4",
+      "Males" = "palegreen1")
     )
 
-ggsave(plot_cd_mortality_sex, filename = "cd_mortality_sex.pdf", 
+plot_cd_mortality_sex
+
+ggsave(plot_cd_mortality_sex, filename = "cd_mortality_sex_2.pdf", 
        path = "../outputs/", width = 19, height = 12, units = "cm")
 
 ```
