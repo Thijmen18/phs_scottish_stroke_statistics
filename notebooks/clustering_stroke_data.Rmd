@@ -1,0 +1,203 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# PHS Scottish Stroke Statistics
+
+This notebook contains steps to perform a cluster analysis to cluster/group 
+NHS health boards based on stroke incidence and mortality rates.
+
+This is helpful as it will group health boards based on closest similarity.
+The outcome can be used by the health boards to seek collaboration opportunities
+across boards and tackle similar problems together.
+
+```{r}
+library(tidyverse)
+library(cluster)
+library(corrplot)
+library(dendextend)
+library(factoextra)
+```
+
+Since Cluster analysis (either hierarchical clustering or k-means clustering) do not 
+allow repeteated row-names or identities. This analysis is not suitable for the 
+dataset, as data is aggregated and occuring many times.
+
+As alternative we are simplifying our methods, and create a single dendrogram based on 
+incidence rate of all ages and sexes taken together. for more recent year.
+
+Load the data
+```{r}
+activity_hb <- read_csv("../clean_data/stroke_activity_healthboard.csv")
+
+head(activity_hb)
+
+#prepare datafile, all groups cumulated for most recent year
+activity_all_recent <- activity_hb %>% 
+  filter(admission_type == "All",
+         diagnosis == "Cerebrovascular Disease",
+         sex == "All",
+         financial_year == "2021/22",
+         age_group == "All",
+         hbr != "S92000003") %>% 
+  mutate(hbr = recode(hbr, "S08000015" = "Ayrshire and Arran",
+              "S08000016" = "Borders",
+              "S08000017" = "Dumfries and Galloway",
+              "S08000019" = "Forth Valley",
+              "S08000020" = "Grampian",
+              "S08000022" = "Highland",
+              "S08000024" = "Lothian",
+              "S08000025" = "Orkney",
+              "S08000026" = "Shetland",
+              "S08000028" = "Western Isles",
+              "S08000029" = "Fife",
+              "S08000030" = "Tayside",
+              "S08000031" = "Greater Glasgow and Clyde",
+              "S08000032" = "Lanarkshire"))
+
+#select data required for the clustering
+activity_cluster_data <- activity_all_recent %>% 
+  select(hbr, number_of_discharges, crude_rate, easr) %>% 
+  column_to_rownames("hbr")
+
+head(activity_cluster_data)
+
+#check for missing values
+activity_cluster_data %>% 
+  summarise(across(everything(), .fns = ~sum(is.na(.x))))
+
+# Standardise data by scaling
+activity_cluster_data_scale <- activity_cluster_data %>% 
+  mutate(across(where(is.numeric), scale))
+
+activity_cluster_data_scale
+```
+
+```{r}
+# calculating distances
+distance_matrix <- activity_cluster_data_scale %>% 
+  dist(method = "euclidian")
+
+# visualising the dissimilarity matrix showing distances
+fviz_dist(distance_matrix)
+```
+
+```{r}
+# build dendrogram
+clusters <- distance_matrix %>% 
+  hclust(method = "complete")
+
+clusters %>% 
+  plot(cex = 0.5, hang = -5)
+```
+
+Now do exactly the same but with mortality rates, and compare with dendogram above
+
+```{r}
+head(mortality_hb)
+
+```
+
+
+
+
+```{r}
+mortality_hb <- read_csv("../clean_data/stroke_mortality_healthboard.csv")
+
+#prepare datafile, all groups cumulated for most recent year
+mortality_all_recent <- mortality_hb %>% 
+   filter(diagnosis == "Cerebrovascular Disease",
+         sex == "All",
+         year == "2021",
+         age_group == "All",
+         hbr != "S92000003") %>% 
+  mutate(hbr = recode(hbr, "S08000015" = "Ayrshire and Arran",
+              "S08000016" = "Borders",
+              "S08000017" = "Dumfries and Galloway",
+              "S08000019" = "Forth Valley",
+              "S08000020" = "Grampian",
+              "S08000022" = "Highland",
+              "S08000024" = "Lothian",
+              "S08000025" = "Orkney",
+              "S08000026" = "Shetland",
+              "S08000028" = "Western Isles",
+              "S08000029" = "Fife",
+              "S08000030" = "Tayside",
+              "S08000031" = "Greater Glasgow and Clyde",
+              "S08000032" = "Lanarkshire"))
+
+#select data required for the clustering
+mortality_cluster_data <- mortality_all_recent %>% 
+  select(hbr, number_of_deaths, crude_rate, easr) %>% 
+  column_to_rownames("hbr")
+
+head(mortality_cluster_data)
+
+#check for missing values
+mortality_cluster_data %>% 
+  summarise(across(everything(), .fns = ~sum(is.na(.x))))
+
+# Standardise data by scaling
+mortality_cluster_data_scale <- mortality_cluster_data %>% 
+  mutate(across(where(is.numeric), scale))
+
+mortality_cluster_data_scale
+```
+
+```{r}
+# calculating distances
+distance_matrix_mortality <- mortality_cluster_data_scale %>% 
+  dist(method = "euclidian")
+
+# visualising the dissimilarity matrix showing distances
+fviz_dist(distance_matrix_mortality)
+```
+
+```{r}
+# build dendrogram
+clusters_mortality <- distance_matrix_mortality %>% 
+  hclust(method = "complete")
+
+clusters_mortality %>% 
+  plot(cex = 0.5, hang = -5)
+```
+
+```{r}
+# compare both dendrogram ans see if they are similar
+
+clustering_mortality <- clusters_mortality %>% 
+  as.dendrogram() %>% 
+  dendextend::set("labels_cex", 0.5)
+
+clustering_mortality
+
+clustering_activity <- clusters %>% 
+  as.dendrogram() %>% 
+  dendextend::set("labels_cex" = 0.8)
+
+clustering_activity
+
+dend_diff(clustering_activity, clustering_mortality)
+```
+
+```{r}
+# Improve plots and draw clustering/grouping
+
+#mortality
+plot(clusters_mortality, cex = 1, hang = -1)
+rect.hclust(clusters_mortality, k = 4, border = 2:5)
+
+
+#activity
+plot(clusters, cex = 1, hang = -1)
+rect.hclust(clusters, k = 3, border = 2:5)
+
+```
+
+
+
+
+
+
+
