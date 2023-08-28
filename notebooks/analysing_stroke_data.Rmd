@@ -187,6 +187,16 @@ plot_diagnosis_incidences <- activity_hb %>%
          sex == "All",
          hbr == "S92000003") %>% 
   mutate(diagnosis = recode(diagnosis, "TIAs and related syndromes" = "TIA")) %>% 
+  mutate(financial_year = recode(financial_year, "2012/13" = "2012",
+                                "2013/14" = "2013",
+                                "2014/15" = "2014",
+                                "2015/16" = "2015",
+                                "2016/17" = "2016",
+                                "2017/18" = "2017",
+                                "2018/19" = "2018",
+                                "2019/20" = "2019",
+                                "2020/21" = "2020",
+                                "2021/22" = "2021")) %>% 
   group_by(financial_year, diagnosis) %>% 
   summarise(total_incidences_easr = sum(easr)) %>% 
   ggplot() +
@@ -213,7 +223,7 @@ plot_diagnosis_incidences <- activity_hb %>%
 plot_diagnosis_incidences
 
 # save the plot:
-ggsave(plot_diagnosis_incidences, filename = "plot_diagnosis_incidences.pdf", 
+ggsave(plot_diagnosis_incidences, filename = "plot_diagnosis_incidences_2.pdf", 
        path = "../outputs/", width = 19, height = 12, units = "cm")
 ```
 Graph shows the total number of stroke incidences in Scotland over the years 
@@ -282,7 +292,7 @@ mortality_absolute_gender <- mortality_hb %>%
   labs(
     x = "\nYear", 
     y = "Total deaths",
-    title = "Total deaths for Cerebrovascular Disease per Year\n"
+    title = "Cerebrovascular Disease Mortality per Year\n"
   ) +
   scale_y_continuous(limits = c(0, 7500)) +
   scale_colour_manual(
@@ -339,6 +349,21 @@ mortality_hb %>%
   ggplot() +
   aes(x = year, y = total_deaths_easr, fill = diagnosis) +
   geom_col(position = "dodge")
+
+
+mortality_hb %>% 
+  select(year, hbr, age_group, sex, diagnosis, number_of_deaths, easr) %>% 
+  filter(sex == "All",
+         hbr == "S92000003",
+         year == "2020",
+         age_group != "All",
+         age_group != "under75 years") %>% 
+  #group_by(diagnosis) %>% 
+ # summarise(total_deaths_easr = sum(easr)) %>% 
+  ggplot() +
+  aes(x = diagnosis, y = easr) +
+  geom_col(position = "dodge") +
+  facet_wrap(~ age_group)
 ```
 Graph shows the total number of deaths due to strokes in Scotland over the year 
 2012-2021 split by diagnosis type. 
@@ -402,6 +427,16 @@ plot_cd_incidence_sex <- activity_hb %>%
          sex == "Males" | sex == "Females",
          hbr == "S92000003",
          diagnosis == "Cerebrovascular Disease") %>% 
+  mutate(financial_year = recode(financial_year, "2012/13" = "2012",
+                                "2013/14" = "2013",
+                                "2014/15" = "2014",
+                                "2015/16" = "2015",
+                                "2016/17" = "2016",
+                                "2017/18" = "2017",
+                                "2018/19" = "2018",
+                                "2019/20" = "2019",
+                                "2020/21" = "2020",
+                                "2021/22" = "2021")) %>% 
   group_by(financial_year, sex) %>% 
   summarise(total_incidences_easr = sum(easr)) %>% 
   ggplot() +
@@ -410,11 +445,11 @@ plot_cd_incidence_sex <- activity_hb %>%
   theme_light(base_size = 15) +
   labs(
     x = "\nYear", 
-    y = "age-sex adjusted incidence rate per 100,000 population\n",
-    title = "Cerebrovascular Disease Standardised Incidences per Sex",
-    subtitle = "age and sex adjusted incidence rates per year (ESP-2013)"
+    y = "Incidences per 100,000 population\n",
+    title = "Cerebrovascular Disease Incidences per Age Group",
+    subtitle = "age and sex adjusted incidence rates per year"
   ) +
-  scale_y_continuous(limits = c(0, 1500)) +
+  scale_y_continuous(limits = c(0, 1000)) +
   scale_colour_manual(
     values = c(
       "Males" = "springgreen3",
@@ -430,34 +465,52 @@ ggsave(plot_cd_incidence_sex, filename = "cd_incidence_sex.pdf",
 
 __age_group__
 ```{r}
-activity_hb %>% 
+plot_cd_incidences_age <- activity_hb %>% 
   select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
   filter(age_group == "0-44 years" | age_group == "45-64 years" | 
            age_group == "65-74 years" | age_group == "75plus years",
          admission_type == "All",
          sex == "All",
-         hbr == "S92000003") %>% 
+         hbr == "S92000003",
+         diagnosis == "Cerebrovascular Disease") %>% 
+  mutate(financial_year = recode(financial_year, "2012/13" = "2012",
+                                "2013/14" = "2013",
+                                "2014/15" = "2014",
+                                "2015/16" = "2015",
+                                "2016/17" = "2016",
+                                "2017/18" = "2017",
+                                "2018/19" = "2018",
+                                "2019/20" = "2019",
+                                "2020/21" = "2020",
+                                "2021/22" = "2021")) %>% 
   group_by(financial_year, age_group) %>% 
   summarise(total_incidences_easr = sum(easr)) %>% 
   ggplot() +
   aes(x = financial_year, y = total_incidences_easr) +
   geom_line(aes(group = age_group, colour = age_group), size = 1.5) +
-  theme_light() +
+  theme_light(base_size = 15) +
   labs(
     x = "\nYear", 
-    y = "age-sex adjusted incidence rate per 100,000 population",
-    title = "Cerebrovascular Disease Standardised Incidences per Age-group",
-    subtitle = "age and sex adjusted incidence rates per year (ESP-2013)",
+    y = "Incidences per 100,000 population",
+    title = "Cerebrovascular Disease Incidences per Age Group",
+    subtitle = "age and sex adjusted incidence rates per year",
     colour = "Age group"
   ) +
-  scale_y_continuous(limits = c(0, 8000)) +
+  scale_y_continuous(limits = c(0, 5000)) +
   scale_colour_manual(
     values = c(
-      "0-44 years" = "palegreen4",
+       "0-44 years" = "palegreen4",
       "45-64 years" = "palegreen3",
       "65-74 years" = "palegreen1",
-      "75plus years" = "limegreen")
+      "75plus years" = "darkgreen")
     )
+
+plot_cd_incidences_age
+
+ggsave(plot_cd_incidences_age, filename = "cd_incidences_age.pdf", 
+       path = "../outputs/", width = 19, height = 12, units = "cm")
+
+
 ```
 
 
@@ -481,11 +534,11 @@ plot_cd_mortality_sex <- mortality_hb %>%
   theme_light(base_size = 15) +
   labs(
     x = "\nYear", 
-    y = "death rate per 100,000 population\n",
-    title = "Cerebrovascular Disease Death rate per Sex",
-    subtitle = "age and sex adjusted death rates per year (ESP-2013)"
+    y = "Mortality per 100,000 population\n",
+    title = "Cerebrovascular Disease Mortality per Sex",
+    subtitle = "age and sex adjusted death rates per year"
   ) +
-  scale_y_continuous(limits = c(0, 400)) +
+  scale_y_continuous(limits = c(0, 150)) +
   scale_colour_manual(
     values = c(
       "Females" = "palegreen4",
@@ -512,12 +565,12 @@ plot_cd_mortality_age <- mortality_hb %>%
   ggplot() +
   aes(x = as.factor(year), y = total_deaths_easr) +
   geom_line(aes(group = age_group, colour = age_group), size = 1.5) +
-  theme_light() +
+  theme_light(base_size = 15) +
   labs(
     x = "\nYear", 
-    y = "age-sex adjusted death rate per 100,000 population\n",
-    title = "Cerebrovascular Disease Standardised Death rate per Age-group",
-    subtitle = "age and sex adjusted death rates per year (ESP-2013)",
+    y = "Mortality per 100,000 population\n",
+    title = "Cerebrovascular Disease Mortality per Age Group",
+    subtitle = "age and sex adjusted death rates per year",
     colour = "Age group"
   ) +
   scale_y_continuous(limits = c(0, 1500)) +
@@ -526,12 +579,210 @@ plot_cd_mortality_age <- mortality_hb %>%
       "0-44 years" = "palegreen4",
       "45-64 years" = "palegreen3",
       "65-74 years" = "palegreen1",
-      "75plus years" = "limegreen")
+      "75plus years" = "darkgreen")
     )
+
+plot_cd_mortality_age
 
 ggsave(plot_cd_mortality_age, filename = "cd_mortality_age.pdf", 
        path = "../outputs/", width = 19, height = 12, units = "cm")
 
 ```
+
+
+#### Stroke mortality and incidences per health board
+
+```{r}
+# mortality
+head(mortality_hb)
+
+mortality_per_hb_wrap <- mortality_hb %>% 
+  filter(hbr != "S92000003",
+         age_group == "All",
+         sex == "All",
+         diagnosis == "Cerebrovascular Disease") %>%
+  mutate(hbr = recode(hbr, "S08000015" = "Ayrshire and Arran",
+              "S08000016" = "Borders",
+              "S08000017" = "Dumfries",
+              "S08000019" = "Forth Valley",
+              "S08000020" = "Grampian",
+              "S08000022" = "Highland",
+              "S08000024" = "Lothian",
+              "S08000025" = "Orkney",
+              "S08000026" = "Shetland",
+              "S08000028" = "Western Isles",
+              "S08000029" = "Fife",
+              "S08000030" = "Tayside",
+              "S08000031" = "Greater Glasgow",
+              "S08000032" = "Lanarkshire")) %>% 
+  ggplot() +
+  aes(x = year, y = easr) +
+  geom_line(aes(group = hbr, colour = hbr), size = 1.5) +
+  theme_light(base_size = 15) +
+  facet_wrap(~ hbr) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1), 
+        legend.position = "none",
+        strip.text = element_text(size=12)) +
+  scale_y_continuous(breaks = c(30, 120)) +
+  labs(
+    x = "\nYear", 
+    y = "Mortality per 100,000 population\n",
+    title = "Cerebrovascular Disease Mortality per Healthboard",
+    subtitle = "age and sex adjusted death rates per year")
+
+mortality_per_hb_wrap
+
+ggsave(mortality_per_hb_wrap, filename = "mortality_per_hb_wrap.pdf", 
+       path = "../outputs/", width = 19, height = 15, units = "cm")
+
+
+```
+
+```{r}
+# incidences
+
+incidences_per_hb_wrap <- activity_hb %>% 
+  filter(hbr != "S92000003",
+         age_group == "All",
+         sex == "All",
+         diagnosis == "Cerebrovascular Disease",
+         admission_type == "All") %>%
+  mutate(hbr = recode(hbr, "S08000015" = "Ayrshire and Arran",
+              "S08000016" = "Borders",
+              "S08000017" = "Dumfries",
+              "S08000019" = "Forth Valley",
+              "S08000020" = "Grampian",
+              "S08000022" = "Highland",
+              "S08000024" = "Lothian",
+              "S08000025" = "Orkney",
+              "S08000026" = "Shetland",
+              "S08000028" = "Western Isles",
+              "S08000029" = "Fife",
+              "S08000030" = "Tayside",
+              "S08000031" = "Greater Glasgow",
+              "S08000032" = "Lanarkshire")) %>% 
+  mutate(financial_year = recode(financial_year, "2012/13" = 2012,
+                                "2013/14" = 2013,
+                                "2014/15" = 2014,
+                                "2015/16" = 2015,
+                                "2016/17" = 2016,
+                                "2017/18" = 2017,
+                                "2018/19" = 2018,
+                                "2019/20" = 2019,
+                                "2020/21" = 2020,
+                                "2021/22" = 2021)) %>%
+  ggplot() +
+  aes(x = financial_year, y = easr) +
+  geom_line(aes(group = hbr, colour = hbr), size = 1.5) +
+  theme_light(base_size = 15) +
+  facet_wrap(~ hbr) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1), 
+        legend.position = "none",
+        legend.text = element_text(size = 10),
+        strip.text = element_text(size=12)) +
+   scale_y_continuous(breaks = c(300, 800)) +
+  labs(
+    x = "\nYear", 
+    y = "Incidences per 100,000 population\n",
+    title = "Cerebrovascular Disease Incidences per Healthboard",
+    subtitle = "age and sex adjusted incidence rates per year")
+
+incidences_per_hb_wrap
+
+ggsave(incidences_per_hb_wrap, filename = "incidences_per_hb_wrap.pdf", 
+       path = "../outputs/", width = 19, height = 15, units = "cm")
+```
+
+
+
+
+```{r}
+# calculations - estimating percentage change 2012 vs 2021
+
+#mortality - sex 
+mortality_hb %>% 
+  filter(year == 2012 | year == 2021,
+         hbr == "S92000003",
+         age_group != "All" & age_group != "under75 years",
+         diagnosis == "Cerebrovascular Disease") %>% 
+  group_by(year, sex) %>% 
+  summarise(total_easr = sum(easr))
+
+#mortality - age_group
+mortality_hb %>% 
+  filter(year == 2012 | year == 2021,
+         hbr == "S92000003",
+         age_group != "All" & age_group != "under75 years",
+         diagnosis == "Cerebrovascular Disease") %>% 
+  group_by(year, age_group) %>% 
+  summarise(total_easr = sum(easr))
+```
+
+Mortality change in easr - 2012 vs 2021:
+```{r}
+## sex
+#Males
+1-(766.8403/997.0874) # -0.23
+#female
+1-(714.8456/1033.6359) #-0.30
+#all
+1-(740.8429/1015.3616) #-0.27
+
+## age-group
+# 0-44 years
+1-(3.050264/4.806742) #-0.36
+# 45-64 years
+1-(65.132479/63.033765) #+0.033
+# 65-74 years
+1-(273.975640/337.554489) #-0.18
+# 75plus years
+1-(1880.370360/2640.689870) #-0.28
+```
+
+```{r}
+# calculations - estimating percentage change 2012 vs 2021
+
+#incidences - sex 
+activity_hb %>% 
+  filter(financial_year == "2012/13" | financial_year == "2021/22",
+         hbr == "S92000003",
+         age_group != "All" & age_group != "under75 years",
+         diagnosis == "Cerebrovascular Disease") %>% 
+  group_by(financial_year, sex) %>% 
+  summarise(total_easr = sum(easr))
+
+#incidences - age_group
+activity_hb %>% 
+  filter(financial_year == "2012/13" | financial_year == "2021/22",
+         hbr == "S92000003",
+         age_group != "All" & age_group != "under75 years",
+         diagnosis == "Cerebrovascular Disease") %>% 
+  group_by(financial_year, age_group) %>% 
+  summarise(total_easr = sum(easr))
+```
+
+Incidence change in easr - 2012 vs 2021:
+```{r}
+## sex
+#Males
+1-(12183.921/11296.164) #+ 0.07
+#female
+1-(9649.621/9108.495) #+ 0.05
+#all
+1-(10916.771/10202.330) # + 0.07
+
+## age-group
+# 0-44 years
+1-(263.3454/231.2459) # +0.13
+# 45-64 years
+1-(3182.0960/2615.5838) # +0.21
+# 65-74 years
+1-(8235.0952/7534.1553) # +0.09
+# 75plus years
+1-(21069.7768	/20226.0038) # +0.04
+```
+
+
+
 
 
