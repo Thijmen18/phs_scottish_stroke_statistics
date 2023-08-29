@@ -8,7 +8,7 @@ output: html_notebook
 This notebook contains steps to create a predictive multivariate model to predict 
 future stroke incidence rates using future population predictions per year
 as published by NRS (National Records Scotland)
-
+%>% 
 ```{r}
 library(tidyverse)
 library(GGally)
