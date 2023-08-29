@@ -92,7 +92,8 @@ scotland_healthboards_2019 <- st_read(
 
 # add incidence rate to shape file:
 join_incidence_shape <- scotland_healthboards_2019 %>% 
-  left_join(test_14, by = c("HBCode" = "hbr"))
+  left_join(test_14, by = c("HBCode" = "hbr")) %>% 
+  mutate(crude_rate = round(crude_rate))
 
 head(join_incidence_shape)
 
