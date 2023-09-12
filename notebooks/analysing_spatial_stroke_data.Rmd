@@ -6,7 +6,7 @@ output: html_notebook
 # PHS stroke statistics spatial analysis
 
 This notebook contains steps and analyses to perform spatial analysis of stroke statistics
-across the healthboards of scotland
+across the healthboards of scotland using the leaflet package 
 
 Datafiles, NHS health boards, ESRI Shapefile Download:
 https://spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/f12c3826-4b4b-40e6-bf4f-77b9ed01dc14
@@ -45,19 +45,16 @@ attr(scotland_healthboards_2019, "sf_column")
 # that works!
 ```
 
-## Let's join the stroke info data together with shape data, and lets try to plot this.
-
 ## spatial visualisations in ggplot
 
 ```{r}
 head(activity_popest_hb)
 ```
 
-
 ```{r}
 # I've not managed to join the full df with all stroke statistics data
 # but instead you will need to do filtering to get the right number per health board
-# first, before visualisation.
+# first, before visualisation:
 
 activity_popest_hb <- read_csv("../clean_data/activity_popest_hb.csv")
 
@@ -140,10 +137,12 @@ leaflet_map <- leaflet() %>%
     opacity = 0.5,
     title = "Stroke incidences per 100k population")
 
-# saving a Leaflet Map as a html widget in R
-library(htmlwidgets)
+leaflet_map
 
-saveWidget(leaflet_map, file = "../outputs/leaflet_map.html")
+# saving a Leaflet Map as a html widget in R
+# library(htmlwidgets)
+#
+# saveWidget(leaflet_map, file = "../outputs/leaflet_map.html")
 
 ```
 

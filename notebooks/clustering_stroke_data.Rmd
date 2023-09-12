@@ -6,7 +6,8 @@ output: html_notebook
 # PHS Scottish Stroke Statistics
 
 This notebook contains steps to perform a cluster analysis to cluster/group 
-NHS health boards based on stroke incidence and mortality rates.
+NHS health boards based on stroke incidence and mortality rates using hierarchical 
+clustering.
 
 This is helpful as it will group health boards based on closest similarity.
 The outcome can be used by the health boards to seek collaboration opportunities
@@ -22,10 +23,11 @@ library(factoextra)
 
 Since Cluster analysis (either hierarchical clustering or k-means clustering) do not 
 allow repeteated row-names or identities. This analysis is not suitable for the 
-dataset, as data is aggregated and occuring many times.
+complete dataset as currently presented, as data is aggregated and occuring many times.
 
-As alternative we are simplifying our methods, and create a single dendrogram based on 
-incidence rate of all ages and sexes taken together. for more recent year.
+As alternative (time constrained) we are simplifying our methods, and create a single dendrogram based on 
+incidence rate of all ages and sexes taken together, for the most recent year.
+For an extensive clustering analysis you would include all data.
 
 Load the data
 ```{r}
@@ -98,9 +100,6 @@ Now do exactly the same but with mortality rates, and compare with dendogram abo
 head(mortality_hb)
 
 ```
-
-
-
 
 ```{r}
 mortality_hb <- read_csv("../clean_data/stroke_mortality_healthboard.csv")
@@ -197,7 +196,16 @@ rect.hclust(clusters, k = 3, border = 2:5)
 
 ```
 
+These plots show the results of a clustering analysis clustering health boards
+based on incidence and mortality rates given the most recent year. Summing up 
+all incidences and deaths for all age groups and genders.
+The grouping into 3 distinct clusters is arbitrarily chosen, minimum requirement 
+was to reduce the number of groups consisting of 2 healthboards.
 
+Looking at the clustering based on incidence rates we identify two major groups,
+leaving 'Greater Glasgow and Clyde' as a unique healthboard.
+I recommend for the remaining health boards to collaborate and set up improvements
+plans together as their incidence rates show highly similar patterns.
 
 
 
