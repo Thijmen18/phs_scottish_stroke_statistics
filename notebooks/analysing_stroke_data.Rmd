@@ -1,16 +1,34 @@
 ---
-title: "R Notebook"
+title: "R Notebook Analysing Stroke Data"
 output: html_notebook
 ---
 
 # PHS Scottish Stroke Statistics
 
-This notebook contains analysis steps of stroke incidence and mortality 
+This notebook contains explorative analysis and visualisations of stroke incidence and mortality 
 data across Scotland.
 
-* Raw datasets are from PHS open data accessible via: https://www.opendata.nhs.scot/dataset/scottish-stroke-statistics
-* The raw datasets have been cleaned and saved within the folder "../clean_data/"
+  * Raw datasets are from PHS open data accessible via: 
+  https://www.opendata.nhs.scot/dataset/scottish-stroke-statistics
+  
+  * The raw datasets have been cleaned and saved within the folder "../clean_data/"
   the cleaned datafiles will be used and analysed here.
+  
+  * Data exploration, analysis and visualisations are covered in this notebook.
+  
+Note: this notebook and its visualisations are not exhaustive, not all types of
+visualisations/analysis are covered.
+
+## Other analysis types covered in separate notebooks:
+
+For the analysis and construction of the predictive model please check the notebook:
+__modelling_stroke_data.Rmd__
+
+For the clustering analysis, please check the notebook:
+__clustering_stroke_data.Rmd__
+
+For the spatial analysis, creating a map with leaflet, please check the notebook:
+__analysing_spatial_stroke_data.Rmd__
 
 ```{r}
 # load in libraries
@@ -20,14 +38,14 @@ library(skimr)
 
 ### Contents
 
-For the analysis I focus on:
+For the analysis and visualisations I focus on (health board level):
 
-1. Stroke activity
-  - demographics (age, sex)
-  - distribution across Scotland
-2. Stroke mortality
-  - demographics (age, sex)
-  - distribution across Scotland
+  1. Stroke activity
+    - demographics (age, sex)
+    - distribution across Scotland
+  2. Stroke mortality
+    - demographics (age, sex)
+    - distribution across Scotland
 
 ### 1. Load in cleaned datafiles
 
@@ -51,13 +69,15 @@ mortality_simd <- read_csv("../clean_data/cd_mortality_by_deprivation.csv")
 ```
 
 ### 2. General exploration data contents
-Initially we focus on Health boards as data contents are similar except for area.
+
+Initially we focus on Health boards as data contents are similar except for area 
+(health board vs. council area).
 
 ```{r}
 # general exploration activity
 
 head(activity_hb)
-view(activity_hb)
+#view(activity_hb)
 
 activity_hb %>% 
   filter(age_group == "All") %>% 
@@ -104,21 +124,23 @@ __crude rate and easr__
 Two columns in all PHS open data files are of interest for data visualisation:
 
 *crude rate:*
-The crude rate is the population-standardised rate of the 'event' (here: incidences or moratlity rate)
+The crude rate is the population-standardised rate of the 'event' (here: incidences or mortality rate)
 Crude rate is the number of events per 100.000 people
 
 *EASR:*
 is the The European Age-Sex Standardised Rate per 100,000 population.
 The numbers of deaths per 100 000 population are influenced by the age distribution of the population.
-use is made of the European Standard Population (ESP) to age and sex standardise.
+For standardisation the European Standard Population (ESP) is used to standardise on age and sex.
 
 ### Visualisations - are organised per data file / topic
 
-3a = stroke activity per HB
-3b = stroke mortality per HB
-3c = mortality per simd (Scottish Index Multiple Deprivation)
-4a = stroke activity per HB - demographics
-4b = stroke activity per HB - demographics
+  * 3a = stroke activity per HB
+  * 3b = stroke mortality per HB
+  * 3c = mortality per simd (Scottish Index Multiple Deprivation)
+  * 4a = stroke activity per HB - demographics
+  * 4b = stroke mortality per HB - demographics
+  * 5 = Stroke mortality and incidences per health board
+  * 6 = Percentage change in incidence and mortality rates for period 2012-2021 for major demographics
 
 #### 3A. General insights Stroke activity per HB
 
@@ -150,7 +172,7 @@ more stable.
 
 However this gives the absolute number of incidences, which are not standardised for 
 age and sex composition differences in the population across years.
-The population size changes and you want to standardise for this.
+Standardisation is important in order to enable comparison between different areas and demographics.
 
 __age-sex standardised stroke incidences in Scotland per year__
 ```{r}
@@ -175,10 +197,11 @@ activity_hb %>%
   scale_y_continuous(limits = c(0, 1300))
   
 ```
-
+Data/graph shows the age-sex standardised incidence rate of stroke incidences in Scotland over the years 
+2012/13 - 2021/22. We see an initial increase until 2016 after incidence rates are 
+more stable and slightly decreasing. Similar to the previous graph, but here standardised.
 
 __What is the number of total stroke incidences split per diagnosis type?__
-
 ```{r}
 plot_diagnosis_incidences <- activity_hb %>% 
   select(financial_year, hbr, age_group, sex, admission_type, diagnosis, number_of_discharges, crude_rate, easr) %>% 
@@ -223,15 +246,17 @@ plot_diagnosis_incidences <- activity_hb %>%
 plot_diagnosis_incidences
 
 # save the plot:
-ggsave(plot_diagnosis_incidences, filename = "plot_diagnosis_incidences_2.pdf", 
+# ggsave(plot_diagnosis_incidences, filename = "plot_diagnosis_incidences_2.pdf", 
        path = "../outputs/", width = 19, height = 12, units = "cm")
 ```
-Graph shows the total number of stroke incidences in Scotland over the years 
+Graph shows the number of stroke incidences (age-sex standardised) in Scotland over the years 
 2012/13 - 2021/22 divided for diagnosis type. 
-Majority of cases are diagnosed as Cerebrovascular disease, followed by Stroke. 
+Majority of cases are diagnosed as Cerebrovascular disease, as expected since all types
+are classified as Cerebrovascular Disease. Stroke is the most common diagnosed type of CD.
+
 Small number of cases are diagnosed as TIA, followed by Subarachnoid Haemorrhage.
 We see an initial increase until 2016 after incidence rates are 
-more stable. Largest differences are found in Cerebrovascular disease and Stroke, while
+more stable. Largest differences are found in Stroke, while
 TIA and Subarachnoid Haemorrhage are relatively stable across all years.
 
 __What is the number of total stroke incidences split per admission type?__
@@ -248,7 +273,7 @@ activity_hb %>%
   aes(x = financial_year, y = total_incidences_easr, fill = admission_type) +
   geom_col(position = "dodge")
 ```
-Graph shows the total number of stroke incidences in Scotland over the years 
+Graph shows the total number of stroke incidences (age-sex standardised) in Scotland over the years 
 2012/13 - 2021/22 split for admission type. 
 Largest number of incidences are transfered patients, followed by emergency cases. 
 A small minority of admitted incidences are elective.
@@ -302,7 +327,9 @@ mortality_absolute_gender <- mortality_hb %>%
       "Females" = "springgreen4")
     )
 
-ggsave(mortality_absolute_gender, filename = "mortality_absolute_gender.pdf", 
+mortality_absolute_gender
+
+# ggsave(mortality_absolute_gender, filename = "mortality_absolute_gender.pdf", 
        path = "../outputs/", width = 19, height = 12, units = "cm")
 
 ```
@@ -335,7 +362,10 @@ mortality_hb %>%
   ) +
   scale_y_continuous(limits = c(0, 200))
 ```
-
+Graph shows the age-sex standardised mortality rate due to Cerebrovascular Disease 
+in Scotland over the year 2012-2021.
+Total number of deaths has decreased over the years comparing start to end year, 
+similar to the graph above (but here standardised to enable comparison)
 
 __What is the number of deaths split per diagnosis type?__
 ```{r}
@@ -365,14 +395,21 @@ mortality_hb %>%
   geom_col(position = "dodge") +
   facet_wrap(~ age_group)
 ```
-Graph shows the total number of deaths due to strokes in Scotland over the year 
-2012-2021 split by diagnosis type. 
-Majority of deaths are diagnosed as Cerebrovascular disease, followed by stroke. 
-Only a minority is caused by Subarachnoid haemorrhage.
+The first graph shows the age-sex standardised mortality rate due to Cerebrovascular Disease, and its most
+common diagnosis types, in Scotland over the year 2012-2021. 
+Majority of deaths are diagnosed as strokes. Only a minority is caused by Subarachnoid haemorrhage.
+
+The second graph introduces an additional layer/ split by age group. We observe that 
+people aged 75+ are most commonly dying from Cerebrovascular Disease and all of its types.
+The data is age-sex standardised and we can therefore comapre the data.
+In total 600 per 100k people that are 75+ die from CD, while this is 100 per 100k or less
+for all remaining age groups.
 
 #### 3C. Stroke mortality per SIMD
 
 Visualise the number of deaths (use age-sex standardised rate per 100k population)
+and split the data per SIMD (Scottish Index of Multiple Deprivation)
+
 ```{r}
 head(mortality_simd)
 
@@ -406,16 +443,18 @@ plot_cd_mortality_simd <- mortality_simd %>%
 plot_cd_mortality_simd
 
 # save the plot:
-ggsave(plot_cd_mortality_simd, filename = "cd_mortality_simd_2.pdf", 
-       path = "../outputs/", width = 19, height = 12, units = "cm")
+# ggsave(plot_cd_mortality_simd, filename = "cd_mortality_simd_2.pdf", 
+#       path = "../outputs/", width = 19, height = 12, units = "cm")
   
   
 ```
 Graph shows the age-sex standardised mortality rates (per 100,000 people) per SIMD quintile.
-Indicating that mortality rate for CD is higher in areas of higher deprivation.
+We see a decrease in death rates across all SIMD quintiles, but we do observe 
+that mortality rate for CD is higher in areas of higher deprivation.
 
 #### 4A. Stroke incidence rate - demographics
-Visualise the number of incidences (use age-sex standardised rate per 100k population)
+
+Analyse/visualise the number of incidences (use age-sex standardised rate per 100k population)
 split per age-group and sex
 
 __sex__
@@ -459,9 +498,14 @@ plot_cd_incidence_sex <- activity_hb %>%
 plot_cd_incidence_sex
 
 # save the plot:
-ggsave(plot_cd_incidence_sex, filename = "cd_incidence_sex.pdf", 
-       path = "../outputs/", width = 19, height = 12, units = "cm")
+# ggsave(plot_cd_incidence_sex, filename = "cd_incidence_sex.pdf", 
+#       path = "../outputs/", width = 19, height = 12, units = "cm")
 ```
+
+Graph shows the age-sex standardised incidence rates (per 100,000 people) split per sex.
+We see a slight increase in incidence rates in both Males and Females, with a similar
+pattern. Overall we do observe that incidence rates for CD is higher in Males compared to Females.
+
 
 __age_group__
 ```{r}
@@ -507,14 +551,20 @@ plot_cd_incidences_age <- activity_hb %>%
 
 plot_cd_incidences_age
 
-ggsave(plot_cd_incidences_age, filename = "cd_incidences_age.pdf", 
-       path = "../outputs/", width = 19, height = 12, units = "cm")
+# save the plot
+# ggsave(plot_cd_incidences_age, filename = "cd_incidences_age.pdf", 
+#       path = "../outputs/", width = 19, height = 12, units = "cm")
 
 
 ```
 
+Graph shows the age-sex standardised incidence rates (per 100,000 people) split per age group.
+We see a slight increase in incidence rates across all age groups. 
+Overall we do observe that incidence rates for CD is higher in the older age groups, while
+much lower in younger aged people.
 
 #### 4B. Stroke mortality rate - demographics
+
 Visualise the number of deaths (use age-sex standardised rate per 100k population)
 split per age-group and sex
 
@@ -547,10 +597,17 @@ plot_cd_mortality_sex <- mortality_hb %>%
 
 plot_cd_mortality_sex
 
-ggsave(plot_cd_mortality_sex, filename = "cd_mortality_sex_2.pdf", 
-       path = "../outputs/", width = 19, height = 12, units = "cm")
+# save plot
+#ggsave(plot_cd_mortality_sex, filename = "cd_mortality_sex_2.pdf", 
+#       path = "../outputs/", width = 19, height = 12, units = "cm")
 
 ```
+
+Graph shows the age-sex standardised mortality rates (per 100,000 people) split per sex.
+Different from the increase seen in incidence rates above, here we see a decrease in 
+mortality rates in both sexes. 
+Overall we do observe that mortality rates for CD is slightly higher in Males in the most
+recent year for which data is available.
 
 __age_group__
 ```{r}
@@ -585,14 +642,24 @@ plot_cd_mortality_age <- mortality_hb %>%
 
 plot_cd_mortality_age
 
-ggsave(plot_cd_mortality_age, filename = "cd_mortality_age.pdf", 
-       path = "../outputs/", width = 19, height = 12, units = "cm")
+# save the plot
+# ggsave(plot_cd_mortality_age, filename = "cd_mortality_age.pdf", 
+#       path = "../outputs/", width = 19, height = 12, units = "cm")
 
 ```
 
+Graph shows the age-sex standardised mortality rates (per 100,000 people) split per age-group.
+Again, different from the increase seen in incidence rates above, here we see a decrease in 
+mortality rates in all age groups except for 45-64 year olds (increased with 3%, see below). 
+Overall we again confirm that mortality rates for CD is higher in older aged age groups. 
+Highest decrease in mortality rates are found in the 75plus group. (decreasing 28%, see below)
 
-#### Stroke mortality and incidences per health board
+#### 5. Stroke mortality and incidences per health board
 
+Visualise the number of deaths and incidence rates (both age-sex standardised rate per 100k population)
+split per health board, to see changing patterns and the differences across the boards.
+
+__mortality rate__
 ```{r}
 # mortality
 head(mortality_hb)
@@ -633,12 +700,21 @@ mortality_per_hb_wrap <- mortality_hb %>%
 
 mortality_per_hb_wrap
 
-ggsave(mortality_per_hb_wrap, filename = "mortality_per_hb_wrap.pdf", 
-       path = "../outputs/", width = 19, height = 15, units = "cm")
-
+# save the plot
+# ggsave(mortality_per_hb_wrap, filename = "mortality_per_hb_wrap.pdf", 
+#       path = "../outputs/", width = 19, height = 15, units = "cm")
 
 ```
 
+This plot shows 14 graphs each showing the age-and sex- adjusted mortality rates 
+of Cerebrovascular disease for the years 2012-2021, for the 14 health boards in Scotland.
+(for full resolution/sized picture, please extend!)
+
+The patterns do differ across health boards, with high similarity across smaller hb's:
+Orkney, Shetland and Western Isles. Generally, all other healthboards show a decreasing trend
+in deaths due to DC.
+
+__incidence rates__
 ```{r}
 # incidences
 
@@ -690,12 +766,23 @@ incidences_per_hb_wrap <- activity_hb %>%
 
 incidences_per_hb_wrap
 
-ggsave(incidences_per_hb_wrap, filename = "incidences_per_hb_wrap.pdf", 
-       path = "../outputs/", width = 19, height = 15, units = "cm")
+# save the plot
+# ggsave(incidences_per_hb_wrap, filename = "incidences_per_hb_wrap.pdf", 
+#       path = "../outputs/", width = 19, height = 15, units = "cm")
 ```
 
+This plot shows 14 graphs each showing the age-and sex- adjusted incidence rates 
+of Cerebrovascular disease for the years 2012-2021, for the 14 health boards in Scotland.
+(for full resolution/sized picture, please extend!)
 
+The patterns do differ (more than mortality rates) across health boards, with hb's
+Glasgow, Forth Valley, Ayrshire, Border experiencing an increase in CD incidences.
+Lothian, Tayside, Grampian and Dumfries show a decreasing trend in CD incidences.
 
+#### 6. Percentage change in incidence and mortality rates for period 2012-2021 for major demographics
+
+Below percentage change are calculated for the change in incidence and mortality rates
+for Cerebrovascular disease for major demographics (age groups and sex)
 
 ```{r}
 # calculations - estimating percentage change 2012 vs 2021
@@ -722,7 +809,8 @@ mortality_hb %>%
 
 ```
 
-Mortality change in easr - 2012 vs 2021:
+__Mortality change in easr - 2012 vs 2021:__
+
 ```{r}
 ## sex
 #Males
@@ -770,7 +858,8 @@ activity_hb %>%
 
 ```
 
-Incidence change in easr - 2012 vs 2021:
+__Incidence change in easr - 2012 vs 2021:__
+
 ```{r}
 ## sex
 #Males

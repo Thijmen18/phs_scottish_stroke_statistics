@@ -12,6 +12,7 @@ library(readxl)
 
 #####################
 ## first dataset: Stroke Activity By Health Board
+#######
 
 activity_hb <- read_csv("raw_data/stroke_activity_by_health_board.csv")
 
@@ -41,7 +42,8 @@ write.csv(activity_hb, file = "clean_data/stroke_activity_healthboard.csv")
 
 ####################
 ## second dataset: Stroke Activity By Council Area
-  
+#######
+ 
 activity_ca <- read_csv("raw_data/stroke_activity_by_council_area.csv")
 
 # 1. initial exploration
@@ -59,6 +61,7 @@ activity_ca <- activity_ca %>%
 
 # each variable has a qualifier column, I will leave it in for now as it might be
 # helpful to filter data during analysis steps based on this.
+
 # 3. check for NA's
 
 activity_ca %>% 
@@ -71,6 +74,7 @@ write.csv(activity_ca, file = "clean_data/stroke_activity_council.csv")
 
 ####################
 ## third dataset: Stroke Mortality By Health Board
+#######
 
 mortality_hb <- read_csv("raw_data/stroke_mortality_by_healthboard.csv")
 
@@ -89,6 +93,7 @@ mortality_hb <- mortality_hb %>%
 
 # each variable has a qualifier column, I will leave it in for now as it might be
 # helpful to filter data during analysis steps based on this.
+
 # 3. check for NA's
 
 mortality_hb %>% 
@@ -102,6 +107,7 @@ write.csv(mortality_hb, file = "clean_data/stroke_mortality_healthboard.csv")
 
 ####################
 ## fourth dataset: Stroke Mortality By Council Area
+#######
 
 mortality_ca <- read_csv("raw_data/stroke_mortality_by_council_area.csv")
 
@@ -120,6 +126,7 @@ mortality_ca <- mortality_ca %>%
 
 # each variable has a qualifier column, I will leave it in for now as it might be
 # helpful to filter data during analysis steps based on this.
+
 # 3. check for NA's
 
 mortality_ca %>% 
