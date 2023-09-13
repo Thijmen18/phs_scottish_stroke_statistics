@@ -1,7 +1,3 @@
----
-title: "R Notebook"
-output: html_notebook
----
 
 # PHS Scottish Stroke Statistics
 
@@ -9,9 +5,9 @@ output: html_notebook
 
 This project is an individual project assigned during the CodeClan Professional Data Analysis Course.
 
-In this project I analyse stroke (or: cerebrovascular disease) incidence and mortality rates in Scotland, using data from Public Health Scotland (PHS).
+__In this project I analyse stroke (or: cerebrovascular disease) incidence and mortality rates in Scotland, using data from Public Health Scotland (PHS).__
 
-Main aim is to predict future stroke incidences using regression modelling and provide advice for health planning and collaboration between health boards using cluster analysis.
+__Main aim is to predict future stroke incidences using regression modelling and provide advice for health planning and collaboration between health boards using cluster analysis.__
 
 __Disclaimer:__ this project was not requested by and had no involvement from PHSor NHS Scotland, and any result or insights are not intended to be used in real life.
 
@@ -42,21 +38,31 @@ The following stages of the data analysis process were followed:
 ## Observations and insights of interest
 
 ![image mortality rate trends](images/motality_rates_sex_trend.jpg)
+
 _We observed a decrease of mortality rates due to cerebrovascular disease across major demographic groups (age groups and sex) in Scotland over the period 2012-2021. The decrease in mortality rates varied between -30% (Females) and -18% (age group 65-74 yrs). Only the age group 45-64 yrs increased with 3%. (death rates are age- and sex- standardised, using the European standard population ESP2013)_
 
 ![image incidence rate trends](images/incidence_rates_agegroup_trend.jpg)
+
 _In contrast to mortality, the incidence rates of cerebrovascular disease increased across all major demographic groups (age groups and sex) in Scotland over the period 2012-2021. The increase in incidence rates varied between 21% (age group 45-64 yrs) and 4% (age group 75+). (incidence rates are age- and sex- standardised, using the European standard population ESP2013)_
 
 ![image healthboard pattern comparison](images/healthboard_incidence_pattern.jpg)
+
 _Major differences and similarities are found between health boards comparing mortality- and incidence rate pattern changes over the period 2012-2021. Here incidence rates of cerebrovascular disease are shown per health board._
 
 ![cluster analysis image](images/cluster_healthboards_incidences.jpg)
+
 _A hierarchical clustering analysis approach identified health boards with highest similarity in incidence and mortality pattern changes. This insight is helpful for setting up collaborative teams._
 
 ![interactive plot immage](images/leaflet_plot.jpg)
+
 _The interactive plot as generated with leaflet can be used to explore differences and similarities across healthboards. Here a screenshot is shown of the incidence rates, given per 100k population sizes. By hoovering over the boards, additional information and insights are presented._
 
-For the construction of the predictive model we have seen that all predictors (of interest) show to be non-significant in terms of predicting proportion of strokes (when added in a single predictor model). This potentially tells us that our data might be too aggregated and we have too little variables that can explain/predict stroke incidences in a (future) population. (Future steps include: 1) augment the data; 2) use de-aggregated non-anonymised data; 3) perform time series forecasting
+For the construction of the predictive model we have seen that all predictors (of interest) show to be non-significant in terms of predicting proportion of strokes (when added in a single predictor model). This potentially tells us that our data might be too aggregated and we have too little variables that can explain/predict stroke incidences in a (future) population. 
+Future steps might include: 
+
+  1. augment the data; 
+  2. use de-aggregated non-anonymised data;
+  3. perform time series forecasting.
 
 ## R scripts and notebooks for cleaning and analysis, and final presentation
 
@@ -73,6 +79,7 @@ Key insights and findings where presented during a 15-minute presentation to pee
 ## About the data
 
 __Internal sources__
+
 This project uses data from Public Health Scotland and NHS Scotland, which contains public sector information licensed under the Open Government Licence v3.0.
 
 The following internal data sources are sourced from the organisation’s Scottish Stroke Statistics page. Found [here:](https://www.opendata.nhs.scot/dataset/scottish-stroke-statistics)
@@ -92,6 +99,7 @@ Exploration notebooks also include work using Stroke Statistics on Council Area 
   https://www.opendata.nhs.scot/dataset/scottish-stroke-statistics/resource/285b4cbd-1e87-49fe-9e24-73d2da8166ae
 
 __External sources__
+
 For the construction/analysis of the predictive model, predicting future stroke incidence rates, population estimates have been used as published by the National Records Scotland (NRS).
 
   *	Mid-Year Population Estimates by NHS health board, sex and single year of age, 1981-2021:
